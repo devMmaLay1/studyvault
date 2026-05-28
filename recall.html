@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recall Session - StudyVault</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5be3">
+    <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="recall-page">
+    <div class="recall-topbar">
+        <a id="exitBtn" href="#" class="recall-exit">Exit Session</a>
+        <div id="sessionProgress" class="session-progress-label"></div>
+        <div id="sessionCourseId" class="session-course-label"></div>
+    </div>
+
+    <div class="session-bar-wrap">
+        <div id="sessionBar" class="session-bar"></div>
+    </div>
+
+    <main class="recall-main">
+        <h1 id="unitTitle" class="recall-unit-title"></h1>
+
+        <div id="recallPanel" class="recall-session-panel">
+            <p class="recall-prompt">
+                Write everything you remember about this unit. Do not look at notes.
+            </p>
+            <textarea id="recallInput" class="recall-textarea" placeholder="Start writing..."></textarea>
+            <button id="showSummaryBtn" class="reveal-btn">Reveal Summary</button>
+        </div>
+
+        <div id="summaryPanel" class="recall-session-summary hidden"></div>
+
+        <div id="confPanel" class="confidence-prompt hidden">
+            <p>How did you do?</p>
+            <div class="confidence-btns">
+                <button class="conf-btn conf-hard" data-conf="hard">Struggled</button>
+                <button class="conf-btn conf-medium" data-conf="medium">Missed some</button>
+                <button class="conf-btn conf-easy" data-conf="easy">Got it all</button>
+            </div>
+        </div>
+
+        <div id="navPanel" class="session-nav hidden">
+            <button id="prevBtn" class="sess-nav-btn">Prev</button>
+            <button id="nextBtn" class="sess-nav-btn sess-nav-next">Next</button>
+        </div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/recall.js"></script>
+</body>
+
+</html>

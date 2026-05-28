@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault — Interactive Lesson</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5be3">
+    <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/lesson.css">
+    <link rel="stylesheet" href="assets/css/lesson-diagrams.css">
+    <!-- Lucide Icons (local first, CDN fallback) -->
+    <script src="assets/js/lucide.minn.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/lucide@latest';document.head.appendChild(s)"></script>
+</head>
+
+<body class="lesson-page">
+
+    <div id="navbar"></div>
+
+    <main class="container">
+        <header class="lesson-header">
+            <span class="lesson-badge">Interactive lesson · Prototype</span>
+            <h1 id="lesson-title">Loading…</h1>
+            <p class="lesson-meta" id="lesson-meta"></p>
+            <p class="text-muted" style="margin-top:0.5rem;font-size:0.9rem;">
+                Teach → quick check → section quiz (70%+ to unlock next). Use help buttons if stuck.
+            </p>
+        </header>
+
+        <div id="lesson-root"></div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lesson-diagrams.js"></script>
+    <script src="assets/js/lessons/CIT108_m2_u3.js"></script>
+    <script src="assets/js/lesson-engine.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.lucide) lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>

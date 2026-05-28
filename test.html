@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST102 — Unit 4: Active, Passive & Infinitive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #f7f4ef;
+            --surface: #ffffff;
+            --border: #e0dbd2;
+            --text: #1a1714;
+            --text-secondary: #3d3935;
+            --text-muted: #7a7469;
+            --accent: #2d5be3;
+            --green: #16a34a;
+            --amber: #d97706;
+            --red: #dc2626;
+            --purple: #9333ea;
+            --font-sans: 'DM Sans', sans-serif;
+            --font-display: 'Bricolage Grotesque', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text-secondary);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        /* ── HEADER ── */
+        .page-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2d5be3 60%, #4f46e5 100%);
+            color: white;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+        .page-hero .course-tag {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 14px;
+            border-radius: 100px;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(26px, 5vw, 42px);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+        .page-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        /* ── LAYOUT ── */
+        .container { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+
+        /* ── SECTION CARDS ── */
+        .section-card {
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            border-radius: 14px;
+            padding: 32px;
+            margin-bottom: 32px;
+            position: relative;
+            overflow: hidden;
+        }
+        .section-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+        }
+        .card-blue::before   { background: var(--accent); }
+        .card-green::before  { background: var(--green); }
+        .card-amber::before  { background: var(--amber); }
+        .card-purple::before { background: var(--purple); }
+        .card-red::before    { background: var(--red); }
+
+        /* ── HEADINGS ── */
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+        .tag-blue   { background: rgba(45,91,227,0.1);  color: var(--accent); }
+        .tag-green  { background: rgba(22,163,74,0.1);  color: var(--green); }
+        .tag-amber  { background: rgba(217,119,6,0.1);  color: var(--amber); }
+        .tag-purple { background: rgba(147,51,234,0.1); color: var(--purple); }
+        .tag-red    { background: rgba(220,38,38,0.1);  color: var(--red); }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: clamp(20px, 3vw, 26px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--text);
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 24px 0 10px;
+        }
+
+        p { margin-bottom: 14px; color: var(--text-secondary); }
+
+        /* ── FORMULA BOX ── */
+        .formula-box {
+            background: var(--bg);
+            border: 2px solid var(--accent);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-family: var(--font-mono);
+            font-size: 15px;
+            color: var(--text);
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        /* ── CALLOUTS ── */
+        .callout {
+            padding: 14px 18px;
+            border-radius: 8px;
+            border-left: 4px solid;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+        .callout-blue   { background: rgba(45,91,227,0.07);  border-color: var(--accent);  color: #1e3a8a; }
+        .callout-green  { background: rgba(22,163,74,0.07);  border-color: var(--green);   color: #14532d; }
+        .callout-amber  { background: rgba(217,119,6,0.07);  border-color: var(--amber);   color: #78350f; }
+        .callout-red    { background: rgba(220,38,38,0.07);  border-color: var(--red);     color: #7f1d1d; }
+        .callout-purple { background: rgba(147,51,234,0.07); border-color: var(--purple);  color: #4c1d95; }
+        .callout strong { font-weight: 700; }
+
+        /* ── EXAMPLES ── */
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .example-item {
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+        .example-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+        .example-sentence {
+            font-size: 14.5px;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .example-note {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* ── COMPARISON TABLE ── */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1.5px solid var(--border);
+        }
+        .compare-table th {
+            background: var(--bg);
+            padding: 12px 16px;
+            text-align: left;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .compare-table td {
+            padding: 12px 16px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+        .compare-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+        .correct { color: var(--green); font-weight: 600; }
+        .wrong   { color: var(--red);   font-weight: 600; text-decoration: line-through; }
+
+        /* ── PASSIVE TENSE TABLE ── */
+        .tense-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .tense-table th {
+            background: #1e3a8a;
+            color: white;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 12px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.04em;
+        }
+        .tense-table td {
+            padding: 11px 14px;
+            border-top: 1px solid var(--border);
+            vertical-align: top;
+        }
+        .tense-table tr:nth-child(even) td { background: rgba(45,91,227,0.03); }
+        .tense-name { font-weight: 700; color: var(--accent); font-size: 13px; }
+        .tense-formula { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+
+        /* ── EXERCISE BLOCKS ── */
+        .exercise-block {
+            background: linear-gradient(135deg, rgba(45,91,227,0.04) 0%, rgba(79,70,229,0.04) 100%);
+            border: 1.5px solid rgba(45,91,227,0.2);
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .exercise-title {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .exercise-title::before {
+            content: '✏️';
+            font-size: 16px;
+        }
+        .exercise-q {
+            font-size: 14.5px;
+            color: var(--text);
+            margin-bottom: 8px;
+            padding-left: 16px;
+            border-left: 3px solid var(--accent);
+        }
+        .answer-block {
+            background: rgba(22,163,74,0.06);
+            border: 1.5px solid rgba(22,163,74,0.2);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-top: 14px;
+        }
+        .answer-title {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--green);
+            margin-bottom: 10px;
+        }
+        .answer-item {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            padding-left: 12px;
+            border-left: 2px solid var(--green);
+        }
+
+        /* ── RULE PILLS ── */
+        .rule-list { list-style: none; margin: 12px 0; }
+        .rule-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 14px;
+            background: var(--bg);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14.5px;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .rule-list li::before {
+            content: '→';
+            color: var(--accent);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* ── SUMMARY TABLE ── */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 16px;
+        }
+        .summary-table th {
+            background: var(--text);
+            color: white;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 12px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.04em;
+        }
+        .summary-table td {
+            padding: 12px 16px;
+            border-top: 1px solid var(--border);
+            vertical-align: top;
+            line-height: 1.6;
+        }
+        .summary-table tr:nth-child(even) td { background: var(--bg); }
+
+        /* ── BACK LINK ── */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 32px;
+            padding: 8px 16px;
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            transition: all 0.2s ease;
+        }
+        .back-link:hover { border-color: var(--accent); color: var(--accent); }
+
+        /* ── MOBILE ── */
+        @media (max-width: 640px) {
+            .section-card { padding: 20px 16px; }
+            .examples-grid { grid-template-columns: 1fr; }
+            .compare-table, .tense-table, .summary-table { font-size: 13px; }
+            .compare-table th, .compare-table td,
+            .tense-table th, .tense-table td,
+            .summary-table th, .summary-table td { padding: 9px 10px; }
+            .page-hero { padding: 36px 16px 32px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<div class="page-hero">
+    <div class="course-tag">GST102 · Module 4 · Unit 4</div>
+    <h1>The Active Voice, Passive Voice &amp; The Infinitive</h1>
+    <p>Master three of the most important grammar tools in English — clearly explained with real-life examples.</p>
+</div>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to StudyVault</a>
+
+    <!-- ══════════════════════════════════
+         SECTION 1 — ACTIVE VOICE
+    ══════════════════════════════════ -->
+    <div class="section-card card-blue">
+        <div class="section-tag tag-blue">Section 1</div>
+        <h2>The Active Voice</h2>
+
+        <p>The <strong>active voice</strong> is the most direct and natural way to write a sentence. The subject <em>does</em> the action — it acts on the object.</p>
+
+        <div class="formula-box">Subject (S) &nbsp;→&nbsp; Verb (V) &nbsp;→&nbsp; Object (O)</div>
+
+        <h3>Simple Definition</h3>
+        <ul class="rule-list">
+            <li>The subject performs the action directly.</li>
+            <li>There is no swapping of subject and object.</li>
+            <li>It is the clearest, most direct way to express an idea.</li>
+        </ul>
+
+        <h3>Real-Life Examples</h3>
+        <div class="examples-grid">
+            <div class="example-item">
+                <div class="example-label">Example 1</div>
+                <div class="example-sentence">John ate the yam.</div>
+                <div class="example-note">John (S) → ate (V) → the yam (O)</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Example 2</div>
+                <div class="example-sentence">She grabbed his hand.</div>
+                <div class="example-note">She (S) → grabbed (V) → his hand (O)</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Example 3</div>
+                <div class="example-sentence">The teacher marked the scripts.</div>
+                <div class="example-note">Teacher (S) → marked (V) → scripts (O)</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Example 4</div>
+                <div class="example-sentence">NEPA took the light at midnight.</div>
+                <div class="example-note">NEPA (S) → took (V) → the light (O)</div>
+            </div>
+        </div>
+
+        <div class="callout callout-amber">
+            <strong>⚠️ Watch out — Complement Objects!</strong><br>
+            Some sentences look active but are NOT. If the object says something <em>further about the verb</em> (a complement), it cannot be reversed into passive.<br><br>
+            ❌ "The boy is in the garden." — no real object to swap.<br>
+            ❌ "She is a beautiful girl." — "a beautiful girl" is a complement, not an object.
+        </div>
+
+        <div class="exercise-block">
+            <div class="exercise-title">Quick Exercise — Identify the S, V, O</div>
+            <div class="exercise-q">1. Everybody needs a friend.</div>
+            <div class="exercise-q">2. The dog bit the man.</div>
+            <div class="exercise-q">3. My mother cooked jollof rice.</div>
+            <div class="answer-block">
+                <div class="answer-title">✅ Answers</div>
+                <div class="answer-item">1. Everybody (S) → needs (V) → a friend (O)</div>
+                <div class="answer-item">2. The dog (S) → bit (V) → the man (O)</div>
+                <div class="answer-item">3. My mother (S) → cooked (V) → jollof rice (O)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         SECTION 2 — PASSIVE VOICE
+    ══════════════════════════════════ -->
+    <div class="section-card card-green">
+        <div class="section-tag tag-green">Section 2</div>
+        <h2>The Passive Voice</h2>
+
+        <p>In the <strong>passive voice</strong>, the object of the active sentence becomes the subject. The focus shifts from <em>who did it</em> to <em>what was done</em>.</p>
+
+        <div class="formula-box">Object becomes Subject &nbsp;+&nbsp; be (correct tense) &nbsp;+&nbsp; Past Participle &nbsp;+&nbsp; by [doer]</div>
+
+        <h3>How to Convert Active → Passive</h3>
+        <table class="compare-table">
+            <thead>
+                <tr><th>Active Voice</th><th>Passive Voice</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>He cleared his throat.</td>
+                    <td class="correct">His throat was cleared by him.</td>
+                </tr>
+                <tr>
+                    <td>Everybody needs a girl.</td>
+                    <td class="correct">A girl is needed by everybody.</td>
+                </tr>
+                <tr>
+                    <td>She grabbed his hand.</td>
+                    <td class="correct">His hand was grabbed by her.</td>
+                </tr>
+                <tr>
+                    <td>He noticed the girl.</td>
+                    <td class="correct">The girl was noticed by him.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-blue">
+            <strong>Key changes when converting:</strong><br>
+            • she → her &nbsp;|&nbsp; he → him &nbsp;|&nbsp; they → them<br>
+            • Add <strong>by</strong> before the doer: "by him", "by her", "by Silas"<br>
+            • Change the verb: needs → is needed &nbsp;|&nbsp; noticed → was noticed
+        </div>
+
+        <h3>Passive Forms Across All Tenses</h3>
+        <table class="tense-table">
+            <thead>
+                <tr><th>Tense</th><th>Formula</th><th>Example</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tense-name">Simple Present / Past</span><br><span class="tense-formula">am/is/are/was/were + past participle</span></td>
+                    <td></td>
+                    <td>"Energy is used every day."<br>"The letter was written."</td>
+                </tr>
+                <tr>
+                    <td><span class="tense-name">Present Continuous</span><br><span class="tense-formula">is/are + being + past participle</span></td>
+                    <td></td>
+                    <td>"Changes are being made."</td>
+                </tr>
+                <tr>
+                    <td><span class="tense-name">Present Perfect</span><br><span class="tense-formula">has/have + been + past participle</span></td>
+                    <td></td>
+                    <td>"This topic has been discussed."</td>
+                </tr>
+                <tr>
+                    <td><span class="tense-name">Future</span><br><span class="tense-formula">will + be + past participle</span></td>
+                    <td></td>
+                    <td>"The answer will be known."</td>
+                </tr>
+                <tr>
+                    <td><span class="tense-name">Modal Verbs</span><br><span class="tense-formula">can/must + be + past participle</span></td>
+                    <td></td>
+                    <td>"Food production can be increased."</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>When to Use the Passive Voice</h3>
+        <ul class="rule-list">
+            <li>When the <strong>doer is unknown</strong> — "He was killed in a fight." (We don't know who killed him.)</li>
+            <li>When the <strong>doer is not important</strong> — focus is on what happened, not who did it.</li>
+            <li>In <strong>scientific writing</strong> — "Glass is made from sand which is melted under great heat."</li>
+            <li>In <strong>historical events</strong> — "The First Battle of Panipat was fought in 1526."</li>
+            <li>When you want to be <strong>impersonal</strong> — "He saw John" (personal) → "John was seen" (impersonal).</li>
+        </ul>
+
+        <h3>Real-Life Examples</h3>
+        <div class="examples-grid">
+            <div class="example-item">
+                <div class="example-label">Science</div>
+                <div class="example-sentence">Glass is made from sand.</div>
+                <div class="example-note">Doer (factory workers) not important.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">News / History</div>
+                <div class="example-sentence">The president was assassinated.</div>
+                <div class="example-note">Focus on the event, not the killer.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Official Notice</div>
+                <div class="example-sentence">You have been informed about the case.</div>
+                <div class="example-note">Impersonal, formal tone.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Everyday</div>
+                <div class="example-sentence">The meeting was addressed by the Governor.</div>
+                <div class="example-note">Doer mentioned with "by".</div>
+            </div>
+        </div>
+
+        <div class="callout callout-red">
+            <strong>⚠️ Common Nigerian Errors with Passive Voice</strong><br><br>
+            Always add <strong>-ed</strong> (past participle) after helping verbs!<br><br>
+            ❌ "You have been <u>inform</u> about the case." &nbsp;→&nbsp; ✅ "You have been <strong>informed</strong>."<br>
+            ❌ "Your case will be <u>consider</u> tomorrow." &nbsp;→&nbsp; ✅ "Your case will be <strong>considered</strong>."<br>
+            ❌ "He felt <u>unconcern</u> about the issue." &nbsp;→&nbsp; ✅ "He felt <strong>unconcerned</strong>."<br>
+            ❌ "She got me <u>confuse</u>." &nbsp;→&nbsp; ✅ "She got me <strong>confused</strong>."
+        </div>
+
+        <div class="exercise-block">
+            <div class="exercise-title">Quick Exercise — Convert to Passive</div>
+            <div class="exercise-q">1. The police arrested the thief.</div>
+            <div class="exercise-q">2. My mother cooks rice every day.</div>
+            <div class="exercise-q">3. The students will write the exam tomorrow.</div>
+            <div class="answer-block">
+                <div class="answer-title">✅ Answers</div>
+                <div class="answer-item">1. The thief was arrested by the police.</div>
+                <div class="answer-item">2. Rice is cooked by my mother every day.</div>
+                <div class="answer-item">3. The exam will be written by the students tomorrow.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         SECTION 3 — THE INFINITIVE
+    ══════════════════════════════════ -->
+    <div class="section-card card-purple">
+        <div class="section-tag tag-purple">Section 3</div>
+        <h2>The Infinitive (to + verb)</h2>
+
+        <p>The <strong>infinitive</strong> is the base form of a verb, usually with <strong>to</strong> before it. It is used after other verbs and to express purpose.</p>
+
+        <div class="formula-box">to + base verb &nbsp;&nbsp; (e.g. to go, to eat, to study, to pass)</div>
+
+        <h3>Use 1 — After Certain Verbs</h3>
+        <p>Some verbs are always followed by <strong>to + infinitive</strong>:</p>
+        <ul class="rule-list">
+            <li><strong>want, wish, hope, decide</strong> → "I want <strong>to pass</strong> my exams."</li>
+            <li><strong>promise, plan, fail, refuse</strong> → "She refused <strong>to answer</strong>."</li>
+            <li><strong>advise, ask, tell + someone</strong> → "The doctor advised him <strong>to stop</strong> smoking."</li>
+        </ul>
+
+        <h3>Use 2 — To Express Purpose (Why someone does something)</h3>
+        <p>Use <strong>to + infinitive</strong> to explain the reason or purpose of an action:</p>
+        <div class="examples-grid">
+            <div class="example-item">
+                <div class="example-label">Purpose Example 1</div>
+                <div class="example-sentence">Azhar went to the bank to cash a cheque.</div>
+                <div class="example-note">Why did he go? → to cash a cheque.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Purpose Example 2</div>
+                <div class="example-sentence">She went to the chemist to get medicine.</div>
+                <div class="example-note">Why? → to get medicine.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Purpose Example 3</div>
+                <div class="example-sentence">We need a match to light the stove.</div>
+                <div class="example-note">Why do we need it? → to light the stove.</div>
+            </div>
+            <div class="example-item">
+                <div class="example-label">Purpose Example 4</div>
+                <div class="example-sentence">I am going to Paris to learn French.</div>
+                <div class="example-note">Why go to Paris? → to learn French.</div>
+            </div>
+        </div>
+
+        <h3>Use 3 — "Too … to" Pattern</h3>
+        <p>This pattern means <em>"so [adjective] that he/she cannot…"</em></p>
+        <div class="callout callout-purple">
+            <strong>Formula:</strong> too + adjective + to + infinitive<br><br>
+            "It is very cold. We can't go out." → <strong>"It is too cold to go out."</strong><br>
+            "He is very tired. He can't work." → <strong>"He is too tired to work."</strong><br>
+            "He is very young. He won't understand." → <strong>"He is too young to understand."</strong>
+        </div>
+
+        <h3>Use 4 — After "make" and "let" (No "to"!)</h3>
+        <ul class="rule-list">
+            <li>After <strong>make</strong> and <strong>let</strong>, drop the "to": "She let me <strong>go</strong>." (NOT "to go")</li>
+            <li>"Why did you make us <strong>wait</strong>?" (NOT "to wait")</li>
+            <li>"My mother wouldn't let me <strong>touch</strong> it." (NOT "to touch")</li>
+        </ul>
+
+        <div class="callout callout-red">
+            <strong>⚠️ The Biggest Nigerian Error with Infinitives</strong><br><br>
+            The infinitive (to) NEVER takes a past tense or past participle form!<br><br>
+            ❌ "I did not see him <u>to told</u> him." &nbsp;→&nbsp; ✅ "I did not see him <strong>to tell</strong> him."<br>
+            ❌ "She went there <u>to bought</u> food." &nbsp;→&nbsp; ✅ "She went there <strong>to buy</strong> food."<br><br>
+            <strong>Rule:</strong> Always use the BASE FORM of the verb after "to".
+        </div>
+
+        <div class="exercise-block">
+            <div class="exercise-title">Quick Exercise — Fill in with "to" or leave blank</div>
+            <div class="exercise-q">1. Do you know how ___ repair a watch?</div>
+            <div class="exercise-q">2. My mother wouldn't let me ___ touch it.</div>
+            <div class="exercise-q">3. Would you like ___ join the army?</div>
+            <div class="exercise-q">4. Why did you make us ___ wait so long?</div>
+            <div class="answer-block">
+                <div class="answer-title">✅ Answers</div>
+                <div class="answer-item">1. to repair (after "how")</div>
+                <div class="answer-item">2. [no "to"] — after "let", drop "to"</div>
+                <div class="answer-item">3. to join (after "would like")</div>
+                <div class="answer-item">4. [no "to"] — after "make", drop "to"</div>
+            </div>
+        </div>
+
+        <div class="exercise-block">
+            <div class="exercise-title">Quick Exercise — Rewrite using "too … to"</div>
+            <div class="exercise-q">1. He was quite angry. He couldn't speak.</div>
+            <div class="exercise-q">2. It was very dark. I didn't see the signpost.</div>
+            <div class="exercise-q">3. He is very busy. He won't see you now.</div>
+            <div class="answer-block">
+                <div class="answer-title">✅ Answers</div>
+                <div class="answer-item">1. He was too angry to speak.</div>
+                <div class="answer-item">2. It was too dark to see the signpost clearly.</div>
+                <div class="answer-item">3. He is too busy to see you now.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         SUMMARY
+    ══════════════════════════════════ -->
+    <div class="section-card card-amber">
+        <div class="section-tag tag-amber">Final Summary</div>
+        <h2>Unit 4 — Master Summary</h2>
+        <p>Everything you need to remember from this unit in one place.</p>
+
+        <table class="summary-table">
+            <thead>
+                <tr><th>Topic</th><th>Key Rule</th><th>Quick Example</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Active Voice</strong></td>
+                    <td>Subject does the action directly. S → V → O. Most direct form.</td>
+                    <td>"John ate the yam."</td>
+                </tr>
+                <tr>
+                    <td><strong>Passive Voice</strong></td>
+                    <td>Object becomes subject. Use: be + past participle. Add "by" for doer.</td>
+                    <td>"The yam was eaten by John."</td>
+                </tr>
+                <tr>
+                    <td><strong>Passive — When to use</strong></td>
+                    <td>Doer unknown, unimportant, or for impersonal/scientific writing.</td>
+                    <td>"He was killed in a fight."</td>
+                </tr>
+                <tr>
+                    <td><strong>Passive — Common Error</strong></td>
+                    <td>Always add -ed after helping verbs (been, be, was, were).</td>
+                    <td>"You have been <strong>informed</strong>." ✅</td>
+                </tr>
+                <tr>
+                    <td><strong>Infinitive (to + verb)</strong></td>
+                    <td>Used after want/hope/plan/decide and to express purpose.</td>
+                    <td>"She went to buy food."</td>
+                </tr>
+                <tr>
+                    <td><strong>Too … to</strong></td>
+                    <td>Means "so [adj] that cannot". Use base verb after "to".</td>
+                    <td>"Too tired to work."</td>
+                </tr>
+                <tr>
+                    <td><strong>Make / Let</strong></td>
+                    <td>After make and let, drop "to" — use bare infinitive.</td>
+                    <td>"Let me go." / "Make him wait."</td>
+                </tr>
+                <tr>
+                    <td><strong>Infinitive Error</strong></td>
+                    <td>NEVER use past tense after "to". Always use base form.</td>
+                    <td>"to tell" ✅ &nbsp; "to told" ❌</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="callout callout-green" style="margin-top: 24px;">
+            <strong>🎯 Exam Tips:</strong><br>
+            1. Active = direct, subject acts. Passive = indirect, object becomes subject.<br>
+            2. Every passive sentence needs <strong>be + past participle</strong>.<br>
+            3. The infinitive always uses the <strong>base form</strong> — never past tense.<br>
+            4. After <strong>make</strong> and <strong>let</strong>, drop the "to".<br>
+            5. Use "too … to" to combine two sentences about inability.
+        </div>
+    </div>
+
+</div><!-- /container -->
+</body>
+</html>

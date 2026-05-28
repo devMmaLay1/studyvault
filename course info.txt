@@ -1,0 +1,4187 @@
+CIT108  
+PROBLEM SOLVING STRATEGIES
+
+Study Units 
+The study units in this course are as follows:  
+Module 1  
+Unit 1   
+Unit 2   
+Unit 3   
+Module 2   
+Unit 1    
+Unit 2   
+Unit 3   
+Unit 4   
+Module 3   
+Unit 1   
+Unit 2   
+Unit 3   
+Unit 4   
+Problem Solving Strategies 
+Roadmap to Solving Problems: Typical Strategies  
+The Problem Solving Process 
+Computational Approaches to Problem Solving 
+Role of Algorithms in Problem Solving 
+Abstraction as a Problem Solving Tool 
+Algorithms 
+Flowcharts 
+Pseudocode 
+Implementation Strategies 
+Recursion 
+Control Structure: Selection and Iteration 
+Decomposition and Modularisation 
+Testing and Debugging 
+
+
+
+
+
+
+COURSE CODE: MTH 101 
+ 
+COURSE TITLE: ELEMENTARY MATHEMATICS I
+
+Study Units 
+ 
+The breakdown of the three modules and eight study units are as follows: 
+    MODULE ONE 
+ 
+Unit 1 Elementary Sets Theory 
+ 
+Unit 2 Basic Set Operations 
+ 
+Unit 3 Set of Numbers 
+ 
+ 
+    MODULE TWO 
+Unit 1 : Real  Sequence And Series 
+UNIT 2 : Qadratic equations 
+Unit 3 : Mathematical Induction 
+ 
+    
+    MODULE THREE:  
+UNIT !: COMPLEX NUMBERS 
+UNIT 2  CIRCULAR MEASURE
+
+
+
+
+
+MTH 102      
+ELEMENTARY MATHEMATICS II  
+
+MODULE 1:  FUNCTIONS 
+ 
+Unit 1:  Function and Graphs  
+Unit 2:  Limits 
+Unit 3:  Idea of Continuity 
+ 
+MODULE 2:  CALCULUS OF DIFFERENTIATION 
+ 
+Unit 1:  The Derivative as Limit of Rate of Change  
+Unit 2:  Differentiation Technique 
+ 
+MODULE 3:  CALCULUS OF INTEGRATION 
+ 
+Unit 1:  Integration 
+Unit 2:  Definite Integrals (Application to Areas under Curve and 
+  Volumes of Solids)
+
+
+
+CIT 104
+INTRODUCTION TO COMPUTERS
+
+STUDY UNITS
+The course is made up of seven modules organised into 19 study units as
+follows:
+Module 1
+Unit 1
+Unit 2
+Unit 3
+Module 2
+Unit 1
+Unit 2
+Unit 3
+Module 3
+Unit 1
+Unit 2
+Module 4
+Unit 1
+Unit 2
+Unit 3
+Module 5
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+Module 6
+Unit 1
+Unit 2
+Unit 3
+Module 7
+Unit 1
+
+
+
+
+PHY 132:
+     ELECTRICITY, MAGNETISM AND MODERN 
+PHYSICS  (no modules in this course so u will need to arrange all this unit in a modules create modules)
+
+Study Units
+There are 20 Study Units in this Course, as follows:
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+Unit 5
+Unit 6
+Unit 7
+Electric charge, Force and Field
+Gauss’s Law
+Electric Potential
+Potential for Continuous Charge Distribution And Energy
+Dielectrics and Capacitors
+Electric Current
+ Direct-Current Circuits and Instruments
+7
+PHY 121                                            ELECTRICITY, MAGNETISM AND MODERN PHYSICS
+Unit 8
+Unit 9
+Unit 10
+Unit 11
+Unit 12
+Unit 13
+Unit 14
+Unit 15
+Unit 16
+Unit 17
+Unit 18
+Unit 19
+Unit 20
+The Magnetic Field
+Motion of Charge Particles in Electric and Magnetic Field
+Electrolysis and Cells
+Thermal Effects of Electric Currents And Electric Power
+Magnetic Properties of Matter
+Terrestrial Magnetism
+Electromagnetic Induction I
+Electromagnetic Induction 11
+Alternating Current Theory 1
+Alternating Current Theory 11
+Thermoelectric, Photoelectric Thermionic Effects
+Modern Physics 1
+Modern Physics 11
+
+
+
+
+GST102 
+USE OF ENGLISH AND COMMUNICATION SKILLS II
+
+STUDY UNITS 
+There are twenty (20) units divided into four modules of five units per 
+module in this course. The units are divided according to the relevant 
+language skills of writing, speaking, grammar and usage. The units and 
+modules are listed below: 
+Module 1 
+Unit 1 
+Unit 2 
+Unit 3 
+Unit 4 
+Unit 5 
+Writing Paragraphs: Topic Sentence and Coherence 
+Development of Paragraphs: Illustration and Description 
+Development of Paragraphs: Cause and Effect and 
+Definitions 
+Formal Letters: Stylistic Forms and Essential Parts 
+Formal Letters: Complaints and Request 
+199 
+GST102                                    
+USE OF ENGLISH AND COMMUNICATION SKILLS II 
+Module 2 
+Unit 1 
+Unit 2 
+Unit 3 
+Unit 4 
+Unit 5 
+Module 3 
+Unit 1 
+Unit 2 
+Unit 3 
+Unit 4 
+Unit 5 
+Module 4 
+Unit 1 
+Unit 2 
+Unit 3 
+Unit 4 
+Unit 5 
+Formal Letters: Letters about Jobs, Ordering Goods and 
+Letters to Government and other Organizations 
+Writing Reports I: Reporting Events 
+Writing Reports II: Reporting Experiments 
+Writing Summaries I: Techniques of Summarizing 
+Writing Summaries II: More on Techniques of Summarizing 
+Letters and Sounds in English 
+English Vowels and Consonants 
+Interviews 
+Seminar Presentation 
+Public Speech Making 
+Articles, Concord and Sentences 
+Tenses 
+Gerunds and Particles 
+The Active, Passive and the Infinitive 
+Modal Auxiliaries 
+
+
+
+
+ GST 104: Use of Library
+
+Study Units
+There are 17 study units in this course divided into six modules.  The
+modules and units are presented as follows:
+CONTENTS
+Module 1 Types of Library and Services
+Unit 1
+Unit 2
+Types of Library
+Library Services
+Module 2 Research Techniques
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+Information Sources
+Literature Review
+Databases Contents
+Open Educational Resources
+Module 3 Organization of Library Materials
+Unit 1
+Unit 2
+Library Catalogues
+Classification Schemes
+Module 4 ICT Use in the Library
+Unit 1
+Unit 2
+Digital Libraries
+Computer Based Literature Search
+Module 5 Good Reading Habit/Study Skills
+Unit 1
+Unit 2
+Unit 3
+Basic Study Techniques/Methods
+Developing Good Reading Habit
+Handling Examinations
+v
+GST 104
+COURSE GUIDE
+Module 6 Copyright; Plagiarism and Referencing
+Unit 1
+Unit 2
+Unit 3
+Unit 4
+Copyright Laws
+Plagiarism and Its Implications
+Harvard In-Text Citing and Referencing
+APA In-text citing and Referencing
+
+
+
+
+BIO 191 
+GENERAL PRACTICAL BIOLOGY
+
+STUDY UNITS 
+The units in this course are listed here below:  
+Module 1 
+Unit 1  
+Unit 2  
+Unit 3  
+Unit 4  
+Unit 5  
+What practical work in biology involves. 
+Laboratory organization 
+Handling common laboratory equipment 
+Microscopy, microscope handling and maintenance. 
+Making microscopic measurements and microscope care.  
+v 
+BIO 191                                                                               
+GENERAL PRACTICAL BIOLOGY 
+Module 2 
+Unit 1  
+Unit 2  
+Unit 3  
+Unit 4  
+Unit 5  
+Module 3 
+Unit 1  
+Unit 2  
+Unit 3 
+Unit 4  
+Unit 5  
+Module 4 
+Unit 1  
+Unit 2  
+Unit 3  
+Unit 4 
+Unit 5  
+Procuring animal materials 
+Procuring plant materials 
+Killing, preserving and mounting animal materials. 
+External features of plants observing similarities and 
+differences. 
+Preparation of temporary slides 
+Preparation of stains and reagents. 
+Techniques for microbial culture and Grain Staining. 
+Setting of demonstrations for physiological processes in 
+plants. 
+Setting up of apparatus for demonstrating physiological 
+processes in Animals. 
+Preparation required for dissection. 
+Dissection of Insects – General Anatomy 
+Morphology of Lower Vertebrates – Fish, Amphibians and 
+Reptiles 
+Dissection of Dogfish – General Anatomy 
+Dissection of Toad – Musculature, Alimentary Canal and 
+Urinogenital System 
+Dissection of Toad – Arterial System
+
+
+
+CHM 191: INTRODUCTORY PRACTICAL CHEMISTRY 1 
+
+MODULE 1: 
+QUANTITATIVE (INORGANIC) ANALYSIS 
+1.0 
+2.0 
+Introduction 
+Objectives 
+UNIT: 1 APPARATUS AND EXPERIMENTAL TECHNIQUES 
+1.0 
+2.0 
+3.0 
+4.0 
+5.0 
+5.1 
+5.2 
+5.3 
+5.4 
+5.5 
+5.6 
+5.7 
+5.8 
+5.8.1 
+Introduction 
+Objectives 
+Laboratory regulations and safety 
+Laboratory note book 
+Laboratory apparatus and operations 
+Heating 
+Evaporation 
+Precipitation 
+Digegtion 
+Filtration 
+Drying and ignition of precipitates 
+Cooling 
+Volumetric tools and techniques 
+Volumetric flask 
+5.8.2 Pipette 
+5.8.3 Burettes 
+5.8.4 The conical flask 
+5.9 
+6.0 
+Common laboratory reagents 
+Summary 
+UNIT 2: UNITS OF MEASUREMENT 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+4.0 
+4.1 
+Introduction 
+Objective 
+Units of measurement 
+Unit of mass (m) 
+Units of volume (V) 
+Amount of substance 
+Concentration 
+Page 
+1 
+1 
+2-3 
+4 
+4 
+4  
+4-8 
+9-10 
+10 
+11-14  
+14  
+14 
+15 
+15-18  
+18-19 
+20 
+20 
+20-21 
+21-22 
+23  
+23 
+24-25 
+25  
+26 
+26 
+26  
+26-27  
+27  
+28  
+28  
+29  
+4.2 
+4.2.1 
+4.2.2 
+4.2.3 
+5.0 
+6.0 
+7.0 
+8.0 
+9.0 
+10.0 
+Mole 
+Mole as appiied to solid 
+The mole as applied to solution 
+Other units of concentration 
+Standard solution 
+Principles of dilution 
+Summary 
+Answers to SAQ'S 
+Tutor marked assignment 
+References and other resources 
+UNIT 3: UNITS OF MEASUREMENT 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.4 
+3.5 
+3.6 
+4.0 
+4.1 
+4.2 
+4.4 
+4.5 
+4.6 
+4.7 
+Introduction 
+Objectives 
+Experiment. Appreciation of a solution of known 
+concentration and obtaining a diluted solution from. 
+the original solution 
+Introduction 
+Objectives 
+Principles 
+Requirements 
+Procedure 
+Observation and results 
+Experiment 1B 
+Objectives 
+Principles 
+Requirements 
+Procedure 
+Exercise 
+Answer 
+UNIT 4: PREPARATION OF A NON-STANDARD 
+SOLUTION AND STADARDIZING SAME. 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+Introduction 
+Objectives 
+Experiment 2A 
+Introduction 
+Objectives 
+Principle 
+29 
+30 
+30-31 
+32-33 
+33 
+34-37 
+37 
+37-38 
+38
+38 
+39 
+39 
+39 
+39 
+40 
+40-41 
+42 
+42-43 
+43 
+43 
+44 
+44 
+44 
+44
+46  
+46 
+47 
+47 
+47 
+47 
+47 
+48 
+48 
+46 
+3 4 
+3.5 
+3.6 
+3.7 
+3.8 
+4.0 
+4.1 
+4.2 
+4.3 
+4.4 
+4.5 
+5.0 
+6.0 
+Requirements 
+Procedure 
+Observations and results 
+Treatment ol .  results 
+Exercise 
+Experiment 2B 
+Introduction 
+Objectives 
+Procedure 
+Results 
+Treatment of results 
+Conclusion 
+Summary 
+UNIT 5: VOLUMETRIC ANALYSIS 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+Introduction  
+Objectives  
+Acid-base titration 
+Introduction 
+Indicator  
+3.2.1 ph Scale 
+3.2.2 Choice of indicator in acid-base titrations 
+3.2.3 Wrong use of indicator 
+3.3 
+Problem solving in acid-base titrations 
+3.3.1 Writing balanced chemical equation 
+3.3.2 Calculation of molar concentration 
+4.0 
+Conclusion  
+5.0 Answers to SAQ'S  
+6.0 References and other resources 
+UNIT 6: ACID-BASE II STANDARDIZATION OF A 
+NON-STANDARD SOLUTION 
+1.0 
+2.0 
+Introduction  
+Objectives  
+3.0 Experiment  
+3.1 
+3.2 
+3.3 
+4.0 
+Requirement 
+Procedure 
+Results  
+Conclusion   
+48 
+48-49  
+49  
+49  
+49 
+50 
+50  
+50  
+51  
+51 
+52 
+52  
+52  
+53 
+53-55 
+55 
+55 
+56-57 
+57-58 
+58 
+58 
+58-59 
+59-60 
+60 
+61-63 
+63 
+63 
+63 
+64 
+64 
+64 
+64 
+64 
+65 
+65-67 
+67 
+5.0 Answers 
+UNIT 7: ACID-BASE II DETERMINATION OF PERCENT 
+PURITY OF A SUBSTANCE 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.4 
+4.0 
+5.0 
+Introduction 
+Objectives 
+Experiment 
+Requirements 
+Procedure 
+Results 
+Treatment of results 
+Conclusion 
+Answers to SAQ 
+67 
+68 
+68 
+69 
+69 
+69 
+69 
+70 
+70-72 
+72 
+72 
+UNIT 8: ACID-BASE IV DETERMINATION OF CONCENTRATION 73 
+OF A SUBSTANCE IN ECESS (BACK TITRATION) 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.4 
+4.0 
+5.0 
+Introduction 
+Objectives 
+Experiment 
+Requirements 
+Procedure 
+Results 
+Treatment of results 
+Conclusion 
+Answers to SAQ'S 
+UNIT 9: ACID-BASE V DETERMINATION OF THE 
+AMOUNT OF NaOH AND Na2CO3  IN A MIXTURE 
+(DOUBLE INDICATOR METHOD) 
+1.0 
+2.0 
+3.0 
+3.2 
+3.3 
+3.4 
+4.0 
+5.0 
+Introduction 
+Objectives 
+Experiments 
+Procedure 
+Results 
+Treatment of results 
+Conclusion 
+Tutor marked assignment 
+MODULE 2: 
+73 
+73-74 
+74 
+74 
+74-75 
+75 
+76-77 
+78 
+78 
+79-80 
+80 
+80 
+80-81 
+81-82 
+82 
+82-83 
+84 
+84 
+85 
+vi 
+QUANTITATIVE PHYSICAL IN ORGANIC ANALYSIS 
+1.0 
+2.0 
+1.0 
+Introduction  
+Objectives  
+UNIT 10: OXIDATION-REDUCTION REACTIONS 
+Introduction  
+2.0 
+Objectives 
+3.0 Theory 
+3.1 
+3.2 
+Oxidizing and reducing agents 
+Balancing redox equations  
+3.2.1 The ion electron method 
+3.2.2 The oxidation state method 
+4.0 Conclusion 
+5.0 Summary 
+6.0 References and other resources  
+7.0 Tutor marked assignment  
+UNIT 11: REDOX TITRATION II. USE OF POTASSIUM 
+PERMANGANATE AS AN OXIDANT. 
+1.0 
+2.0 
+Introduction  
+Objectives 
+3.0 Experiment 
+3.1 
+3.2 
+Introduction  
+Objectives 
+3.3 Requirement 
+3.4 
+3.5 
+3.6 
+4.0 
+Procedure  
+Result  
+Treatments of results  
+Conclusion  
+5.0 Summary  
+UNIT 12: REDOX TITRATION III USE OF POTASSIUM 
+vii 
+85 
+85-86 
+86 
+87 
+87 
+88-89 
+89-92 
+92 
+92 
+92-94 
+94-95 
+95 
+96 
+96 
+96 
+97 
+97 
+97-98 
+98 
+98-99 
+99 
+100 
+100-101 
+101 
+101-102 
+102 
+102-103 
+104 
+PERMANGANATE AS AN OXIDANT 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.4 
+4.0 
+5.0 
+Introduction 
+Objectives 
+Experiment 
+Requirement 
+Procedure 
+Results 
+Treatments of results 
+Conclusion 
+Summary 
+UNIT 13: REDOX TITRATION IV USE OF POTASSIUM 
+PERMANGANATE AS AN OXIDANT 
+1.0 
+2.0 
+3.0 
+1.2 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.5 
+3.6 
+4.0 
+5.0 
+Introduction 
+Objectives 
+Theory of oxidizing action of iodine 
+Indicators for iodimetry/iodometric titrations 
+Objectives 
+Experiment 
+Introduction 
+Objectives 
+Requirements and 
+Results 
+procedure 
+Treatment of results 
+Conclusion 
+Summary 
+UNIT 14: REDOX (REACTIVITY) SERIES IN METALS 
+1.0 
+2.0 
+3.0 
+3.1 
+3.2 
+3.3 
+3.4 
+3.5 
+3.6 
+4.0 
+4.1 
+Introduction 
+Objectives 
+Experiment 1. 
+Introduction 
+Objectives 
+Requirements 
+Procedure 
+Results 
+Treatment of result 
+Experiment 
+Introduction 
+104 
+104 
+104 
+104 
+105 
+106 
+106-107 
+107 
+107 
+108 
+108 
+108
+108-110 
+110-111 
+111 
+111 
+111-112 
+112 
+112 
+112- 113 
+114- 115 
+115 
+115 
+116 
+116 
+116 
+116 
+116- 117 
+11 7 
+117 
+117 
+118 
+118 
+11 8 
+119-120 
+4.2 
+Objectives 
+4.3 Requirement  
+4.4 Procedure  
+4.5 
+4.6 
+Results  
+Treatments of result 
+5.0 Conclusion 
+6.0 Summary  
+UNIT 15:  
+1.0 
+2.0 
+ENERGY EFFECTS IN CHEMICAL. REACTIONS 
+Introduction  
+Objectives  
+3.0 Experiment 1.  
+3.1 
+3.2 
+3.3 
+3.4 
+Introduction  
+Requirements  
+Procedure  
+Results  
+3.5 Treatment of results 
+4.0 Experiment 2. 
+4.1 
+Introduction  
+4.2 Requirements  
+1.3 Procedure  
+1.4 
+4.5 
+Results  
+Treatment of results 
+5.0 Conclusion  
+6.0 Summary  
+120 
+120 
+120-122 
+122 
+122 
+123 
+123 
+124 
+124 
+124 
+124 
+124 
+124-125 
+125-126 
+126 
+126 
+127 
+127-128 
+128 
+128-129 
+129 
+1
+130 
+29 
+130
+
+
+
+
+PHY 191:GENERAL PHYSICS PRACTICAL.....PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+ 
+NOUN 2
+PHY 191:GENERAL PHYSICS PRACTICAL
+COURSE GUIDE
+                                                                            
+NATIONAL OPEN UNIVERSITY OF NIGERIA
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+This physics practical has been designed in such a way that you will develop some 
+manipulative skills in handling some physics apparatus. It is an integral part of your 
+physics course, which reinforces some, if not all,  the principles, theories and 
+concepts you must have learnt in Mechanics, Heat and Properties of Matter. 
+Furthermore, the Physics Practical is to enable you determine some physical 
+constants such as acceleration due to gravity, specific heat capacity of a sold or 
+liquid, force constant of a spiral spring to mention a few.
+This physics practical course will show you how to:
+• Identify the two physical quantities to be measured as the variables - the 
+independent and dependent variables;
+• Determine the relationship between the two variables in form of a graph.
+Thus the first thing you have to do is to study the concept of graph in Unit l.
+In measurement, you are supposed to be accurate as possible but no measurement is 
+absolutely correct because of the errors that are bound to occur due to personal 
+errors. 
+Unit 2 therefore introduces you to how you can minimise or reduce such errors when 
+you measure physical quantities such as length, mass, time and temperature. Since 
+one is bound to make errors, you are required to analyse your errors in the process of 
+the determination of the physical constant. Unit 3 therefore shows you how you can 
+analyse your errors.
+After Unit 3 are the ten (10) experiments that you are required to perform. In 
+performing these experiments you must posses the following before going to the 
+laboratory:
+1.
+2.
+3.
+4.
+5.
+A mathematical set containing the protractor, set squares, pair of compass, 
+short ruler and pencils
+A soft rubber (eraser)
+18cm long transparent plastic ruler
+A scientific notebook with graph sheets to record your experiments.
+Four - figure table and or a scientific calculator French - curves for drawing 
+graphs.
+NOUN
+3
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Getting Set for the Practical
+• You are supposed to read the experiment, as many times as possible so that 
+you know how you will carryout the experiment in question.
+• On the day of the experiment you are to make sure that you assemble all the 
+apparatus required from the Laboratory Technologist
+• Set up the apparatus carefully and neatly on the working bench.
+• Determine beforehand how you will establish the physical quantities to be 
+measured.
+• Remember to include in your table the way to obtain, observe and record the 
+dependent variable twice for a corresponding value of the independent 
+variable. This is a way of taking a precaution to ensure accurate 
+measurement. The repetitive values can be used to obtain the mean values of 
+the dependent variable.
+• Examine the apparatus very well before the commencement of the 
+experiment to ensure that they are working well. Then make necessary 
+corrections.
+• Do form the habit of writing on scarps of paper, use your notebook straight
+to contain all observations and calculations.
+Report of Experiments
+The report of each experiment should start from a fresh page in your notebook. The 
+following must be clearly written in this order:
+1.
+2.
+3.
+5.
+6.
+ 7.
+Date when the experiment was performed
+The aim or purpose of the experiment
+Table of observations 4. Graph
+Calculation of slope or the constant
+Estimation of errors where possible
+Conclusion
+NOUN
+4
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+There is no need to repeat in your report, the section on apparatus, procedure or 
+theoretical consideration. All these are already contained in your course-text.
+You are required to spend not more than l hr 30min in performing and the reporting 
+the experiment each time you are in the laboratory. At the end of this period you are 
+required to submit your experiment for assessment.
+NOUN
+5
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+NOUN 6
+ PHY 191: GENERAL PHYSICS PRACTICAL I
+ 
+COURSE DEVELOPMENT
+Course Developer
+Dr. J. S. O. Oludotun
+University of Lagos
+Akoka - Lagos
+Unit Writer
+Dr. J. S. O. Oludotun
+University of Lagos
+Akoka - Lagos
+Programme Leader
+Dr. M. Oki
+National Open University of Nigeria
+Lagos
+Course Coordinator
+Dr. (Mrs) C. A. Okonkwo
+National Open University of Nigeria
+Lagos
+                                                                       
+NATIONAL OPEN UNIVERSITY OF NIGERIA
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+      UNIT 1
+    GRAPHS      
+TABLE OF CONTENTS
+1.0
+2.0
+3.0
+3.1
+3.1.1
+3.1.2
+3.1.3
+3.1.4
+3.2
+4.0
+5.0
+6.0
+7.0
+Introduction 
+Objectives 
+Graphs 
+Types of graphs 
+Linear graph through the origin
+Linear graph not passing through the origin 
+ Reducing non-linear equation to linear equation 
+Reducing to a linear equation from unknown relationship
+Determination of gradient of non-linear graph at a point 
+Conclusion
+Summary
+Tutor Marked Assignments
+References and Other Resources
+1.0 INTRODUCTION
+As a physics student, you will be involved in observing some physical 
+phenomena and measuring physical quantities such as length, mass, time, 
+temperature and current of electricity. These are called fundamental physical 
+quantities.
+You should also note that such fundamental quantities are used to obtain 
+derived quantities such as force, velocity, pressure, density etc.
+Through such measurements we are able to learn more about nature. We are 
+able to measure some constants about nature for example acceleration due to 
+gravity, the resistance of a wire, and specific heat capacity of a substance. We 
+NOUN 7
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+determine these constants by identifying how two variables are related 
+through the use of graphs.
+Thus in your practical sessions in the laboratory, you will be developing 
+practical skills in measuring physical quantities and the show the relationship 
+between the two physical quantities to be measured through the use of 
+graphs.
+In this unit therefore, you will be introduced to the various types of graphs 
+and how to use such graphs to obtain the physical constants required.
+2.0
+3.0
+ OBJECTIVES
+At the end of this unit you should be able to:
+• identify the importance of graphs in the study of physics;
+• identify the two variables as physical quantities to be measured,
+• show how the two variables are related either linearly or non-linearly,
+• identify linear relationship from non-linear relationship;
+• translate non-linear relationships to linear relationships,
+• 
+use graphs to determine physical constants through the use of slopes 
+(gradients) or intercepts.
+ GRAPHS
+In physics, we are always interested in knowing how two variables are related 
+to each other.
+There are two types of variables 
+• independent variable 
+• dependent variable
+For example, if the value of quantity P depends on the value of quantity Q, 
+then, Q is the independent variable while P is the dependent variable.
+For example, the change in position of an object with respect to time. Time 
+(t) is regarded as the independent variable while the change in position (x) is 
+regarded as the dependent variable.
+NOUN
+8
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+If you therefore measure time (t) of a moving object and its corresponding 
+change in position, it is possible to show the relationship between x and t. 
+That is it is possible to show how x relates with t by means of a graph.
+A graph, therefore gives a vivid picture of how two physical quantities are 
+related. The following are the advantages of graphs:
+• if t is plotted against x the relationship between the two variables is 
+shown I
+in a pictorial form,
+• the corresponding values of x and t other than those actually observed 
+or measured can be read from the graph,
+• it is possible to verify a known or expected relationship between x 
+and t and to determine the numerical values of constants occurring in 
+it,
+• in many cases, the relationship between x and t is of a simple form 
+and is not known or is suspected before hand, a graph enables us to 
+discover this form of relationship.
+3.1
+3.1.1
+TYPES OF GRAPHS
+The following are the types of graphs you will come across.
+ LINEAR GRAPH THROUGH THE ORIGIN
+Consider the equation
+y = mx 
+where, x is the independent variable
+y is the dependent variable 
+m is a fixed number
+When x=0 then y=0
+When x = I then y = m 
+When x = 2 then y = 2m 
+When x = 3 then y = 3m and so on.
+If we therefore plot the graph of y on the vertical axis and x on the horizontal 
+axis we would obtain a graph as shown in fig. 3.1.
+NOUN
+9
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+  y
+∆x 
+                                             O      
+Fig. 3.1
+ ∆y
+We would have a straight line graph passing through the origin.
+You will observe that the ratio of y = m = a constant that is y is directly 
+x 
+proportional to x.
+The gradient or the slope of the graph is obtained from this ratio:
+Increase in y -  Increase in y    =  m = ∆y
+Increase in x            ∆x
+            x 
+Thus a straight line through the origin shows that the quantity y is directly
+proportional to x. The constant of proportionality, m is given by the slope or the 
+gradient of the graph.
+3.1.2 LINEAR GRAPH NOT PASSING THROUGH THE ORIGIN 
+Consider another equation
+y= mx+b
+where, x = independent variable 
+y = dependent variable m and b are constants 
+When x = 0 then y = b
+When x = 1 then y = m + b
+When x=2 then y=2m+b
+When x = 3 then y = 3m +band soon.
+Again if we plot the graph of y on the vertical axis against x on the horizontal 
+axis we also obtain a straight line. It will be noted that this time the graph 
+does not pass through the origin as shown in fig. 3.2.
+NOUN
+10
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+                         y
+                                                                      ∆x
+                       b- b
+  m
+Fig. 3.2
+                                  b value
+ of b
+             ∆y
+           x 
+You will also observe that when x = 0, y = b gives the intercept of the graph 
+on the y-axis.
+When y = 0 then x = - b gives the intercept of the graph on the x-axis.
+m
+The relationship between y and x is also linear. It is however to be noted that 
+this is not a direct relationship.
+The slope or the gradient of the graph is given by 
+Increase in y = ∆y  = while b is the intercept on the axes  
+Increase in x
+  ∆x
+If the line slopes downwards as shown in fig. 3.3, then the graph is said to 
+have a
+negative slope.
+                                                                    y
+                                          ∆ y
+           ∆X 
+O
+Fig 3.3
+NOUN
+11
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Then y = -mx + b .
+In conclusion, therefore, whenever the graph of y against x is a straight line, 
+this shows that the relationship between y and x is linear and can be 
+expressed as
+y=mx+b
+If the graph passes through the origin when b = 0 then y is directly 
+proportional to x.
+The slope or gradient = Increase in y  = m
+  Increase in x
+3.1.3 REDUCING NON-LINEAR EQUATION TO LINEAR EQUATION
+Consider the expression that relates the period of oscillation of a simple 
+pendulum (T) with the length (l ) of the pendulum.
+T = 2π g   ℓ      
+      g
+If T is plotted against √ℓ there will be no linear relationship between T and 
+√ℓ But on squaring both sides of the equation we would obtain this 
+expression
+T2 = 4π2       ℓ   
+    g
+∴T2 = 4  π  2      ℓ
+g
+Plotting the graph of T2 on the vertical axis and ℓ on the horizontal axis will 
+give us a straight line passing through the origin as shown in fig. 3.4.
+NOUN
+12
+PHY 191                                                                                                           
+               T2/S2
+GENERAL PHYSICS PRACTICAL I
+T2
+ℓ
+                     O                                                                                          
+Fig. 3.4
+The slope or the gradient of the graph is given as
+∆T 2     = Increase in T 2    =  m = 4  π  2  
+∆ℓ
+Increase in ℓ
+           g
+ℓ/cm
+The value of g, acceleration due to gravity may then be  obtained, by 
+substitution of values of known variables in the relation.
+Thus we have reduced a non-linear relationship to a linear one. Another 
+example of this reduction may be found in Boyle's law. Boyle's law shows 
+the relationship between the pressure exerted on a given mass of gas (P) and 
+its volume V provided the temperature of the gas is kept constant.
+PV =K
+If the values of P are plotted against the corresponding values of V, we do not 
+obtain a linear relationship as shown in fig. 3.5 (i).
+          P
+NOUN
+13
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+ (i)
+(ii)
+     O
+      P
+       O                     
+Fig. 3.5
+                                                           V.
+P
+   1   
+V
+1
+       V.
+By rearranging the expression we would obtain this
+P = k    
+1   
+            V
+When P is therefore plotted against 1  , the reciprocal of V, then we obtain a straight
+   V
+line passing through the origin as shown in fig. 3.5 (ii).
+The gradient or the slope m of the graph is expressed as 
+             Increase in pressure      
+_____   = ∆P
+   Increase in the reciprocal of volume    1__
+    ∆V
+    = m
+    = K a constant
+The oscillation of a weighted spiral spring is another example.
+There is a relationship between the period of oscillation T, the loaded mass M and 
+the effective mass of the spiral spring m.
+                 ___________
+ T = 2π  √ M + m
+                      k
+where, k is the spring constant.
+NOUN
+14
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+We then reduce the expression to a linear one by squaring both sides of the equation. 
+T2 
+T2 = 4π2 (M+m)
+                   k
+∴T2 = 4  π   2    M + 4 π  2    m compare this equation with  
+              k
+    k
+y = ax + b where y ≅ T2, 4  π  2   M ≅ ax and 4  π  2   m = b 
+     k
+        k
+By plotting the values of T2 against the corresponding values of M, we would 
+obtain a straight line graph which does not pass through the origin as shown 
+in fig. 3.6.
+        T2
+T2 
+M
+}    b = 4  π  2      m 
+     k- m
+Fig. 3.6
+The gradient or the slope of the graph is expressed as
+Increase in T 2    =  
+T2       = 4  π  2  
+Increase in M     
+    M
+M       k
+The intercept on the vertical axis is obtained when M = 0.
+∴ T2 = 4  π  2       m  = b  
+ k
+The intercept on the horizontal axis is obtained when T2 = 0.
+∴M = - m 
+NOUN
+15
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+which gives us the effective mass of the spiral spring. Thus, through the 
+knowledge of m, k, could be determined.
+3.1.4 
+REDUCING TO A LINEAR EQUATION FROM UNKNOWN 
+RELATIONSHIP
+Suppose two physical quantities P and Q are related as
+P = kQn
+where the values of k and n are not known we can reduce the expression to a 
+linear one by taking the logarithm of both sides of the equation.
+log P = log k + n log Q or 
+log P = n log Q + log k
+compare it with
+y = nx + b where n log Q ≅ nx and log k ≅ b.
+Therefore if we plot log P on the vertical axis against log Q on the horizontal 
+axis, we shall obtain a straight line graph as shown in fig. 3.7.
+ Log P
+log P
+log Q
+Log Q  
+Fig. .3.7
+The slope or the gradient of the graph is expressed as
+Increase in log P 
+Increase in log Q
+ log P = n
+ log Q
+When log Q = 0 gives the intercept of the graph on the vertical axis 
+∴log P = log k
+NOUN
+16
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Thus the value of k is obtained.
+You need to be careful when working with logarithm.
+• If the value of P or Q is greater than l, log P is taken as positive.
+For example, log 9 =
+0.9542
+log 90 =
+log 900=
+1.9542
+2.9542 etc
+• If the value of P or Q is less than 1 then you need to sensitise yourself 
+on what value of log P or log Q you have to use. For example,
+log 0.5 = 1.6990 = -1 + 0.6990 = -0.3010
+log 0.006 = 3.7781 = -3 + 0.7781 = -2.22 
+If the intercept is -2.73-2.73=-3+x
+x=3-2.73=0.27 
+∴ -2.73 = 3 + 0.2700 
+The antilog of 0.2700 = 1.86
+∴ Antilog of -2.73 = 1.86 x 10-3
+3.2
+DETERMINATION OF GRADIENT OF NON-LINEAR GRAPH AT A 
+POINT
+From the equations 
+y = mx
+y = mx +b 
+the highest power to which x is raised is 1 hence when y is plotted against x, 
+we obtain a straight line graph.
+But for equations such as 
+y = ax2
+y = ax + bx
+y = ax2  + c
+they produce non-linear graphs because when you plot the values of y against 
+x, we do not produce a straight line graph. You will observe that the graphs 
+produced are usually parabolic because they are quadratic functions. The 
+equations are described as being quadratic because the highest power to 
+which x is raised is 2. Fig. 3 (i) – (vi) are
+NOUN
+17
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+                    y y
+                                  y            
+                                                      x        x 
+x
+(i)                                             (ii)                                    (iii)
+                        y                                                                      y                                                               y    
+                                                        x                                                                       x                                                       X   x 
+Fig. 3.7
+Some typical graphs of such quadratic functions for the values of – x to + x.
+You will observe that the slopes of the graphs rise and fall with a turning 
+point usually described as the minimum or maximum points of values of y 
+with respect to x.
+The slopes or gradients vary from one point of x to the other. At the 
+minimum or maximum point, the gradient at that point is zero.
+     y 
+     
+                                  C           b          D
+                            B                                    P     
+                a                                                          C
+         A                    K                          R                    Q.
+                                                                                                   X   
+The straight lines on the graph at points a, b and c or the graph in fig. 3.8 
+define the slopes of the graph at such points. The lines AB, CD and PQ 
+describe the tangents at points a, b and c.
+AB gives a positive slope or gradient while PQ produces a negative slope or 
+gradient. The line CD is parallel to the horizontal axis to produce no slope or 
+gradient.
+Because the slope or gradient progresses from positive values through zero at 
+b to negative values then point b gives maximum value of y. Otherwise as in 
+fig. 3.9 it is a minimum value.
+NOUN 18
+Fig. 3.8
+PHY 191                                                                                                           
+             B
+                                              Q
+GENERAL PHYSICS PRACTICAL I
+                         a
+             K.            A                           
+                  C
+Fig. 3.9
+                              C
+                                            b
+                                                            P
+                 R
+                                                      D
+To obtain the gradient at a, we then produce a right-angled triangle on the 
+tangent AB
+such that AB forms the hypotenuse. Hence the gradient at point a is given as 
+BK
+AK
+which must be interpreted to scale.
+Displacement-time, velocity-time and Newton's cooling curves are examples 
+of nonlinear graphs, which enable us to measure the rate of change of 
+displacement, velocity and other quantities such as temperature with time. 
+Example
+The table below shows the temperature of a cooling calorimeter at different 
+times. Use the data to determine the rate of fall of temperature at 2 min.
+Time in minutes
+0
+1
+2
+3
+4
+5
+6
+Temperature in °C 45.0
+33.0
+26.1
+21.7
+19.1
+17.4
+16.5
+           t/0C
+                A
+                        C
+                                   B
+NOUN
+19
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+                                                                                                                          t/ min 
+                                1         2         3           4       5        6 
+Fig 3.10
+The gradient or slope is obtained from the tangent drawn on the graph at time 
+t = 2 min.
+The gradient is defined as AC= negative which is about 5.6 °C per minute.
+                                          BC
+The negative sign shows that the temperature is falling.
+Self Assessment Question
+Discuss the advantages to be gained by a graphical representation of asset of 
+physical measurements.
+SOLUTION
+See Text
+4.0
+CONCLUSION
+Graphs are pictorial ways of showing how two physical measurements are 
+related. Such physical measurements are regarded as variables. If the graph 
+produced is a straight line, then the relationship is described as being linear. 
+Then the equation that relates the two variables such as y and x are expressed 
+as
+y = mx or 
+(1)
+(2) 
+y = mx + c 
+where, x = independent variable
+y = dependent variable
+m = the slope or gradient of the slope 
+c = intercept on the y-axis when x = 0
+The first equation tells us that the line passes through the origin while the 
+second equation does not.
+NOUN
+20
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+It is possible to reduce a linear graph from unknown relationship by taking 
+the logarithm of the equation expressing the unknown relationship.
+5.0
+6.0
+SUMMARY
+At the end of this unit you have learnt,
+• the importance of graphs in physics practicals
+• that a straight line graph shows that there is a linear relationship 
+between the two variables in question
+• non-linear relationship can be reduced to a linear one by squaring the 
+equation expressing the relationship between the two variables such 
+as
+     T = 2π     ℓ
+                                             g
+• the slope of the graph is determined by the ratio of 
+Increase of the Dependent Variable
+Increase of the Independent Variable
+      •
+      •
+how to determine the slope of a non-linear graph at a given point
+non-linear graphs are usually in form of quadratic equations
+TUTOR MARKED ASSIGNMENTS
+EXERCISE 1
+Plot the displacement-time graph for the following motion of an object and 
+determine the velocity after 3 seconds of its motion.
+Time/s
+0
+1
+2
+3
+4
+5
+Displacement /m 0.0
+4.0
+12.0
+36.0
+64.0
+100.0
+EXERCISE  2 
+NOUN
+21
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Plot the velocity-time graph for the following motion of an object and find 
+the acceleration at t = 2 seconds.
+Time in seconds
+0
+1
+2
+3
+4
+Velocity in cm/s
+15
+29.5
+36
+38
+35
+EXERCISE 3 
+The following values were obtained for the period of vertical oscillation for a 
+spiral spring carrying different loads.
+Load M/g
+25
+50
+75
+100
+125
+Period T/s
+0.96
+1.14
+1.28
+1.41
+1.54
+Suppose the formula relating T and M is
+T = 2π    M +m
+                  k
+where m = effective mass of the spring and k = spring constant 
+Determine the values of m and k.
+7.0
+REFERENCES AND OTHER RESOURCES
+Awe, O. and Okunola, 0.0. (1986), Comprehensive Certificate Physics, 
+University Press, Ibadan.
+Ference, M. (Jnr.), Lemon, H.B. and Stephenson, R.J. (1970), Analytical 
+Experimental Physics, The University of Chicago Press, Chicago and 
+London 3.
+Feyman, R.P., Leighton, R.B. and Sands, M. (1971), 
+The Feyman Lectures on Physics, Addison-Wesley Publishing 
+Company, California.
+Flowers, B.H. and Mendoza, E (1970), Properties of Matter, John Wiley and 
+Sons Limited, London.
+Noaks, M.A. (1963), New Intermediate Physics, Macmillan and company 
+limited, Canada.
+Soars, F.W., Zemansky, M.W. and Young, H.D. (1980), College Physics. 
+Addison-Wesley Publishing Company, London.
+NOUN
+22
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Tyler, F. (1966), Heat and Thermodynamics. Edward Arnold Publisher 
+Limited, London.
+Wilkinson, J. (1983): Essentials of Physics, Macmillan Education Australia
+Zemansky, M.W. (1968): Heat and Thermodynamics, McGraw-Hill Book 
+Company, New York.
+UNIT 2
+MEASUREMENT
+NOUN
+23
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+1.0 INTRODUCTION
+NOUN 24
+TABLE OF CONTENTS
+1.0
+2.0
+3.1
+3.1.1
+3.1.2
+3.2
+3.3
+3.4
+3.4.1
+3.4.2
+4.0
+5.0
+6.0
+7.0
+Introduction 
+Objectives
+Errors: Expressing the results of measurements 
+Possible error and precision
+Relative error and accuracy 
+Scientific notation
+Significant digits
+Computations with approximate numbers
+Multiplication and division
+Addition and subtraction
+Conclusion
+Summary
+Tutor Marked Assignments
+References and Other Resources
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+In carrying out scientific investigations as in physics practical, we know that 
+scientists use devices to measure and thereby quantify physical quantities. 
+But even the best of devices yield inexact measurements. We express these 
+measurements as approximate numbers. We distinguish between numbers 
+such as 3.2 cm and 3.20 cm. These are the results of measurements using 
+different devices. While doing computations with these numbers special care 
+is required. 
+32.1
+You may have wondered why the ratio of two measurements such as 12 is 
+expressed as 2.7 not as 2.68 or 2.675.The numbers of digits used in a 
+measurement have some significance regarding the quality of measuring 
+instruments. In this unit we will aim at the meaning and usage of approximate 
+numbers. We will also learn about the techniques of computations with these 
+numbers. These techniques are of basic importance in calculating the results 
+of experiments that we will do later. The mastery of these techniques is 
+therefore, essential at this stage. In the next unit we will study errors, which 
+arise due to defects in measuring instruments, fluctuations in the quantity to 
+be measured and several other reasons. We will also learn how these errors 
+are propagated and how the final results of an experiment are expressed.
+2.0 
+3.1
+OBJECTIVES
+At the end of this unit you should be able to,
+•      observe that all measurements are inexact and are expressed in numbers 
+resulting from approximations or approximate numbers
+• distinguish between precision and accuracy
+• express a measurement in scientific notation
+• add, subtract, multiply and divide approximate numbers
+ERRORS: EXPRESSING THE RESULTS OF MEASUREMENTS
+We are familiar with at least two reasons why all measurements are inexact. 
+Firstly, the measuring instrument itself, such as the zero error, causes error. 
+Secondly, error can be due to limitations of human judgement and perception, 
+such as in aligning the end of a rod to be measured with the zero of the 
+centimetre scale. To better appreciate
+the inexact nature of measurement let us reflect on the process of 
+measurement of length. Let us obtain a `perfect' centimetre scale, which has 
+NOUN
+25
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+clear and equal marking of millimetres. We desire to measure the length of 
+three arrows A, B and C (Fig. 3.1).
+Fig .3.1
+Let us suppose that we are able to perfectly align the tails of the arrows with 
+zero marking on the scale. Of course, this is impossible to achieve in practice, 
+but let us assume it to gain an insight into the process of measurement.
+In order to measure the length of these arrows we look at the arrowheads. The 
+head of arrow A is closer to the 4.3 cm mark th ri to the 4.2 cm mark. We 
+will report the length of arrow A as 4.3 cm to the nearest millimetre. Let us 
+now measure the length of arrow B. The heads of arrow B is closer to 4.3 cm 
+mark than to the 4.4 cm mark. Therefore, we will also report its length as 4.3 
+cm to the nearest millimetre or simply 4.3 cm. Similarly the length of arrow 
+C would be reported as 4.3 cm. Thus the lengths of all arrows whose tails are 
+aligned with zero marking, and whose heads lie in the range Rl and R2, 
+would be reported as 4.3 cm. We can conclude that a measurement which is 
+reported as 4.3 cm (which is in the middle of RIR2) might possibly be in 
+error by 0.05 cm (or one-half of the unit of measure which is 0.1 cm) or less. 
+Thus in the measurement 4.3 cm the last digit is in error. We will, therefore, 
+report measurements in such a manner that only the last digit will have error.
+3.1.1 POSSIBLE ERROR AND PRECISION
+We have seen that the maximum possible error, barring any mistake in 
+measuring, in a measurement is 1/2 of the unit of measurement. The possible 
+error is thus due to inherent imprecision in measuring devices. The 
+measurements having less possible error are more precise. Since possible 
+error is proportional to the unit of measure the instruments having smaller 
+units of measure will give more precise measurement. A measurement 
+reported to one hundredth of a centimetre, such as 5.32 cm is more precise 
+than a measurement reported to one tenth of a centimetre, such as 5.3 cm.
+Self Assessment Question 1
+Consider the following pairs of measurement. Indicate which measurement in 
+each pair is more precise.
+NOUN
+26
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+a. 17.9 cm or 19.87 cm
+b. 16.5 s or 3.21 s
+c. 20.56 °C or 32.22 °C
+SOLUTION 
+(a) 19.87 cm 
+(b) 3.21 s
+(c) Equally precise
+3.1.2 RELATIVE ERROR AND ACCURACY
+So far we have considered measurement of nearly equal lengths with 
+emphasis on precision. Let us now consider measurement of much different 
+lengths. Suppose, two measurements yield 3.2 cm and 98.6 cm using the 
+same metre stick. The possible error in both of these measurements is equal 
+to 0.05 cm but the 98.6 cm is much bigger than measurement 3.2 cm. Would 
+you say that the 98.6 cm is more accurate? How would you compare the 
+accuracy of measurement such as 7.4 s and 98 s? In order to compare such 
+measurements we define relative error as the ratio of possible error to the 
+total measurement. In the table 1.0 below we have computed the relative 
+error in some measurement. (The exact method of expressing the relative 
+error will be discussed in section 1.5)
+Table 1.0
+Measurement Unit of measure Possible error Relative error
+3.2 cm
+98.6 cm
+0.1 cm
+0.1 cm
+0.05 cm
+0.05 cm
+0.02
+0.0005
+7.4 s
+98 s
+0.1 s
+1 s
+0.05 s
+0.5 s
+10.007
+0.005
+*Relative error is the ratio of possible error to the total measurement
+Let us compare measurements 3.2 cm and 98.6 cm. Both have equal unit of 
+measure and are therefore equally precise. But the measurement 98.6 cm has 
+less relative error (0.0005 compared to 0.02) and is therefore more accurate.
+Comparison of measurements 7.4s and 98 s is more revealing. The 
+measurement 7.4 s is more precise than the measurement 98 s (possible errors 
+0.05 s and 0.5 s respectively) but less accurate (relative error 0.007 as 
+compared to 0.005).
+NOUN 27
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+You will therefore appreciate that a smaller measurement needs to be more 
+precise for the same accuracy. This is why when measuring the dimensions of 
+a room, metre is used as unit of measure while in measuring inter-city 
+distances the unit kilometre is used for the same accuracy.
+Self Assessment Question 2
+Consider the following pairs of measurements. Indicate which measurement 
+in each pair is more accurate.
+a. 40.0 cm or 8.0 cm
+b. 0.85 m or 0.05 m
+SOLUTION
+(a) The relative errors are: 
+0.05  =   5     =  1
+40 4000    800
+0.05 =  5  =  1
+  8     800 160
+Therefore the measurement 40.0 cm is more accurate.
+(b) 0.85 m
+3.2 SCIENTIFIC NOTATION
+In the system of measurement that we use (SI-system) a measurement is 
+expressed in decimal numerals. While measuring interatomic distances, we 
+use very large,` numbers. On the other hand, while measuring interstellar 
+distances we use very large numbers. In scientific notation these numbers are 
+written as a number between one and ten multiplied by an integral power of 
+ten. For example, the diameter of the sun isl, 390, 000, 000 metres and the 
+diameter of hydrogen atom is only 0.000000000106 metres. In scientific 
+notation we write the diameter of the sun as 1.39 x 109 m and the diameter of 
+the hydrogen atom as 1.06 x 10-10 m.
+Self Assessment Question 3
+The mass of a water molecule is 0.000 000 000 000 000 000 000 03 g. 
+Express this in scientific notation.
+SOLUTION
+3 x 10-23 g
+NOUN 28
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+You have probably guessed that writing numbers in scientific notation will 
+make computations easier. This is because we can apply the laws of 
+exponents readily.
+3.3 SIGNIFICANT DIGITS
+ We have seen in section 3.1.1 that a measurement reported as 5.32 cm is 
+more precise than 5.3 cm. The number of digits in these measurements are 
+three and two, respectively. This suggests that the number of digits used in 
+reporting a measurement have some significance. All non-zero digits are 
+significant. However, in measurements such as 0.05 m or 0.005 m, none of 
+the zeros is significant. The zeros to the left of the decimal are merely flags 
+pointing to the decimal. The other zeros are placed to help locate the decimal 
+point. Let us investigate this by calculating the possible error and relative 
+errors as in the table 2.0 below.
+Table 2.0
+We can see from this table that the unit of measure and the possible error in 
+all the cases are different. But the relative error is the same. Therefore, we 
+can assert that these zeros are not significant because they do not affect the 
+relative error. We can thus conclude that a digit is significant if and only if it 
+affects the relative error.
+Self Assessment Question 4 
+Complete the following table,
+S/NO Measurement Possible error Relative error
+1 0.2m 0.05m 0.05m
+             =  0.25
+0.2m
+2 0.20m
+3 0.2000m
+4 25m
+NOUN 29
+Measurement Unit of measurement Possible Error Relative error
+0.5m 0.1 m 0.05m 0.1
+0.05 m 0.01 m 0.005 m 0.1
+0.005 m 0.001 m 0.0005 m 0.1
+0.00005 m 0.00001 m 0.000005 m 0.1
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+5 250m
+6 25000m
+7 102m
+8 1002m
+(a) What can you conclude regarding the significance of `trailing' zeros in 
+the first three measurements?
+(b) What can you conclude about zeros in the fifth and sixth 
+measurements?
+(c) What can you conclude regarding the significance of zeros between 
+non-zero digits in the seventh and eight measurements?
+SOLUTION
+S/No. Measurement Possible error Relative error
+1. 0.2 m 0.05 m 0.05 m = 0.25
+ 0.2 m
+2. 0.20 m 0.005 m 0.005 m = 0.025
+ 0.20 m
+3. 0.2000 m 0.00005 m 0.00005 m = 0.00025
+ 0.2 m
+4. 25 m 0.5 m 0.5 m = 0.2
+ 25 m
+5. 250 m 0.5 m 0.5 m = 0.002
+ 250 m
+6. 25000 m 0.5 m 0.5 m = 0.00002
+ 25000 m
+7. 102 m 0.5 0.5 m = 0.0049
+ 102 m
+8. 1002 m 0.5 0.05 m = 0.000499
+ 1002 m
+ (a) They are significant
+(b) They are also significant. The zeros are significant only if they come 
+from a measurement. But if fifth and sixth measurements are 
+expressed in centimetres as 2500 cm and 2500000 cm respectively, 
+the last two zeros should not be counted as significant as these have 
+come as a result of multiplication by the factor 100 and not from 
+measurement.
+(c) Significant
+NOUN 30
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Self Assessment Question 5 
+From the above discussion justify that a measurement possessing greater 
+number of significant digits has greater relative accuracy.
+Sometimes we take a sequence of whole number measurements such as 32, 
+30, 28, 26. All these measurements have two significant digits except the 
+measurements 30. In such special cases zero can be taken as significant 
+without any ambiguity.
+Self Assessment Question 6
+Comment on the following:
+"The distance to the sun from the roof of a house (height 20 m) is 150 million 
+kilometres. Therefore the distance to the sun from ground is 15 million 
+kilometres plus 20m"
+3.4
+3.4.1
+COMPUTATIONS WITH APPROXIMATE NUMBERS
+In section 3.1, we have seen that the reported measurements have errors in 
+the last digit. For example, a measurement reported as 3.2, has error in the 
+digit 2, which is indicated by placing a bar (-) over this digit. In computing 
+values of physical quantities from observed experimental data we have to do 
+computations. We will now establish some rules for expressing the results of 
+basic operations with approximate numbers.
+ MULTIPLICATION AND DIVISION
+Let us consider multiplication first. We want to multiply 1.23 by 2.3. At each 
+step of the computational process we will put a bar (-) over a significant digit, 
+which arises from computation with a digit containing error as below:
+__
+1.23
+    __ 
+x 2.3
+_ _ _
+0.369  
+     _
+2.4 6
+2.829
+NOUN
+31
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+We see that the product contains three digits, which contain errors. Since we 
+report the result in a number having only one digit containing error, we 
+should 
+                                          _
+round off the product to 2.8. Thus the product has two significant digits.
+This is also equal to the number of significant digits contained in a factor 
+having
+                                                                                 _
+the least number of significant digits, namely 2.3. Therefore we formulate 
+the following rule:
+RULE: The product (or quotient) of two measurements should be rounded off 
+to contain as many significant digits as the measurement having fewer 
+numbers of significant digits.
+Self Assessment Question  7 
+Divide 2.1 by 1.54. Round off the result according to the above rule. 
+SOLUTON
+1.4
+Let us consider the multiplication of the following numbers, which have 
+already been rounded off to significant digits.
+5.2865 x 3.8 x 19.62 
+= 20.0887 x 19.62
+ = 394.14029
+which must be rounded of to 3.9 x 102. We could have obtained the same 
+result by rounding off these numbers first as shown below.
+5.29 x 3.8 x 19.6 
+= 20.1 x 19.6
+= 393.9
+which rounds off to 3.9 x 102.
+Here we have rounded off 20.102 (the product of 5.29 and 3.8) to 20.1 before 
+multiplying it with 19.6. We can generalise this as a labour saving rule.
+Labour Saving Rule: Before multiplying (or dividing), round off the numbers 
+to one more significant digit than (the number of significant digits) in the 
+least precise factor.
+NOUN
+32
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Self Assessment Question 8
+Divide 9.5362 by 3.2
+SOLUTION
+3.0
+3.4.2 ADDITION AND SUBTRACTION 
+Let us study the process of addition given below: 2.135
+       _
+2.135 
+       _ 
+x 2.53
+       _
+x 1.02
+      _ _
+  5.685
+The sum has two error-containing digits. We, therefore, round off the sum to 
+5.69 so that it contains only one digit containing error. Rounding off is 
+necessary because the sum cannot be more precise than individual 
+measurements. We note that the sum 5.69 has the same unit of measure as the 
+least precise addend. Thus we formulate the following rule:
+Rule: While adding (or subtracting) approximate numbers, round off the sum 
+(or difference) to the same unit of measure as the least precise measurement.
+Se l f Assessment Question 9 
+Subtract 2.11 from 2.1546 
+SOLUTION 
+0.04
+Self Assessment Question. 10.
+Compute the sum of 2.1546 m, 2.11 m and 2.125 m.
+SOLUTION 
+NOUN
+33
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+HINT: In such cases we can use the following saving rule.
+Labour Saving Rule: Before adding (or subtracting) round off the numbers so 
+that they contain one more digit of precision than the number of precision 
+digits in the least precise. Thus the addends become 2.155 m, 2.11 m and 
+2.125 m.
+4.0 
+5.0 
+CONCLUSION
+In this unit, you have learnt that errors do occur in physical measurements. 
+All measurements are not exact. They are expressed in numbers resulting 
+from approximations.
+Precision of a measurement is a function of possible error only while 
+accuracy is related to relative error that occurs in a measurement.
+Scientific measurements are usually expressed by using the scientific 
+notations. There are rules for multiplication, division, addition and 
+subtraction of measurements.
+SUMMARY
+At the end of this unit you have learnt,
+• exact measurement is impossible. The result of every measurement is 
+expressed in numbers resulting from approximation such that only the 
+last
+digit contains error. In scientific notation a measurement is expressed 
+as a decimal number between one and ten multiplied by powers of 
+ten.
+• possible error is only one-half the unit of measurement. Precision is a 
+function of possible error only.
+• relative error is the ratio of possible error to total measurement. 
+Accuracy is related to relative error. A digit is significant if and only 
+if it affects the relative error
+• rule for multiplication (or division)
+The product (or quotient) of two measurements should be rounded off 
+to contain as many significant digits as the measurement having fewer 
+numbers of significant digits.
+ rule for addition (or subtraction)
+While adding (or subtracting) approximate numbers, round off the 
+sum (or difference) to the same unit of measure as the least precise 
+measurement.
+NOUN
+34
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+6.0
+REFERENCES AND OTHER RESOURCES
+Awe, O. and Okunola, 0.0. (1986), Comprehensive Certificate Physics, 
+University Press, Ibadan.
+Ference, M. (Jnr.), Lemon, H.B. and Stephenson, R.J. (1970), Analytical 
+Experimental Physics, The University of Chicago Press, Chicago and 
+London 3.
+Feyman, R.P., Leighton, R.B. and Sands, M. (1971), 
+The Feyman Lectures on Physics, Addison-Wesley Publishing 
+Company, California.
+Flowers, B.H. and Mendoza, E (1970), Properties of Matter, John Wiley and 
+Sons Limited, London.
+Noaks, M.A. (1963), New Intermediate Physics, Macmillan and company 
+limited, Canada.
+Soars, F.W., Zemansky, M.W. and Young, H.D. (1980), College Physics. 
+Addison-Wesley Publishing Company, London.
+Tyler, F. (1966), Heat and Thermodynamics. Edward Arnold Publisher 
+Limited, London.
+Wilkinson, J. (1983): Essentials of Physics, Macmillan Education Australia
+Zemansky, M.W. (1968): Heat and Thermodynamics, McGraw-Hill Book 
+Company, New York.
+NOUN
+35
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+UNIT 3
+ERROR ANALYSIS
+TABLE OF CONTENTS
+1.0
+2.0
+3.1
+3.1.1
+3.1.2
+3.2
+3.3
+3.3.1
+3.3.2
+3.3.3
+3.3.4
+3.4
+4.0
+5.0
+6.0
+7.0
+Introduction 
+Objectives 
+Types of errors 
+Systematic errors 
+Random errors 
+Determining the size of error
+Propagation of errors
+Error propagation in addition and subtraction
+Error propagation in multiplication and division 
+Error propagation in other mathematical operations 
+Error propagation in graphing
+Use of π 
+Conclusion 
+Summary 
+Tutor Marked Assignments
+References and Other Resources
+1.0 INTRODUCTION
+In the last unit we studied about errors in measurements due to imprecision of 
+measuring devices. The results of measurements were expressed as 
+approximate numbers. We also learn about performing basic operations of 
+addition, subtraction, multiplication and division of approximate numbers 
+NOUN 36
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+and expressing results using correct number of significant digits. We assumed 
+that the measuring instruments as well as the observers were perfect. 
+However, as you are aware, there can be defects in measuring instruments 
+and also humans are not perfect. If the environment is not perfectly controlled 
+its changes will affect the object to be measured thereby introducing errors in 
+measurements. In this unit we will familiarise ourselves with these and other 
+sources of errors. We will also learn how to estimate and possibly eliminate 
+or account for such errors. In most of the physics experiments our objective is 
+to determine relationship between physical quantities. Therefore, we will 
+estimate the errors in the measurement of various physical quantities and 
+make efforts to determine valid relationships as mentioned above. In the next 
+couple of experimental write-ups we will apply our knowledge of errors and 
+its propagation to actual measurements and deduce relationships. We will 
+first concentrate on the measurements of fundamental quantities such as 
+mass, length and time, and then do experiments involving two or more of 
+these quantities.
+2.0
+3.1
+OBJECTIVES
+After studying this unit you should be able to
+• distinguish between random errors and systematic errors
+• eliminate to some extent the systematic errors
+• compute errors in the measurement of various physical quantities
+• analyse data by calculation and by plotting graphs to determine 
+functional relationship
+• interpret the slope of a graph and to determine the value of certain 
+physical quantities from the slope of a straight-line graph.
+TYPES OF ERRORS
+Every measuring instrument has a limitation in that it cannot measure 
+physical quantities smaller than a certain value known as the least count of 
+instrument. For
+example, a meter scale can measure only up to 1 mm (smallest division of the 
+scale). A vernier calliper can generally measure up to 0.1 mm whereas a 
+spherometer and screw gauge can measure lengths up to 0.01 mm. Similarly 
+a thermometer usually has the least count of half a degree. In addition to 
+these limitations, which are inherent in a measuring device, there are other 
+sources of error. These arise due to changes in environment, faults in 
+observational techniques, malfunctioning of measuring devices etc. The 
+NOUN
+37
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+errors in any measurement can be classified into two broad headings namely - 
+Systematic errors and Random errors.
+Let us now study the causes of such errors, and see how they are eliminated 
+or minimised.
+3.1.1 SYSTEMATIC ERRORS
+The systematic errors, also called determinant errors, are due to causes which 
+can be identified. Therefore, these errors, in principle, can be eliminated. 
+Errors of this type result in measured values which are consistently too high 
+or consistently too low. Let us discuss these errors one by one.
+(i)
+(ii)
+(iii)
+(iv)
+Zero Error
+In the case of vernier callipers, for example, when the jaws are in 
+contact, the zero of the vernier may not coincide with the zero of the 
+main scale. The magnitude and sign of the `zero error' can be 
+determined for the scale readings. We can easily eliminate this error 
+from the measurement by subtracting or adding the zero error.
+Back lash Error
+While measuring a physical quantity there may be an error due to 
+wear and tear in the instruments like screw gauge or spherometer due 
+to defective fittings. Such an error is called back lash error and can be 
+minimised in a particular set of measurements by rotating the screw 
+head in only one direction.
+End Correction
+Sometimes the zero marking of the metre scale may be worn out. 
+Unless we are careful, this will lead to incorrect measurements. We 
+must therefore compensate for this by shifting our reference point.
+Errors due to changes in the Instrument parameters
+Usually, in experiments involving electrical quantities, the value of 
+the electrical quantities change during the course of the experiment 
+due to heating or other causes. For example, the value of the 
+resistance of a wire will increase because of current passing through 
+it. This will lead to errors, which are generally difficult to calculate 
+and compensate for. To some extent this can be avoided by not 
+allowing current to flow through the circuit while observations are not 
+being taken.
+NOUN
+38
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+(v)
+(vi)
+Defective Calibration
+Occasionally instruments may not be properly calibrated leading to 
+errors in the results of measurement. This type of error is not easily 
+detected and compensated for. This is a manufacturer's defect and if 
+possible the instrument should be calibrated against a standard 
+equipment.
+Faulty Observation
+This could be due to causes like parallax in reading a metre scale. These 
+errors are eliminable by using proper techniques.
+3.1.3 RANDOM ERRORS
+You must have noticed that many times repeated measurements of the same 
+quantity do not yield the same value. The readings obtained show a scatter of 
+values. Some of those values are high while others are low. This function is 
+due to random errors whose possible sources are:
+(i) Observational
+These arise due to errors in judgment of an observer when reading a scale to 
+the smallest division.
+(ii) Environmental
+These arise due to causes like unpredictable fluctuations inline voltage, 
+variation in temperature etc. They could also be due to mechanical vibrations 
+and wear and tear of the systems. There could be a random spread of readings 
+due to friction say, wear and tear of mechanical parts of a system.
+Self Assessment Question 1
+Which of the figures 1(a) or (b) show random errors only?
+                                      .   .     .       .      .
+     True value
+.   .    .     .     .
+NOUN
+39
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+Fig. 1 Set of measurements. Each point indicates the result of a measurement
+SOLUTION
+1(a)
+Unlike systematic errors, random errors can be quantified by statistical 
+analysis. Let us now learn to determine the size of such error.
+3.2 DETERMINING SIZE OF ERROR
+When we measure a quantity it is important to take several readings. It may 
+be preferable that readings are taken by independent observer. This has the 
+advantage that bias of a single observer is eliminated. The value obtained will 
+indicate whether the data is scale limited or random. An error analysis can be 
+made to determine the size of error from these readings. A typical set of 
+values of a measurement is given below in table l. The quantity to be 
+measured as a `true' value is independent of our measuring process. But the 
+imperfection of our measuring process prevents us from obtaining that value 
+every time. Which on of the values listed in table I would be `true' value? It is 
+impossible to tell that from the measurements because of this spread. Under 
+the circumstances the average A value can be quoted. To get the average 
+value we simply add up all the measurements and divide the sum by the total 
+measurements. As you can see from the table l, the average is 3.68. Also 
+notice that most of the data in table I deviates 
+                                                                   __
+from the average d we first take the difference of each data from the average 
+to 
+                                                                                      __
+get individual deviations d. These deviations are then added and their sum is 
+divided by the number of observations to obtain d. As you can see from table 
+1 the average deviation in this case is 0.009.
+NOUN 40
+PHY 191                                                                                                           
+Table 1
+GENERAL PHYSICS PRACTICAL I
+S/No
+Data 
+Deviation (d)
+1.
+3.69
+0.01
+2.
+3.67
+0.01
+3.
+3.68
+0.0
+4.
+3.69
+0.01
+5.
+3.68
+0.0
+6.
+3.69
+0.01
+7.
+3.66
+0.02
+8.
+3.67
+0.01
+A = 3.68
+_ 
+d  = 0.009
+As you are aware, repeated measurements of the same quantity yield results 
+with better precision. A measure of this precision index S whose definition 
+(without proof) is
+       _
+S = d 
+     √n
+_
+where d is the average derivation and n is the number of observations. The 
+precision index S is a measure of uncertainty of average. Using the data of 
+table l, the precision index is
+S = d = 0.009 = 0.003
+                √n     √8
+Thus the final result can be expressed as A ± S. In this case the result of 
+random data analysis gives 3.68 ± 0.003. We can see that this error is much 
+less than the possible error, which is ± 0.005. Thus in such cases we will 
+consider the possible error only.
+Self Assessment Question 2
+The measurement of the length of a table yields the following data. 
+11=135.0cm,/2=136.5cm,13=134.0 cm, /4=134.5 cm Calculate (a) the 
+average value and (b) precision index. How does the precision index compare 
+with possible error? How will you express the final result?
+NOUN
+41
+PHY 191                                                                                                           
+SOLUTION
+GENERAL PHYSICS PRACTICAL I
+(a)
+(b)
+3.3
+135.0 cm
+0.375 cm
+PROPAGATION OF ERROR
+We have so far learnt how to determine the error in the measurement of a 
+quantity, which can be measured directly. In actual practice, however, we 
+determine values of a quantity from the measurements of two or more 
+independent quantities. In such cases the error in the value of the quantity to 
+be determined will depend on the errors in other independent quantities. In 
+other words, the error will `propagate'. The actual analysis of propagation of 
+error is beyond the scope of this course. We shall therefore, quote some rules 
+which can be used in our laboratory.
+3.3.1
+3.3.2
+ ERROR PROPAGATION IN ADDITION AND SUBTRACTION
+What will be the error, in quantity E, defined by E = x + y + z ?
+Let us take the differential of this quantity, we get δE = δx + δy + δz
+if the error is small compared to the measurement we can replace the 
+differential by `delta' to get δE = δx + δy + δz
+which is simply the sum of errors in x, y and z. It, therefore, is the maximum 
+error in E. Statical analysis shows that a better approximation is
+δE =   (δx)2 + (δy)2 + (δz )2
+We only consider the magnitude of errors in the above calculation. Therefore, 
+the error in the quantity (x + y - z) will also be the same.
+SOLVED EXAMPLE: Let the measured value of two lengths be 
+Ll + δLl = 1.746 ± 0.010 m
+L2 + δL2 = 1.507 ± 0.010 m
+The error in the quantity L = L1 + L2 will be
+δL = (0.010 m)2 + (0.0l0 m )2  = 0.014 m
+ ERROR PROPAGATION IN MULTIPLICATION AND DIVISION
+If a quantity E = A x B and the result of measurement of A & B is A ± δA 
+and B ± δB then what will be the error δE in E? Here if we take differentials 
+we get 
+dE = B dA + A dB
+Dividing by E = AB and changing differentials by `deltas' we get 
+NOUN
+42
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+δE  = δA + δB
+E      A
+      B
+Self Assessment Question 3
+Take logarithm of E = AB and then differentiate to show that δE = δA + δB
+    E
+which is generally known as the logarithmic error.
+SOLUTION
+E = AB
+Taking logarithm on both sides
+log E = log A + log B 
+Differentiating partially
+     A
+     B
+The statistical analysis, however, gives the following better result of the 
+fractional error in E.
+δE =       
+      E       
+δA  2   +   δB   2
+                    A
+             B
+RULE 1: When independent measurements are multiplied or divided the 
+fractional error in error in the result is the square root of the sum of squares 
+of fractional errors in individual quantities.
+SOLVED EXAMPLE: In an experiment we calculate velocity from 
+measurement of distance and time. If the distance is S ± δS = 0.63 ± 0.02 m
+δS = 0.03 
+S
+and time is T ± δT = 1.71 ± 0.10
+δT = 0.06
+T
+Then the velocity (V)
+V = S = 0.368 MS-1
+       T
+The fractional error in V is given by
+NOUN
+43
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+δV=       
+      V          
+δS   2   +   δT   2   = 0.07
+                    S
+              T      
+δV = 0.368 ms-1 x 0.07 = 0.02 ms-1 
+Thus the final result becomes
+V ± δV = 0.37 ± 0.02 ms-1
+3.3.3 ERROR PROPAGATION IN OTHER MATHEMATICAL
+OPERATIONS
+Errors in exponential quantity: Let us first consider a special case where a 
+quantity
+appears with an exponent. For example, S = A2 = A x A. Here the two 
+numbers multiplied together are identical and hence not independent. The 
+rule mentioned above does not apply. Detailed analysis shows that 
+logarithmic error gives a good estimate. Taking the logarithm of the above 
+equation we get,
+log S = 2 log A
+on differentiation and changing differentials to `deltas' we get
+δS  = 2 δA
+S 
+A
+Therefore, the fractional error in A2 would be twice the error in A, the 
+fractional error in A3 will be 3 times the fractional error in A, and the 
+fractional error in √A will be 1/2 the fractional error in A.
+RULE: The fractional error in the quantity An is given by n times the 
+fractional error in A.
+EXAMPLE: Suppose two measurements of mass are M1 ± δMl = 0.743 ± 
+0.005 kg and M2 ± δM2 = 0.384 ± 0.005 kg. 
+Determine the value of M = 2Ml + 5M2 along with δM.
+What will be the error in (Ml + M2)2 and (Ml - M2)-3. 
+HINT: The error in 2M1 is 2 δM1 and in 5M2 is 5 δM2 .
+Thus error in 2M1 + 5M2 is δM =  (2δM1)2 + (5δM2)2
+Error in (M1 + M2)2 = 2   (δM1)2 + (δM2)2
+Error in (M1 - M2)-3 = 3  (δM1)2 + (δM2)2
+NOUN
+44
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Similarly in other mathematical operations and deducing results from graphs 
+(about this you will learn in the next subsection) the flowing rule is used.
+RULE: The error in the result is found by determining how much change 
+occurs in the result when the maximum error occurs in the data.
+EXAMPLE: Let us compute the error in the sine of 30° ± 0.5°. Using the 
+logarithmic tables we get,
+sin 30° = 0.5, sin 30.5° = 0.508,
+sin 29.5° = 0.492
+The difference between sin 30° and sin 30.5° is 0.008, and the difference 
+between sin 30° and sin 29.5° is also 0.008. Thus the error in sin 30° would 
+be ± 0.008.
+Self Assessment Question 4
+Determine the error of sine of 90°, when the error in the angle is 0.5°. 
+Compare your result with that of the example above.
+SOLUTION
+(i)
+sin 90° = 1.000, sin 90.5° = cos 0.5° = 1.000, sin 89.5° = 1.000 
+In this case error in sin 90° is zero.
+3.3.4 ERROR PROPAGATION IN GRAPHING
+Very often we can better visualise the functional relationship between two 
+physical quantities by plotting a graph between them. This is another useful 
+way of handling experimental data because the values of some quantities can 
+be obtained from the slope. While plotting a graph we will use the following 
+guidelines:
+1.
+2.
+3.
+A brief title may be given at the top
+Label the axes with the names of the physical quantities being 
+presented along with units. It is customary to plot the independent 
+variable (the quantity which is varied during the experiment at one's 
+will) on the x-axis and the dependent variable on the y-axis (the 
+dependent variable is the one that varies as a result of change in the 
+independent variable). We would write to the name of the variable 
+represented on each axis along with units in which they are measured.
+We should choose the range of the scales on the axis so that the points 
+are suitably spread out on the graph paper and not cramped into one 
+NOUN
+45
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+corner. Check for the minimum and maximum values of the data that 
+has to be plotted. We may then round off these two numbers to 
+slightly less than the minimum and slightly more than the maximum. 
+Their difference may be divided by the number of divisions on the 
+graph paper. For example, if we are to plot 5.2 and 17.7 it would be 
+convenient to allow the scale to run from 5 to 20 rather than from 0 to 
+18.
+Each set of data points is indicated by a point within a circle on the graph 
+paper and the error is shown by using bars above and below this point as 
+shown in fig. 2. The graphed data show that velocity V is the linear function 
+of time T. 
+We recall that the general equation of a straight line is y = mx + c where m is 
+the slope of line and c the vertical intercept in the value of y when x = 0. 
+From the graph we can thus write V = aT + V0. By comparing the above 
+equation we can conclude that the slope of the graph gives the acceleration 
+and the intercept gives the velocity Vo at T =0. From the graph Vo = 0.32 
+ms-1. To determine the slope we consider two points on the straight line, 
+which are well separated.
+Then,
+a = Slope = V  = 2.35 - 0.40 (ms -1  )   = 0.20 ms -2 
+                    T
+       10.0 - 0.5 (s)
+In the above example, we have plotted the variable V, which is a linear 
+function of T in a linear graph paper. In some experiments we may get data 
+where the relationship between the measured variable is not linear. Suppose a 
+man gets a salary of N
+20, 000.00 on the 1st of every month and he decides 
+that each day he will spend half the money he has with him on that day. Then 
+the amount of money, which the man will have over a period of first seven 
+days of any month, will be given as in table 2.
+NOUN
+46
+PHY 191                                                                                                           
+TABLE 2
+GENERAL PHYSICS PRACTICAL I
+Day of any month
+Money left with the man
+             (M)
+N
+  K x 102
+               1st
+           200.00
+               2nd
+           100.00
+               3rd
+           50.00
+               4th
+           25.00
+               5th
+           12.50
+               6th
+            6.25
+               7th
+            3.12
+               8th
+            1.56
+Let us plot these data on a linear graph paper. The paper will be of the type 
+shown in fig. 3. Look at the graph carefully. You will find that seven of the 
+ten experimental points are clustered together near the bottom right-hand 
+corner of the graph. The shape of the curve we have drawn also involves a bit 
+of guesswork. Therefore, we have to find some method so that these data can 
+be plotted in a better way.
+Fig. 3 Graphical representation of Table 2
+Try to recollect what you used to do in school when you used to come across 
+data like this, which range over a few orders of magnitude or having big gaps 
+between the points. We will tell you, in such cases you used to take the 
+logarithm of the data and then plot those data in a linear graph paper. When 
+you did this, you must have found that the result was a straight line. So let us 
+NOUN
+47
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+take the logarithm of the data of table 2 and tabulate them as shown in table 
+3.
+Day of any month Money left in the man 
+             (m)
+  N        K    x    102
+ Log N
+1st   200.   00 4.301ø
+2nd   100.  00 4.000 ø
+3rd   50.    00 3. 699 ø
+4th   25.    00 3. 398 
+5th    12.    00 3.097 
+6th   6.      00 2.706
+7th    3.      12 2.494
+8th   1.       00 2.193
+       Day of any month                Log M
+1st               3.301
+2nd               2.000
+3rd               1.699
+4th               1.397
+5th              1.097
+6th              0.796
+7th               0.494
+8th              0.193
+Now plot log M against days as shown in fig. 4. You obtain a graph in which 
+points are more clearly spaced evenly and hence you can more easily draw a 
+straight line through the points.
+Fig. 4 Graphical representation of Table 3
+NOUN 48
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+You might have realised that working out the log values for each data is 
+tedious and it also introduces another step, which may introduce error 
+between the data and the graph. Therefore, to plot such a data we use a graph 
+paper called semi-logarithmic or log-linear graph paper where the lines on 
+one axis have been drawn in a logarithmic fashion. On a semi-log paper (see 
+the graph paper of fig. 5) the horizontal scale is an ordinary one, in which the 
+large division are divided into tenths and each division has the same size. The 
+vertical scale is a logarithmic scale (is automatically takes logarithms of data 
+plotted), in which each power of ten or decade (also called frequency) 
+corresponds to the same length of scale. In each decade, the divisions become 
+progressively compressed towards the upper end. Now to the semi-log graph 
+paper we plot the data of table 1. We obtain a straight line as shown in fig. 5. 
+If you compare fig. 4 & 5 you will see that the points plotted on semi-log 
+paper are distributed on a linear graph paper. A question may strike your 
+mind that how to calculate the slope of the straight line of fog. 5? Also what 
+is the equation of the straight line? Let log M be represented by y and by t 
+then we have a straight line graph of y against t. Let the question be 
+represented as 
+y = b + kt        
+Fig. 5 Representation of Table 3 graphically on semi-log paper
+NOUN
+49
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Where b is the intercept of the line on the y-axis and k the slope of the line. 
+We can find the values of b and k from the graph as follows. When t = 0, M = 
+200 then log M
+ =log 200=2.30=y
+2.30=b+0 or b=2.30
+ ...y=2.30+kt
+When t = 7th day, M = 1.56 and log M = log 1.56 = 0.193 = y
+Putting these values in equation (1) we get
+0.193=2.30+7k
+.'. The slope k = - 2.1 = -0.3
+      7
+and the equation of the straight line is
+y = 2.3-0.3t
+(2)
+From the graph of fig. 5 or in other words from equation (2) can you find the 
+equation of the curve plotted in fig. 3?
+Let the value of M at t = 0 be denoted as Mo then equation (2) becomes 
+log M = log MO + kt
+or 
+log M - log Mo = kt
+or Log M
+       MO
+or
+or 
+or
+M = 10 kt 
+            MO
+= kt
+M = MO10kt
+M = 200 x 10-0.3t
+(3)
+This is the equation of curve plotted in fig. 3. It tells us that the money is 
+decreasing logarithmically (also called exponentially) with each day.
+In science, you will come across many logarithmic or exponential relations of 
+the form of equation (3). In such cases it would be convenient to plot the data 
+on semilogarithmic graph paper because the graph will be convenient to plot 
+the data on semilogarithmic graph because the graph will be a straight line if 
+the relationship is logarithmic. Also the slope of the line (which may give 
+you the value of any physical constant) can be read simply and directly from 
+the graph.
+NOUN
+50
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Sometimes we find that we wish to plot a graph where both variables range 
+over several powers of ten. For example, you know that according to Keplar's 
+law, the semi-major axis of the orbit of a planet (R) is related to its period 
+(time for one revolution around the sun) T by the following power-law 
+relation:
+R 3 = kT 2
+Where k is another constant.
+(4)
+If you consider the experimental data that shows how the quantity T depends 
+on quantity R you will observe that R varies by two orders of magnitude and 
+T varies by three orders of magnitude. In other words the experiment data 
+follows equation (4). For a moment, suppose you do not know the exact 
+relationship between the variables T and R. The you can suppose that
+R = kT n
+(5)
+where n is another constant.
+Using the conventional method to find the value of n, you will take logarithm 
+of equation (5) as follows:
+log R = log k + n log T
+Now you will plot log R vs. log T on a linear graph paper. The slope of 
+straight line obtained will give the value of exponent n. But again, as 
+mentioned above, taking logarithm of each experimental date is rather tedious 
+so it would be convenient to plot both the variables T and R on a logarithmic 
+scale where the lines on both axes are drawn in a logarithmic fashion. A log
+log graph is shown in fig. 6. The points lie upon a straight line. The slope of 
+the straight line will give the exponent (n) of the powerlaw relation and hence 
+the exact relationship between R and T will be found out.
+To determine the error in the value of the slope of the straight line drawn in 
+any graph paper (linear or semi-log or log - log) we draw two dashed lines 
+representing the greatest and the least possible slopes which reasonably fit the 
+data as shown in fig. 2. Thus the error in the slope is defined as
+Error in slope = maximum slope - minimum slope 
+2
+Thus from the graph we get the error in the slope as
+δa = 0.23 - 0.19 ms -2   = 0.02 ms -2     
+2
+Thus the experimental value of acceleration from the graph is 
+NOUN
+51
+PHY 191                                                                                                           
+a ± δa=0.20 ± 0.02 ms-2.
+GENERAL PHYSICS PRACTICAL I
+Similarly the error in intercept = (intercept of minimum slope line - intercept 
+of maximum slope line)/2
+    δVO   = (0.45 - 0.17)  ms-1 
+= 0.14 ms-1
+2
+                                                             Fig 6
+3.4
+USES OF π 
+It appears that most of our students are under the impression that the value of 
+π is equal to 
+22 
+7
+exactly. Unfortunately many books writers also have contributed to     
+perpetuate and establish this false idea by setting numerical problems with 
+data
+22
+cooked up that using π =     
+7,     
+the factor always happily cancels out and the 
+simplification becomes very easy. However, in the real world the values of 
+actual physical quantities are not such as to facilitate cancellation with 7. 
+Also, we may as well acknowledge that the value of π cannot be expressed 
+exactly in terms of  any whole number. The value of π = 
+22  
+7
+is one of the many approximations that can be used. In fact, a better 
+approximation is 355 = 3.1415928. Compare this 
+113
+NOUN
+52
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+with the calculator value π = 3.141592654 and 22 = 3.14286. It may be noted 
+that the value of 22 deviates from the more accurate value from the calculator 
+                            7
+in the third decimal place; if we round it off to 5-digit accuracy, π = 3.1415 
+(from calculator), whereas the approximations 355 = 3.1416 and   22  = 3.1429. 
+                                                                           113                       7
+For practical purposes at undergraduate level, the most convenient and 
+comparatively more accurate thing to do will be to remember
+π
+π2
+=
+=
+3.142;
+9.870;
+log π =
+log π2 =
+0.4972;
+0.9943
+Wherever the value of 7r is to be used in our calculations, the above values 
+prove fruitful.
+4.0
+5.0 
+6.0
+ CONCLUSION
+In this unit you have been able to distinguish between random errors and 
+systematic errors when measuring physical quantities and know Systematic 
+errors to some extent, can be eliminated. Errors in the measurement of 
+various physical quantities can also be computed. When graphs are used to 
+show relationship between certain physical quantities, they can also be used 
+to determine the errors in the calculation of slopes.
+SUMMARY
+In this unit you have learnt the following:
+• the difference between random errors and systematic errors,
+• systematic errors, to some extent can be eliminated;
+• errors in the measurement of various physical quantities can be 
+computed;
+• data collected can be used to show relationship between two physical 
+quantities through graphs;
+• from the graphs plotted, the errors in the determination of the slopes 
+of such graphs may also be calculated;
+• the use of π in calculations .
+REFERENCES AND OTHER RESOURCES
+NOUN
+53
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Awe, O. and Okunola, 0.0. (1986), Comprehensive Certificate Physics, 
+University Press, Ibadan.
+Ference, M. (Jnr.), Lemon, H.B. and Stephenson, R.J. (1970), Analytical 
+Experimental Physics, The University of Chicago Press, Chicago and 
+London 
+Feyman, R.P., Leighton, R.B. and Sands, M. (1971), The Feyman Lectures 
+on Physics, Addison-Wesley Publishing Company, California.
+Flowers, B.H. and Mendoza, E (1970), Properties of Matter, John Wiley and 
+Sons Limited, London.
+Noaks, M.A. (1963), New Intermediate Physics, Macmillan and company 
+limited, Canada.
+Soars, F.W., Zemansky, M.W. and Young, H.D. (1980), College Physics. 
+Addison-Wesley Publishing Company, London.
+Tyler, F. (1966), Heat and Thermodynamics. Edward Arnold Publisher 
+Limited, London.
+Wilkinson, J. (1983): Essentials of Physics, Macmillan Education Australia 
+9.Zemansky, M. W. (1968): Heat and Thermodynamics, McGraw
+Hill Book Company, New York.
+EXPERIMENT 1
+Determination of acceleration due to gravity by means of the Simple 
+Pendulum.
+AIM: To determine the value of acceleration due to gravity by using the 
+Simple Pendulum.
+APPARATUS
+• Small pendulum bob made up of lead or brass
+• Cotton thread
+• Split cork
+• Meter rule
+• Stop watch
+• Retort stand and clamp 
+NOUN
+54
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+THEORETICAL BACKGROUND
+The motion of a simple pendulum is described as being a simple harmonic 
+motion. A simple harmonic motion (SHM) is defined thus:
+When an object moves to and fro in such a way that its acceleration is 
+directly proportional to its displacement and is always directed to its 
+equilibrium position, then, that object is said to perform a simple harmonic 
+motion.
+The simple pendulum has its equilibrium position at point B. If the mass of 
+the pendulum bob is m and length ℓ.
+If it is displaced to point A such that the angle of displacement Ө is small and 
+released, the bob will oscillate i.e. move to and fro.
+The restoring force F = mg sin Ө
+Where, m = mass of bob and g = acceleration due to gravity.
+From the second law of motion,
+F = ma –mg sin Ө
+.'. a = -g sin Ө 
+where, a = acceleration
+The negative sign indicates that the acceleration does not increase 
+perpetually, it increases and decreases as it moves to and fro.
+From a = -g sin Ө
+ When Ө is very small then sin Ө = Ө rad 
+NOUN
+55
+PHY 191                                                                                                           
+.'. a = -g Ө
+GENERAL PHYSICS PRACTICAL I
+Using the sector PAB, 
+.'.  
+Ө    =  x
+ 2π
+     2π
+.'.  
+Ө    =  x
+          ℓ
+.'. a  = - g   x
+             ℓ
+.'. a  = - g   x  x
+             ℓ
+where, g and P are constants.
+ .'. a ∝ x
+where, x is the displacement.
+Hence, the acceleration a is proportional to the displacement x. Consequently, 
+the motion is simple harmonic.
+Compare
+a = -ω2 x
+Where, ω2 = angular velocity
+.'. ω2 x = g   x
+   ℓ
+∴ω =     g
+                          ℓ
+The period T = 2π
+∴ T = 2 π   ℓ
+        g
+ω
+By squaring both sides of the equation,
+       G
+NOUN
+56
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+by plotting the graph of T2 versus P , we shall then obtain the slope m = 4π  2  
+          g
+where g can then be determined from g =4π  2  
+       m
+To obtain T, we shall then find the time for 20 oscillations. Thus T =  t    s.
+   20
+PROCEDURE
+(1) Set the simple pendulum as shown in the diagram above.
+(2) Hang the pendulum bob on one end of the cotton thread and clamp the 
+other end firmly between the two split corks
+(3) Allow the pendulum to dangle freely on the working bench
+(4) Use the metre rule to measure 95 cm length of the thread
+(5) Displace the pendulum through a small displacement, release and 
+allow to swing
+(6) Time 20 complete swings (A --> B -> C --> B --> A) is a complete 
+swing or 1 oscillation as t1
+(7) Repeat for another 20 swings for the same length a time t2
+(8) Find the mean time for tl and t2
+(9) Repeat the above procedure of timing for other values of ℓ such that ℓ 
+= 85 cm, 75 cm, 65 cm, 55 cm 45 cm.
+(10) Tabulate your observations as shown below and complete the table 
+for the period T and T2.
+TABLE OF OBSERVATIONS
+   ℓ/cm
+      Time for 20 oscillations
+  t1/s   t2/s Mean t/s
+Period 
+T/s= ( t )
+         20
+ T2/s2
+95
+85
+75
+65
+45
+NOUN 57
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+GRAPH
+Plot the graph of T2 on the vertical axis and P on the horizontal axis. 
+Determine t he slope m of the graph as
+T2/S2
+T22                                                                                                            
+A
+                                                                             ∆ T2
+B
+T21                                                                                                               
+O
+                                    L1
+Slope or gradient m = AC 
+BC
+    =
+    =
+From ∆ T2 = 4  π  2     ∆ℓ
+           g
+∴∆ T 2      = 4  π  2   ∆ℓ
+    ∆ ℓ
+        g
+∴g =  4  π  2   = 4  π  2   x ∆ℓ 
+m         ∆T2
+∆T 2  
+∆ℓ
+T 2  2 – T 2  1
+ ℓ2 - ℓ1
+Estimate the error in g.
+               ∆ℓ
+C
+                              L2
+                  L/cm
+NOUN
+58
+PHY 191                                                                                                           
+CONCLUSION                                
+GENERAL PHYSICS PRACTICAL I
+m
+Acceleration due to gravity = ...................... S 2
+EXPERIMENT 2 
+Acceleration due to gravity by means of the simple pendulum from 
+inaccessible
+height.
+AIM:
+(i)
+(ii)
+To determine the value of acceleration due to gravity by using a 
+simple pendulum hanging from an inaccessible height
+To determine the height of the room experimentally
+APPARATUS
+• Small pendulum bob made up of lead or brass
+• Cotton thread of about 3 m long
+• A hook on the ceiling of the room or laboratory
+• Meter rule
+• Stop watch
+• A pair of scissors or blade
+NOUN
+59
+PHY 191                                                                                                           
+DIAGRAM
+GENERAL PHYSICS PRACTICAL I
+                             H
+                              H-h
+                                                              h.
+THEORETICAL BACKGROUND
+We know that the period of oscillation (T) of a simple pendulum of length (ℓ) 
+is expressed as
+If we therefore have a simple pendulum hanging from a ceiling, the only 
+measurement available to us is the height of the pendulum bob from the floor 
+of the room or the laboratory.
+If the height of the room or laboratory is H and the height of the bob above 
+the floor is h, therefore the length of the simple pendulum (ℓ) measured from 
+the ceiling H is 
+ℓ=H – h 
+We can now write the period of oscillation T as
+T = 2π  H - h
+NOUN
+60
+PHY 191                                                                                                           
+    g
+GENERAL PHYSICS PRACTICAL I
+Squaring both sides of the equation will produce
+T2 = 4  π  2   (H – h)
+g
+∴T2 = 4  π  2   = H - 4  π     2     h
+g               g 
+If we therefore plot the values of T2 against h we will obtain a graph similar 
+to a linear graph represented by the equation
+y = c - mx 
+where, c = the intercept when x = 0 -m = slope of the graph 
+Similarly from
+T2 = 4π 2   = H - 4π  2     h
+g               g 
+the slope of the graph m = - 4π 2  
+         g 
+The intercept of the graph on the x-axis i.e. when T2 = 0 gives us the height H 
+of the room.
+      T2/s2
+                          ∆T2              
+∆h
+            O.                                                                    H
+                        h/cm
+Consequently two values of g and H can be determined experimentally.
+NOUN
+61
+PHY 191                                                                                                           
+PROCEDURE
+GENERAL PHYSICS PRACTICAL I
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+Hang the simple pendulum from the ceiling using the hook such that 
+the bob is about 30 cm from the floor.
+Measure accurately and record the height h from the floor of the room 
+to the pendulum bob
+Displace the pendulum bob through a small angle Ө and allow it to 
+oscillate freely.
+Determine the time t for 20 oscillations and record as tl
+Repeat steps (2) - (4) to determine time t2 for 20 oscillations for the 
+same height h above the ground
+Determine the mean time t
+Cut off 5 cm of the thread, retie the bob as closely as possible to the 
+end of the thread to obtain a new height h above the ground and 
+obtain the time tl and t2 for the new height
+Determine the new mean time t for the 20 oscillations
+Repeat steps (7) and (8) three times to obtain three new heights h and 
+t1, t2 and t
+Tabulate your observations as shown below
+TABLE OF OBSERVATIONS
+Time 
+oscillations 
+for 
+20 
+    t1
+T2
+ Meant t 
+t  = T
+20
+  T/s
+   T2/s2
+NOUN
+62
+PHY 191                                                                                                           
+GRAPH
+GENERAL PHYSICS PRACTICAL I
+Plot the graph of T2 on the vertical axis and h on the horizontal axis. You 
+should obtain a graph similar to the one shown below,
+            T2/s2
+                          ∆T2
+                                   ∆ℓ.
+                    O
+(i)
+Determine the lope m of the graph as
+m = ∆T 2  
+                                ∆h
+Calculate the value of g from m = - 4π 2  
+           g
+(ii)
+                                                                                           L/am.
+Determine the intercept of the graph on the x-axis when T2 = 0 
+Estimate the error in (i)
+g
+(ii) 
+CONCLUSION
+1.
+2.
+Acceleration due to gravity
+Height of the room
+H
+Now with the assistance of your friend, determine the height H of the room 
+by using a tape.
+Compare your answers.
+NOUN
+63
+PHY 191                                                                                                           
+EXPERIMENT 3
+GENERAL PHYSICS PRACTICAL I
+The determination of the force constant of a spiral spring.
+AIM: (1)
+(ii)
+To verify Hooke's law
+To determine the force constant of a spiral spring
+APPARATUS
+• Spiral spring
+• Slotted weights
+• Retort stand and clamp
+• Metre rule
+• A pointer
+DIAGRAM
+                                                                       Spiral
+ Spring
+                        Weight
+THEORETICAL BACKGROUND
+                                                                                           Pointer
+                                                                                           Metre
+ Rule 
+The spiral spring will behave as an elastic material if subjected to a force. 
+Provided its elastic limit is not exceeded you will expect that Hooke's law 
+will be obeyed.
+You will recall that Hooke's law states that, the force on an elastic material is 
+directly proportional to the extension produced by the force provided the 
+elastic limit is not exceeded.
+i.e.
+F = - ke
+NOUN
+64
+PHY 191                                                                                                           
+where k is the force constant of the spiral spring.
+GENERAL PHYSICS PRACTICAL I
+The negative sign shows that the original shape of the spring can be restored.
+If the graph of the force F is plotted against the extension (e) we shall obtain 
+a linear graph like this
+     F/N.
+         O.
+                                                                        ∆
+      ∆e.
+ F
+                                                                                                  e/c m.     
+Where the slope m = ∆F = k the force constant provided the elastic limit is 
+                                    ∆e
+not exceeded.
+A linear graph shows that Hooke's law is obeyed while the slope obtained 
+gives the force constant (k)
+PROCEDURE
+(1)
+(2)
+(3)
+(4)
+(5)
+Suspend the spiral spring vertically on the retort stand firmly
+Attach to the lower end the first of the slotted weights
+Clamp the metre rule vertically along the side of the spiral spring so 
+that a small pointer (a pin) attached to the bottom of the weights 
+moves along lightly against the metre rule
+Record the reading of the pointer as e, and the weight wl attached to 
+the spiral spring
+Increase the force by successive increments of 10 or 20 g and record 
+the pointer reading each time
+NOUN
+65
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+(6) When you have taken about five of such readings start unloading the 
+weights and again record the pointer readings
+(7) Tabulate your readings as in the section for observations
+TABLE OF OBSERVATIONS
+ Mass   Weight /N
+           Pointer Reading 
+  Weight
+  Increasing 
+Weight 
+Unloading
+Mean Pointer
+      Reading
+     W1    e1   e1       e1
+     W2    e2   e2       e2
+     W3    e3   e3       e3
+       :         :    :       :
+  Additional 
+    Load/g
+Pointer position (cm)
+Loading Unloading Mean
+ Extension 
+  (cm)
+Extension 
+for 
+10 a
+20 b b - a
+30 c c – a
+40 d d – a
+50 e e – a
+60 f f – a
+70 g g – a
+80 h h - a
+NOUN 66
+PHY 191                                                                                                           
+GRAPH
+GENERAL PHYSICS PRACTICAL I
+Plot the graph of weight in newtons on the y-axis against the extension on the x-axis.
+W/N
+                                                                              ∆W
+                                                          ∆e.
+             O
+                                                                                       e/cm
+A straight-line graph shows a linear relationship between the force and the 
+extension.
+This shows that W ∝ e.
+That is Hooke's law is obeyed.
+W = ke
+The slope m = ∆W = k
+the force constant
+ ∆e
+CONCLUSION 
+(I)
+(II)
+F ∝ e
+k = ∆W = …………….
+                   ∆e
+EXPERIMENT 4
+Determination of effective mass of a spiral spring and the spring constant
+AIM: To determine the effective mass of a spiral spring by oscillation 
+method
+APPARATUS
+• A spiral spring
+• A set of slotted weights
+• A stop watch
+• Retort stand and clamp
+NOUN
+67
+PHY 191                                                                                                           
+• Split cork
+GENERAL PHYSICS PRACTICAL I
+DIAGRAM
+Split Cork
+                                                                             Spiral
+Retort
+Stand
+                                                          B
+                  Weight
+                                     O
+                                                               x 
+mg                                                                       
+                                                                  B1
+THEORETICAL BACKGROUND
+ Spring 
+Let M be the mass of the slotted weight. The weight on the spiral spring is 
+then Mg. According to Hooke's law, this force produces an extension e.
+.'.Mg=ke
+where k = spring constant
+∴F=Mg = ke 
+If the mass is pushed down through a displacement x due to a small increased 
+force Fδ.
+∴F + δF = k (e + x)  
+with F = ke
+∴F + δF - F= k (e +x) - ke .
+∴δF = ke + kx - ke
+∴δδF = kx = Ma
+where, a = acceleration imparted to mass M 
+∴Ma = kx
+.'. a = -  k   x
+                                    M
+NOUN
+68
+PHY 191                                                                                                           
+i.e. a ∝ x
+GENERAL PHYSICS PRACTICAL I
+Therefore the motion is a simple harmonic motion because the acceleration is 
+proportional to the displacement x and always directed to the equilibrium 
+point.
+Compare  a = - k  x 
+                        M
+∴ω2 x = k  x
+                          M
+with a = -ω2  x
+The period of oscillation   T = 2π
+ω
+.'. T = 2π  M
+                 k
+This equation does not include the effective mass of the spiral spring in. So 
+we add m to M.
+.'. T = 2π  M + m
+                   k
+Squaring both sides of the equation.
+.'. T2 =4π 2(M + m)
+          K
+.'. T2 = 4  π     2   M + 4  π  2    m
+k             k
+If we plot the values of T2 against the corresponding values of M, a graph 
+shown below is obtained.
+NOUN
+69
+PHY 191                                                                                                           
+                   T2/s2                  
+GENERAL PHYSICS PRACTICAL I
+                                                                        ∆T 2
+                                                               ∆M
+The slope ∆T 2   = 4π 2    = m
+                 ∆M
+      k
+                                                                                                        M/kg
+∴ The value of k can be obtained
+The intercept on the x-axis gives us the value of m when T2 = 0.
+∴0 = 4π 2       M + 4π 2     m 
+                       k              k 
+∴M = - m 
+Hence the effective mass of the spiral spring is the intercept of the graph on 
+the xaxis.
+PROCEDURE
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+Set the spiral spring on the retort stand rigidly by using the split cork.
+Mark the equilibrium position of the slotted weight and use it as a 
+reference point
+Give the hanger and weight a small displacement downwards to set 
+the spiral spring oscillating
+Determine the time t for 20 complete oscillations using 10 g mass of 
+the slotted weight
+Repeat this timing
+Increase the load by another 10 g weight and again take the time for 
+20 complete oscillations twice
+NOUN
+70
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+(7)
+(8)
+Continue to increase the load on the hanger for another three sets of 
+weights and then determine the corresponding time for 20 complete 
+oscillations. 
+Tabulate your readings under the observations below
+TABLE OF OBSERVATIONS
+Time for oscillations 
+ Mass M
+ Loading 
+ Unloading 
+Mean time 
+       t 
+   Period
+ T = t  / s
+         20
+T2/s2
+GRAPH
+Plot the graph of T2 on the y-axis against the corresponding values of M on 
+the x-axis.  A straight line graph shows the linear relationship between T2 and 
+M as shown below:
+Calculate the value of k from slope = 4π 2  
+  k
+Find the intercept of the graph on the x-axis.
+What is the effective mass of the spiral spring?
+Estimate your error in
+CONCLUSION
+(1)
+(ii)
+the value of k
+the value of m
+NOUN
+71
+PHY 191                                                                                                           
+The spring constant k = ..............................
+GENERAL PHYSICS PRACTICAL I
+The effective mass of the spiral spring = ..............................
+EXPERIMENT 5
+Determination of surface tension of water by rise in a capillary tube
+AIM: To determine the surface tension of water by the rise of water in a 
+capillary tube
+APPARATUS
+• A set of glass capillary tubes
+• Travelling microscope
+• A beaker
+• Distilled water
+• Retort stand with clamp
+• Clearing fluids such as nitric acid and caustic soda solution
+DIAGRAM
+THEORETICAL BACKGROUND
+The weight of the water column of height h supported in the capillary tube 
+due to surface tension y is
+π2 h pg
+where, r = radius of the capillary tube
+h = height of the water column in the capillary tube
+p = the density of water
+g = acceleration due to gravity
+NOUN
+72
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+This weight is being supported by the upward surface tension acting around 
+the circumference of the meniscus of the water in the tube is given as 2πry.
+∴2πry = π2hpg
+∴y = π  2  hpg  
+           2πr
+=rhpg    N
+       2       
+m
+With very fine capillary tubes the meniscus surface may be considered to be 
+hemispherical and the weight of the liquid above the lowest point of the 
+meniscus is given as
+πr3  - 2 πr3       pg =  1 πr3 pg 
+                    3                     3     
+This weight has to be added to the main weight of the water column.
+:. 2πry = 1π2hpg + 1 πr3 pg
+      3
+1
+∴y = π  2   hpg +  3 π  3   pg  
+                                            2πr
+  r
+= π  2   pg  h +  3 
+                                2πr
+∴y = 1  rpg   h + r
+                                2                 3
+We can then determine various values of r and their corresponding values of 
+h to obtain 7 at the room temperature.
+PROCEDURE
+(1)
+(2)
+(3)
+(4)
+(5)
+Obtain about five different capillary tubes of different radii
+Clean them thoroughly by first washing with caustic soda solution 
+and nitric acid and then rinse them with pure water
+Fill the beaker with water to the brim
+Insert the capillary tube in the water contained in the beaker
+Observe the capillary tube in the water contained in the beaker
+NOUN
+73
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+Observe the capillary rise of water in the tube
+Use the travelling microscope to determine the height (h) of the 
+capillary rise of water in the tube by recording X and Y positions of 
+the travelling microscope. Thus h =- Y-X 
+Remove the tube from the water and clamp it horizontally to show the 
+circular section of the tube
+                                                              d.        
+                                                   P
+                     Q
+Measure the diameter PQ of the tube to determine the average radius 
+of the tube
+Repeat the above procedure with other given capillary tubes
+Tabulate your readings as shown under observations
+Measure and record the temperature of the room
+TABLE OF OBSERVATIONS
+  Tube 
+ Point
+   X 
+ Point 
+   Y
+  h
+(Y-X)
+  P
+ Q
+ d
+(Q-P)
+   r
+   d
+ (  - )
+    2
+ y 
+1
+2
+3
+4
+5
+CALCULATIONS
+For each tube calculate the value of y and find the average. What would you 
+consider as your sources of error?
+EXPERIMENT 6
+NOUN
+74
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+Determination of Specific Latent Heat of Fusion of ice
+AIM: To determine the specific Latent Heat of fusion of ice
+APPARATUS
+• Lagged calorimeter
+• Thermometer (0 - 50 °C in tenths) 
+• Pieces of ice block
+• 
+• 
+Water
+Beaker
+• Beam balance
+• Blotting paper
+DIAGRAM
+THEORETICAL BACKGROUND
+When ice block melts, it changes its state from solid to liquid at its melting 
+point which is 0 °C. The amount of heat in joules required to change 1 kg 
+mass of ice (solid) to liquid at its melting point defines the specific latent heat 
+of fusion of ice (Lf).
+Thus if we have m kg mass of ice the total amount of heat Q1 absorbed by the 
+ice is mLf joules.
+NOUN
+75
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+If the temperature of this liquid water at 0 °C now changes to 0 °C then the 
+amount of heat in joules required to change its temperature from 0 °C to Ө °C 
+is given by Q2, where Q2 = mC∆Ө.
+Where, m = mass of ice converted to liquid
+C = specific heat capacity of water = 4200       J 
+                                                                    kg 
+OC
+AӨ = change in temperature = (0 - 0) °C = Ө °C 
+∴ Q2 = MCӨ
+The question is "Where does the heat absorbed by the ice come from?"
+The heat comes from the water in the calorimeter in which it melts. Let ml be 
+the mass of the water in the calorimeter, then the heat lost by this water Q3 = 
+m1C∆Ө1. 
+Where, ml = mass of water in the calorimeter
+C = specific heat capacity of water
+∆Ө1 = change in temperature of the water from Ө1 - 0 
+where, 01 = original temperature of water in the calorimeter 
+0 = final temperature of the mixture
+∴Q3 = m1C(Ө1 - Ө)
+But calorimeter and stirrer also lost some heat to the ice. Thus the quantity of 
+heat lost by the calorimeter and stirrer is Q4 where.
+Q4 = M2C2∆Ө2
+But ∆Ө2 = ∆Ө1
+.'. Q4 = m2C2∆Ө1
+Where, m2 = mass of calorimeter and stirrer
+C2 = specific heat capacity of calorimeter and stirrer which can be 
+made of copper or aluminium
+∆Ө1= (Ө1- Ө)
+∴ Q4 = m2C2(Ө1 - Ө)
+We then apply the principle of conservation of heat energy,
+Heat gained by ice
+=
+heat lost by water.
+Provided no heat goes out or enters the system.
+Consequently, Q1 + Q2 = Q3 + Q4
+i.e.
+mLf  + mC∆Ө = m1C∆Ө1 + m2C∆Ө1
+∴mLf  + MCӨ = m1C(Ө1 - Ө) + m2C2(Ө1 - Ө)
+NOUN
+76
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+:. mLf = m1C(Ө1 - Ө) + m2C2 (Ө1 - Ө) - mCӨ 
+                                    m
+Hence, Lf can be determined.
+PROCEDURE
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+Weigh the calorimeter and stirrer empty and dry = ml
+Use the thermometer to measure the room temperature =Ө1
+Warm some water say to 3 5 °C
+Fill the calorimeter halfway with the warm water and weigh it 
+containing the warm water and stirrer
+When the temperature is about 10 °C above the room temperature Ө1. 
+Record the temperature at tl °C
+Dry a few small pieces of ice between the sheets of blotting paper and 
+quickly add them to the water in the calorimeter
+Stir the content until all the ice has melted
+Continue to add the dry ice until the temperature of the calorimeter 
+and contents is about as far below room temperature as it was 
+originally above 
+Record the new temperature as t2 °C
+Weigh the calorimeter + water + the melt ice (m3)
+TABLE OF OBSERVATIONS
+Mass of calorimeter empty = ml = ............ kg
+Mass of calorimeter + warm water = m2 = .................. kg 
+Temperature of calorimeter + warm water = t1…………. 0C
+Temperature of calorimeter + water + melted ice = m3 = ..... . ..... kg
+CALCULATIONS
+Mass of melted ice = (m3 - m2) 
+Mass of warm water = (M2 – M1)
+Heat gained by ice to melt it = Ql = (m3 - m2) Lf
+Heat gained by melted ice to change its temperature to t2 °C
+= Q2 = (m3 - m2) C (t2 - 0) oC
+= (m3 - m2) Ct2
+Heat lost by warm water = 
+Q3 = (m2 – m1) C (tl - t2)
+∴Q3=(m2-ml)C(tl-t2)
+Heat lost by calorimeter and stirrer = Q4 = m1 C1 (t1 – t2)
+where, C1 = specific heat capacity of calorimeter and stirrer
+Using the conservation of heat energy
+NOUN
+77
+PHY 191                                                                                                           
+Heat lost = Heat gained
+GENERAL PHYSICS PRACTICAL I
+. : Q1 +  Q2 = Q3 - Q4
+∴(m3 - m2)Lf + (m3 -m2)Ct2 - (m2 - mI)C(t1 + t2) + m 1C1(t1- t2)
+. : (m3 - m2)Lf - (m2 - ml)C(tl - t1) + m1C1(t1 -t2(m3 – m2)Ct2
+.'. Lf = (m2 - m1)C(t1 - t2) + m1Cl(t1 - t2) - (m3 - m2)Ct2
+(m3 - m2)
+CONCLUSION
+The specific latent heat of fusion of ice = ...........................   J  
+kg
+PRECAUTIONS
+Mention two precautions taken in performing this experiment.
+EXPERIMENT 7
+Determination of the coefficient of limiting static friction between two 
+surfaces.
+AIM: To determine the coefficient of limiting static friction between two 
+surfaces.
+APPARATUS
+• A long smooth piece of wood P
+• A block of wood Q having one smooth surface 
+• A single pulley A
+• Two sets of known weights • Light cord
+• Spring balance
+• Pieces of chalk
+DIAGRAM                                                                                      R.
+                            R.
+NOUN
+78
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+Fr.                                   T.                A.
+                                                                                              
+                                                                                                  Fr. 
+T
+                      WB.                                               T.
+                                                                                                                        (Ww + W)
+                                                                               W.
+THEORETICAL BACKGROUND
+                                                R
+                   Fr.                    Q.                         T
+                                                                                S.
+.                                              W
+When an object Q is on a surface S, the vertical forces acting on it are the 
+weight W and the normal reaction R acting in opposite directions to each 
+other. The resultant of these two forces is zero because there is no relative 
+motion downwards or upwards from the surface S.
+However if a horizontal force T is brought to play on Q, there is a limiting 
+value of T that will make the body Q to move. This limiting value is equal to 
+the frictional force Fr that will oppose the motion.
+The coefficient of friction p is an associated property of the two surfaces in 
+contact and it is defined as
+µ = Frictional Force (Fr) 
+Normal Reaction (R)
+NOUN 79
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+But the normal reaction R is equal to the weight of the object (W), which is 
+equal to (mg) i.e. the product of the mass of Q and the acceleration due to 
+gravity (g)
+∴µ   =  Fr = Fr 
+W    mg  
+.'. Fr = µWB where, WB = weight of wood
+Fr = µm B g where, mB = mass of the wood
+But the frictional force (Fr) is equal to the limiting value of the tension in the 
+string (T) that is equal to W.
+.'. T = µWB
+By adding more weights on top of the wood Q, we can vary the normal 
+reaction of the wood on the horizontal surface.
+By plotting the values of T against the corresponding values of WB, the 
+coefficient of static friction may be determined.
+           T/N
+              O
+                                                                                        ∆T.
+                                                                 ∆WB
+                                                                                                WB
+The slope or gradient of the graph gives the coefficient of static friction 
+between 
+∆T
+the two given surfaces. µ =   ∆WB
+PROCEDURE
+(1)
+Set the apparatus as shown in the diagram
+NOUN
+80
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+Ensure the long board is horizontal by using the spirit-level
+Rub the surfaces of P and Q with the chalk to ensure smooth surfaces 
+of the wood
+Determine the weight of Q by using the spring balance
+Record this weight as WB
+Add the load W to the string until Q just begins to move
+Record the weight W that is used to make the wood Q move
+Place a known weight w on top of Q in order to increase the normal 
+reaction
+Record the new normal reaction as WB + w
+Determine the new load W that will make the wood move again 
+Record the new load W
+Repeat this procedure three more times by increasing w and recording 
+the corresponding values of W that will make the wood just move
+TABLE OF OBSERVATIONS
+WB = ……………………N
+   Normal Reaction (R)
+       W = Fr     
+ Fr    
+      R
+=   µ
+1
+            WB
+     W1 + Fr1
+2
+            WB + W1
+     W2 + Fr2
+3
+            WB + W2
+     W3 + Fr3
+4
+            WB + W3
+     W4 + Fr4
+5
+            WB + W4
+     W5 + Fr5
+GRAPH
+Plot the graph of W on the vertical axis against the values of the normal 
+reaction R on the horizontal axis.
+NOUN
+81
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+             
+               W.
+                                                                                           ∆W                     
+                                                                     ∆R.
+                                                                                                                      R.
+Determine the slope as        m =  ∆W  = µ 
+                                                               ∆R
+Complete the table of observations by calculating the ratios of Fr = µ
+                                                                                                         R
+Compare your answers with that obtained from the graph.
+CONCLUSION
+The coefficient of limiting friction, between the two surfaces = ................
+EXPERIMENT 8
+Determination of the coefficient of static friction on two surfaces using an 
+inclined plane.
+AIM: To determine the coefficient of static friction between two surfaces by 
+using the inclined plane.
+APPARATUS
+• An inclined wooden plane
+• A wooden block
+• A set of weights
+• A protractor
+DIAGRAM
+                                                                 Fr.
+                        R = W Cos Ө.           
+                                                     
+NOUN 82
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+                                                                                    h.
+      W Sin Ө
+              Ө
+                                                              X
+THEORETICAL BACKGROUND
+Another way to determine the coefficient of static friction is the use of an 
+inclined plane.
+The inclined plane is made up of two wooden boards hinged at one end.
+On top of the upper board is placed a wooden block. By gradually raising the 
+upper board an angle Ө is made between the upper and lower boards.
+The wooden board is then made just to glide down the upper board through 
+the resolved weight (WSinӨ) of the wooden block. The angle Ө, which 
+enables the wooden block just to glide, is then noted.
+The limiting frictional force (Fr) is equal to WSinӨ. The normal reaction R 
+on the inclined plane is WCosӨ. Hence, the coefficient of friction p, is 
+defined as
+µ = WSin Ө
+                 WCos Ө
+∴µ = Sin Ө
+                     Cos
+ Ө
+Sin Ө = µCos Ө
+∴µ = Tan Ө 
+Attaching different weights on the wooden block can vary the normal 
+reaction of the wooden block. Corresponding angles of inclination Ө, just to 
+make the wooden block move can then be determined.
+Thus by plotting the graph of SinӨ on vertical axis against CosӨ on the 
+horizontal axis, we can then determine the slope m, which is equal to the 
+coefficient of static friction.
+m = ∆Sin Ө = Tan Ө = µ
+NOUN
+83
+PHY 191                                                                                                           
+                               ∆Cos
+ Ө  
+GENERAL PHYSICS PRACTICAL I
+PROCEDURE
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+Weigh the wooden block Q and record its weight as WB.
+Place the wooden block Q on the upper wooden board of the inclined 
+plane
+Raise the upper board gradually to determine the angle Ө when the 
+wooden block just starts to move.
+Record the angle 8 by using the protractor. Note that in the absence of 
+a protractor, you can use the height h and distance x to determine 
+angle 8.
+Where, TanӨ  h
+                        x
+.'. Ө = Tan -1   h 
+          x
+Attach a known weight w on the wooden block Q and place it again 
+on the inclined plane
+Raise the board of the inclined plane to determine the new angle A 
+just to make the wooden block slide on the plane
+Record the new angle Ө
+Repeat this procedure three times by adding more known weights on 
+the wooden block Q and then determe the corresponding angle Ө to 
+make it just slide.
+Tabulate your observations
+TABLE OF OBSERVATIONS
+Load
+Angle of inclination 
+Sin Ө
+Cos Ө
+Sin Ө = µ
+Cos Ө
+WB
+             Ө1
+NOUN
+84
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+WB + W1             
+Ө2
+WB + W2
+             Ө3
+WB + W3
+             Ө4
+WB + W4
+             Ө5
+Complete the table of observations by using the four-figure table to determine 
+SinӨ and Cos Ө.
+GRAPH
+Plot the graph of Sin Ө on the y-axis against Cos Ө on the x-axis. Determine 
+the slope/gradient of the graph.
+            Sin Ө.
+                                                                                         ∆
+                                                              ∆
+ Cos Ө
+ Sin Ө
+CALCULATIONS 
+Calculate also the ratio of Sin Ө for each set of reading
+Cos Ө
+Compare your results with that obtained from the graph.
+CONCLUSION
+                                                                                                         Cos
+ Ө
+The coefficient of limiting friction, p, between the two surfaces = ...........
+EXPERIMENT 9
+Determination of relative density of kerosene using the specific gravity 
+bottle.
+NOUN
+85
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+AIM: To determine the relative density of kerosene or any other liquid by 
+using the specific gravity bottle.
+APPARATUS
+• The specific gravity bottle
+• Kerosene
+• Methylated spirit
+• Balance and weights
+• Beaker of water
+DIAGRAM
+THEORETICAL BACKGROUND
+The relative density of a liquid is defined as
+Relative Densty = Density of the liquid 
+      Density of water
+mass of the liquid 
+= volume of the liquid
+mass of water
+ volume of water
+      =  m1 ÷ m2
+               V1     V2
+     =  m1 х    m  2
+            V1     V2
+    =  m1  x   V  2
+          m2       V
+Where, ml = mass of liquid 
+m2 = mass of water
+ Vl = volume of liquid
+V2 = volume of water 
+NOUN 86
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+If V1=V2
+∴Relative Density = m1
+m2
+That is the relative density of the liquid is defined as the ratio of the mass of 
+the liquid over the mass of an equal volume of water.
+The volumes of the liquid and the water are made to be equal by using the 
+specificgravity bottle, which has a constant volume V. The special stopper 
+made for the bottle helps to achieve this. The stopper has a narrow opening to 
+ensure that the volume of the liquid contained in the bottle is constant.
+If the mass of the bottle when empty
+And the mass of bottle + kerosene
+And the mass of bottle + water
+:.mass of kerosene
+and mass of equal volume of water
+. . Relative density of kerosene = m2 - ml
+ m3 – m1
+PROCEDURE
+(1)
+=
+=
+=
+=
+=
+ml
+m2
+m3
+(m2 - ml)
+(km3 - ml)
+Clean the bottle and stopper with Methylated spirit and dry it by using 
+a hot air drier
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+NOTE
+Weigh the bottle and stopper empty by using the balance and record 
+this mass as m1.
+Fill the bottle with kerosene whose relative density is to be 
+determined
+Weigh the bottle, stopper and the kerosene using the balance 
+Record this as mass m2
+Pour out the kerosene and clean it again with the Methylated spirit 
+and dry
+Fill the bottle with water and use the blotting paper to wipe the excess 
+water on the bottle
+Then reweigh the bottle, stopper and water
+Record the mass of bottle, stopper and water as m3 
+• In this experiment always weigh the bottle with the stopper
+• Observe that no air bubbles are left in the liquid near the base of the 
+stopper. If there is any, remove the stopper add more liquid and then 
+reinsert the stopper carefully
+NOUN
+87
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+• Be careful not to warm the bottle by the heat of the hand. This may 
+make the liquid expand and that will not provide the desired constant 
+volume. Handle the bottle with care.
+CALCULATIONS
+If the mass of empty bottle and stopper = m1
+The mass of bottle + kerosene = m2
+And the mass of bottle + water = m3 
+.'. mass of kerosene = m2 – m1,
+and the mass of equal volume of water = m3 - ml
+:.Relative density of kerosene = m2 – m1
+m3 – m1
+If
+p = Density of kerosene 
+pw= Density of water
+pr = Relative density of kerosene
+By definition     
+Pr = P
+                                   Pw -'- P = Pr Pw
+∴P =  m2 –m1   Pw
+m3 – m1
+kg                  
+Where, Pw, = 1000  3
+g
+1cm3 
+    or
+Therefore, the density of kerosene can be determined.
+CONCLUSION
+The relative density of kerosene
+The density of kerosene
+EXPERIMENT 10
+=
+=
+………………………
+…………………….. 
+Determination of the relative density of a granular substance not soluble in 
+water using the specific gravity bottle.
+AIM: To determine the relative density of granular sand using the specific 
+gravity bottle.
+APPARATUS
+• Specific gravity bottle 
+NOUN
+88
+PHY 191                                                                                                           
+• Granulated sand 
+GENERAL PHYSICS PRACTICAL I
+• 
+• 
+Water
+Balance
+• Set of weights
+DIAGRAM
+THEORETICAL BACKGROUND
+The relative density (R.D.) of a substance is defined as
+ R.D.   =    Density of the substance
+        Density of water
+Mass of substance
+Volume of substance
+            =     
+Let
+Mass of water 
+      Volume of water
+pr represent the relative density of the substance 
+Ps = density of the substance
+Pw = density of water 
+ms = mass of substance
+VS = volume of substance
+ VW = volume of water
+.'. By definition
+Pr = PS 
+       PW
+∴Ps = Pr Pw
+Thus if pr and pw are known ps can be determined. But what is pr?
+NOUN
+89
+PHY 191                                                                                                           GENERAL PHYSICS PRACTICAL I
+If
+Pr = Ps 
+       Pw
+ms
+Vs
+        ∴Pr=      mw
+                 Vw
+= ms ÷ mw
+   Vs     Vw
+= ms  x  Vw 
+   Vs        mw
+=   ms x Vw
+                            Mm   Vs
+ 
+If V, ie if the volume of water is equal to the volume of the substance.
+∴Pr = ms
+           mw
+       = mass of the substance
+mass of an equal volume of water to that of the substance
+ How do we make Vw= VS?
+We do so by using the specific gravity bottle.
+For the granular sand we determine the following:
+1 . Mass of the empty bottle = m1
+2. Mass of the bottle + some sand = m2
+.-.Mass of sand = m2 - ml
+3. Mass of bottle + sand + water = m3
+4. Mass of bottle + water only = m4
+.-.Mass of equal volume of water = (m4 - ml) - (m3 - m2)
+.'. pr of sand =m
+∴ Pr of sand =                     m2   -  m1
+         (m4 - m1) -  (m3 - m2)
+PROCEDURE
+(1) The specific gravity bottle is cleaned and dried
+(2) It is then weighed empty as (ml)
+NOUN 90
+PHY 191                                                                                                           
+GENERAL PHYSICS PRACTICAL I
+(3)
+(4)
+(5)
+(6)
+(7)
+water
+(8)
+The specific gravity bottle is now filled with one-third full of sand
+The bottle with sand is then weighed as (m2)
+Fill the bottle containing the sand with water and shake very well to 
+ensure that it does not harbour any air bubbles
+Weigh the bottle containing the sand and water as (m3)
+Remove the content of the bottle, clean it and now fill it with only 
+Weigh the bottle with water only as m4
+CALCULATIONS
+The mass of the sand
+Mass of the water that fills the bottle alone
+Mass of water that fills the bottle with sand
+=
+=
+=
+:.Mass of equal volume of water to that of the sand =
+m2) Hence,
+m2-m1
+m4 – m1
+m3 - m2
+(m4 - ml) - (m3 - 
+m2 – m1
+Relative density of the granular sand =    (m4 – m1) - (m3 – m2)
+m2 - MI
+∴Pr =  (m4 - mI) - (m3 -m2)
+∴Ps =    m2 – mI      
+x  Pw
+(m4 - mI) - (m3 - M2)
+CONCLUSION
+Relative density of sand = .............................
+kg
+Density of sand = .......................   m 3
+NOUN
+91
+
+
+
+
+
+
+
+
+
+
+CIT 191 
+COMPUTER LABORATORY I 
+
+
+ 
+There are 12 study units in this course organized into three modules as 
+follows: 
+ 
+Module 1: Computer Hardware 
+ 
+Unit 1: Hardware Components (1) 
+Unit 2: Hardware Components (2) – Peripheral Devices 
+Unit 3: Auxiliary Equipment 
+ 
+Module 2: Computer Networking 
+Unit 1 Network Cables   
+Unit 2 Network Devices  
+Unit 3 Network Internet Protocols Addressing 
+Unit 4 Local Area Network 
+Unit 5 Basic Network Command 
+Module 3: Computer Programing                                                                                                                  
+Unit 1  Programming in Visual Basic  
+Unit 2    Visual Basic Project Window 
+Unit 3    Creating Menu Applications               
+Unit 4   Analyzing Visual Basic Data    
+
+

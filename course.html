@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault — Course</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5be3">
+    <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Lucide Icons (local first, CDN fallback) -->
+    <script src="assets/js/lucide.minn.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/lucide@latest';document.head.appendChild(s)"></script>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <i data-lucide="search" class="icon-md icon-muted"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="Search units, courses, modules... (Press / or Ctrl+K)" oninput="handleSearch(this.value)">
+                <button class="search-close" onclick="closeSearch()"><i data-lucide="x" class="icon-lg"></i></button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Breadcrumb -->
+        <div id="breadcrumb"></div>
+
+        <!-- Course Header -->
+        <div id="course-header" class="course-header"></div>
+
+        <!-- Module List -->
+        <div id="module-list" class="module-list"></div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/course.js"></script>
+</body>
+
+</html>

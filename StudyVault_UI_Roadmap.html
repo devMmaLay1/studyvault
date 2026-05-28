@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>StudyVault — Full UI Roadmap & Build Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0d0c0a;
+  --paper:#f7f4ef;
+  --cream:#ede9e1;
+  --line:#d5cfc4;
+  --muted:#8c8680;
+  --accent:#e8500a;
+  --accent2:#2a56d6;
+  --accent3:#16a34a;
+  --yellow:#f5c842;
+  --surface:#ffffff;
+  --mono:'DM Mono',monospace;
+  --sans:'DM Sans',sans-serif;
+  --display:'Bricolage Grotesque',sans-serif;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.65;overflow-x:hidden}
+
+/* ─── NOISE TEXTURE ─── */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.4}
+
+/* ─── LAYOUT ─── */
+.page{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 32px}
+
+/* ─── STICKY NAV ─── */
+nav{position:sticky;top:0;z-index:100;background:rgba(247,244,239,.92);backdrop-filter:blur(12px);border-bottom:1.5px solid var(--line);padding:0 32px}
+.nav-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:0;height:52px}
+.nav-logo{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.5px;margin-right:auto}
+.nav-logo span{color:var(--accent)}
+.nav-tabs{display:flex;gap:0}
+.nav-tab{background:none;border:none;font-family:var(--sans);font-size:12px;font-weight:500;color:var(--muted);padding:0 14px;height:52px;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;letter-spacing:.2px;text-transform:uppercase}
+.nav-tab:hover{color:var(--ink)}
+.nav-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ─── SECTIONS ─── */
+.section{display:none;padding:64px 0}
+.section.active{display:block}
+
+/* ─── HERO ─── */
+.hero{padding:80px 0 64px;border-bottom:1.5px solid var(--line)}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--accent);background:#fef2eb;border:1px solid #fad4be;padding:5px 14px;border-radius:100px;margin-bottom:28px;letter-spacing:.5px}
+.hero-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+h1{font-family:var(--display);font-size:clamp(42px,6vw,72px);font-weight:800;line-height:1.0;letter-spacing:-2.5px;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--accent);display:block}
+.hero-sub{font-size:16px;color:var(--muted);max-width:520px;line-height:1.6;margin-bottom:40px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,auto);gap:0;border:1.5px solid var(--line);border-radius:12px;overflow:hidden;max-width:560px}
+.hero-stat{padding:18px 24px;border-right:1.5px solid var(--line);background:var(--surface)}
+.hero-stat:last-child{border-right:none}
+.hero-stat-num{font-family:var(--display);font-size:28px;font-weight:800;letter-spacing:-1px}
+.hero-stat-num.orange{color:var(--accent)}
+.hero-stat-num.blue{color:var(--accent2)}
+.hero-stat-num.green{color:var(--accent3)}
+.hero-stat-num.gold{color:#c97c10}
+.hero-stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.hero-stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;padding:6px 12px;border-radius:6px;border:1px solid var(--line);background:var(--surface);font-weight:500;color:var(--ink)}
+.pill-html{border-color:#ff6b35;color:#c94700;background:#fff4ef}
+.pill-css{border-color:#2a56d6;color:#1a3da0;background:#eef2fd}
+.pill-js{border-color:#c97c10;color:#9a5e08;background:#fdf8ef}
+.pill-ls{border-color:#16a34a;color:#0f7535;background:#f0fdf4}
+.pill-tw{border-color:#a855f7;color:#7e22ce;background:#fdf4ff}
+
+/* ─── SECTION HEADERS ─── */
+.sec-label{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;display:block}
+h2{font-family:var(--display);font-size:32px;font-weight:800;letter-spacing:-1px;margin-bottom:6px}
+h3{font-family:var(--display);font-size:18px;font-weight:700;letter-spacing:-.4px;margin-bottom:4px}
+.sec-desc{color:var(--muted);font-size:14px;margin-bottom:36px}
+
+/* ─── PHASE STRIP ─── */
+.phase-strip{display:flex;gap:0;overflow-x:auto;border:1.5px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:48px;scrollbar-width:none}
+.phase-strip::-webkit-scrollbar{display:none}
+.phase-item{flex:1;min-width:100px;padding:16px 14px;background:var(--surface);border-right:1.5px solid var(--line);text-align:center;cursor:pointer;transition:all .2s;position:relative}
+.phase-item:last-child{border-right:none}
+.phase-item:hover{background:var(--cream)}
+.phase-item.done{background:#f0fdf4}
+.phase-item.done .phase-num{background:var(--accent3);color:#fff}
+.phase-num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--cream);font-family:var(--mono);font-size:11px;font-weight:700;margin-bottom:6px}
+.phase-name{font-size:11px;font-weight:600;letter-spacing:.2px;display:block;line-height:1.3}
+.phase-time{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:3px;display:block}
+
+/* ─── BUILD PHASE CARDS ─── */
+.phase-card{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;margin-bottom:16px;overflow:hidden}
+.phase-card-header{display:flex;align-items:center;gap:16px;padding:20px 24px;cursor:pointer;transition:background .15s}
+.phase-card-header:hover{background:var(--cream)}
+.phase-badge{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:14px;flex-shrink:0}
+.ph0{background:#e8f4ff;color:#1a5bb5}
+.ph1{background:#fff8e6;color:#b37a00}
+.ph2{background:#fef2eb;color:#c94700}
+.ph3{background:#f0fdf4;color:#15803d}
+.ph4{background:#fdf4ff;color:#7e22ce}
+.ph5{background:#fff0f0;color:#b91c1c}
+.ph6{background:#e6fff9;color:#0e7a60}
+.ph7{background:#f0f7ff;color:#1a5bb5}
+.phase-card-title{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.3px;flex:1}
+.phase-card-meta{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.phase-chev{font-size:11px;color:var(--muted);transition:transform .2s}
+.phase-card.open .phase-chev{transform:rotate(90deg)}
+.phase-card-body{display:none;padding:0 24px 24px;border-top:1px solid var(--line)}
+.phase-card.open .phase-card-body{display:block}
+.phase-card-body{padding-top:20px}
+
+/* ─── STEP LIST ─── */
+.step-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.step-item{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:var(--paper);border-radius:8px;font-size:13.5px;border:1px solid transparent}
+.step-item:hover{border-color:var(--line);background:var(--surface)}
+.step-num{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--muted);min-width:22px;padding-top:2px}
+.step-text{flex:1;line-height:1.5}
+.step-text code{font-family:var(--mono);font-size:12px;background:var(--cream);padding:1px 5px;border-radius:3px;color:var(--accent2)}
+.step-file{font-family:var(--mono);font-size:10px;padding:2px 8px;border-radius:4px;background:var(--cream);color:var(--muted);margin-left:auto;white-space:nowrap;flex-shrink:0;align-self:center}
+
+/* ─── FILE TREE ─── */
+.file-tree{background:var(--ink);color:#e8e3da;font-family:var(--mono);font-size:12.5px;line-height:2;padding:28px 32px;border-radius:14px;margin:16px 0;overflow-x:auto}
+.ft-dir{color:#82aaff;font-weight:500}
+.ft-html{color:#ff9580}
+.ft-css{color:#82d9ff}
+.ft-js{color:#f7c948}
+.ft-json{color:#c3e88d}
+.ft-note{color:#546e7a;font-size:11px}
+.ft-indent1{padding-left:20px}
+.ft-indent2{padding-left:40px}
+.ft-indent3{padding-left:60px}
+
+/* ─── SITEMAP ─── */
+.sitemap{margin:20px 0;overflow-x:auto;padding-bottom:8px}
+.sitemap-row{display:flex;align-items:flex-start;gap:0;position:relative;margin-bottom:0}
+.sitemap-row+.sitemap-row{margin-top:24px}
+.sitemap-levels{display:flex;flex-direction:column;gap:24px}
+.sitemap-node{border:2px solid var(--line);border-radius:10px;background:var(--surface);padding:12px 18px;min-width:160px;position:relative;transition:all .2s}
+.sitemap-node:hover{border-color:var(--accent);box-shadow:0 0 0 3px #e8500a20}
+.sitemap-node-label{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:-.2px}
+.sitemap-node-sub{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:2px}
+.sitemap-node.root{border-color:var(--accent);background:#fff4ef}
+.sitemap-node.root .sitemap-node-label{color:var(--accent)}
+.sitemap-node.lv2{border-color:var(--accent2);background:#eef2fd}
+.sitemap-node.lv2 .sitemap-node-label{color:var(--accent2)}
+.sitemap-node.lv3{border-color:#9333ea;background:#fdf4ff}
+.sitemap-node.lv3 .sitemap-node-label{color:#9333ea}
+.sitemap-node.lv4{border-color:var(--accent3);background:#f0fdf4}
+.sitemap-node.lv4 .sitemap-node-label{color:var(--accent3)}
+.sitemap-node.lv5{border-color:#c97c10;background:#fdf8ef}
+.sitemap-node.lv5 .sitemap-node-label{color:#c97c10}
+
+/* ─── FLOW DIAGRAM ─── */
+.flow{display:flex;align-items:center;gap:0;flex-wrap:wrap;margin:24px 0;gap:0}
+.flow-node{padding:12px 18px;border-radius:10px;font-size:13px;font-weight:600;font-family:var(--display);letter-spacing:-.2px;white-space:nowrap;border:2px solid transparent}
+.flow-arrow{font-size:14px;color:var(--muted);padding:0 6px;flex-shrink:0}
+.fn-orange{background:#fff4ef;border-color:var(--accent);color:var(--accent)}
+.fn-blue{background:#eef2fd;border-color:var(--accent2);color:var(--accent2)}
+.fn-purple{background:#fdf4ff;border-color:#9333ea;color:#9333ea}
+.fn-green{background:#f0fdf4;border-color:var(--accent3);color:var(--accent3)}
+.fn-gold{background:#fdf8ef;border-color:#c97c10;color:#c97c10}
+.fn-red{background:#fff0f0;border-color:#b91c1c;color:#b91c1c}
+
+/* ─── PAGE CARDS ─── */
+.page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:8px}
+.page-card{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;transition:all .2s}
+.page-card:hover{box-shadow:0 8px 28px rgba(0,0,0,.08);transform:translateY(-2px)}
+.page-card-top{padding:20px 22px 0;display:flex;align-items:flex-start;gap:12px}
+.page-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.page-card-name{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--muted)}
+.page-card-title{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.4px;margin-top:2px}
+.page-card-url{font-family:var(--mono);font-size:10px;background:var(--cream);padding:4px 10px;border-radius:20px;display:inline-block;margin:10px 22px 0;color:var(--muted)}
+
+/* ─── WIREFRAME ─── */
+.wireframe{background:var(--paper);border:1.5px dashed var(--line);border-radius:10px;padding:16px;margin:16px 22px 20px;font-size:12px}
+.wf-bar{background:var(--ink);height:28px;border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:6px;margin-bottom:8px}
+.wf-dot{width:8px;height:8px;border-radius:50%}
+.wf-row{display:flex;gap:6px;margin-bottom:6px}
+.wf-block{border-radius:5px;height:22px;flex:1;opacity:.15;background:var(--ink)}
+.wf-block.tall{height:60px}
+.wf-block.h40{height:40px}
+.wf-block.h50{height:50px}
+.wf-block.h80{height:80px}
+.wf-block.h100{height:100px}
+.wf-block.w30{flex:.3}
+.wf-block.w40{flex:.4}
+.wf-block.w50{flex:.5}
+.wf-block.w60{flex:.6}
+.wf-block.w70{flex:.7}
+.wf-block.w20{flex:.2}
+.wf-block.accent{background:var(--accent);opacity:.3}
+.wf-block.blue{background:var(--accent2);opacity:.3}
+.wf-block.green{background:var(--accent3);opacity:.3}
+.wf-block.solid{opacity:.06}
+.wf-label{font-family:var(--mono);font-size:9px;color:var(--muted);margin:6px 0 3px;text-transform:uppercase;letter-spacing:.5px}
+.wf-grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+.wf-grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:6px}
+.wf-grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-bottom:6px}
+
+/* ─── SECTION LIST ─── */
+.section-list{list-style:none;margin:12px 0}
+.section-list li{display:flex;align-items:flex-start;gap:10px;padding:8px 12px;border-radius:6px;font-size:13px}
+.section-list li:hover{background:var(--cream)}
+.section-list .snum{font-family:var(--mono);font-size:10px;color:var(--muted);min-width:26px;padding-top:2px}
+.section-list .stag{font-family:var(--mono);font-size:10px;padding:1px 7px;border-radius:3px;margin-left:auto;white-space:nowrap;flex-shrink:0}
+.tag-comp{background:#e8f4ff;color:#1a5bb5}
+.tag-local{background:#f0fdf4;color:#15803d}
+.tag-dyn{background:#fef2eb;color:#c94700}
+.tag-nav{background:#fdf4ff;color:#7e22ce}
+
+/* ─── COMPONENT GRID ─── */
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:8px}
+.comp-card{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;transition:all .15s}
+.comp-card:hover{border-color:var(--accent2);transform:translateY(-1px)}
+.comp-card-name{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:-.3px;margin-bottom:4px}
+.comp-card-file{font-family:var(--mono);font-size:10px;color:var(--accent2);margin-bottom:6px}
+.comp-card-desc{font-size:12px;color:var(--muted);line-height:1.45}
+.comp-card-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.comp-tag{font-family:var(--mono);font-size:9px;padding:2px 6px;border-radius:3px;background:var(--cream);color:var(--muted)}
+
+/* ─── DATA FLOW ─── */
+.data-flow-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.df-card{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:20px}
+.df-card-title{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:-.3px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.df-icon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.df-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.df-list li{font-family:var(--mono);font-size:11.5px;padding:7px 10px;background:var(--paper);border-radius:6px;color:var(--ink)}
+.df-list li span{color:var(--muted);display:block;font-size:10px;margin-top:1px}
+
+/* ─── TIPS ─── */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:8px}
+.tip-card{padding:16px 18px;border-radius:10px;border:1.5px solid;font-size:13px;line-height:1.5}
+.tip-card-title{font-family:var(--display);font-weight:700;font-size:14px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.tip-orange{background:#fff4ef;border-color:#fad4be;color:#5a2000}
+.tip-blue{background:#eef2fd;border-color:#c3d0f5;color:#1a2e6b}
+.tip-green{background:#f0fdf4;border-color:#bbf7d0;color:#052e16}
+.tip-red{background:#fff0f0;border-color:#fecaca;color:#450a0a}
+
+/* ─── DIVIDER ─── */
+.divider{height:1.5px;background:var(--line);margin:48px 0}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:700px){
+  .nav-tabs{display:none}
+  h1{font-size:38px}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hero-stat:nth-child(2){border-right:none}
+  .hero-stat:nth-child(3){border-top:1.5px solid var(--line)}
+  .hero-stat:nth-child(4){border-top:1.5px solid var(--line);border-right:none}
+  .data-flow-grid{grid-template-columns:1fr}
+  .page{padding:0 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Study<span>Vault</span></div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showTab('overview')">Overview</button>
+      <button class="nav-tab" onclick="showTab('sitemap')">Sitemap</button>
+      <button class="nav-tab" onclick="showTab('pages')">Pages</button>
+      <button class="nav-tab" onclick="showTab('components')">Components</button>
+      <button class="nav-tab" onclick="showTab('data')">Data & Storage</button>
+      <button class="nav-tab" onclick="showTab('build')">Build Roadmap</button>
+      <button class="nav-tab" onclick="showTab('tips')">Tips</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════
+     TAB 1: OVERVIEW
+═════════════════════════════════════ -->
+<div id="tab-overview" class="section active">
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-eyebrow">Full Project Roadmap — 100L · 2nd Semester</div>
+      <h1>StudyVault<em>UI Build Plan</em></h1>
+      <p class="hero-sub">Every page, navigation flow, component, and build step for your personal academic study website. HTML + CSS + Vanilla JS only. No frameworks.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num orange">6</div>
+          <div class="hero-stat-label">HTML Pages</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num blue">15</div>
+          <div class="hero-stat-label">Components</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num green">8</div>
+          <div class="hero-stat-label">JS Files</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num gold">8</div>
+          <div class="hero-stat-label">Build Phases</div>
+        </div>
+      </div>
+
+      <div class="hero-stack" style="margin-top:24px">
+        <span class="pill pill-html">HTML5</span>
+        <span class="pill pill-css">CSS3 + Variables</span>
+        <span class="pill pill-js">Vanilla JS ES6</span>
+        <span class="pill pill-ls">localStorage</span>
+        <span class="pill pill-tw">Tailwind CDN (optional)</span>
+        <span class="pill" style="border-color:#e8500a;color:#c94700;background:#fff4ef">Google Fonts</span>
+        <span class="pill">No Framework ✓</span>
+      </div>
+    </div>
+
+    <div class="section" style="display:block;padding:48px 0 0">
+
+      <!-- WHAT THIS IS -->
+      <span class="sec-label">What you're building</span>
+      <h2>Project in One Sentence</h2>
+      <p class="sec-desc">A personal study website with 6 pages that lets you navigate from a dashboard down to individual unit summaries across all 11 courses (162 units), track what you've reviewed, and take notes — all stored locally in your browser.</p>
+
+      <div class="divider"></div>
+
+      <!-- MAIN NAVIGATION FLOW -->
+      <span class="sec-label">Core user journey</span>
+      <h2>The Main Navigation Flow</h2>
+      <p class="sec-desc">Every page click follows this single linear path. Understanding this is the foundation of building the whole site.</p>
+
+      <div style="overflow-x:auto;padding-bottom:8px">
+        <div class="flow" style="gap:0;flex-wrap:nowrap;min-width:700px;margin-top:4px">
+          <div class="flow-node fn-orange">
+            🏠 index.html<br>
+            <small style="font-size:10px;font-weight:400">Dashboard</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node fn-blue">
+            level.html<br>
+            <small style="font-size:10px;font-weight:400">e.g. 100 Level</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node fn-purple">
+            semester.html<br>
+            <small style="font-size:10px;font-weight:400">e.g. 2nd Sem</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node fn-green">
+            course.html<br>
+            <small style="font-size:10px;font-weight:400">e.g. MTH101</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node fn-gold">
+            module.html<br>
+            <small style="font-size:10px;font-weight:400">e.g. Set Theory</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node fn-red">
+            unit.html<br>
+            <small style="font-size:10px;font-weight:400">Read + Review</small>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:20px 24px">
+        <h3 style="margin-bottom:12px;font-size:15px">How each page knows what to show</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6">Every page (except index.html) reads URL query parameters to know what data to load. When you click a Level card on the dashboard, it takes you to <code style="font-family:var(--mono);font-size:12px;background:var(--cream);padding:1px 5px;border-radius:3px">level.html?lid=100L</code>. When you click a course, it goes to <code style="font-family:var(--mono);font-size:12px;background:var(--cream);padding:1px 5px;border-radius:3px">course.html?cid=MTH101</code>. The JS on each page reads these params and renders the right data from your <code style="font-family:var(--mono);font-size:12px;background:var(--cream);padding:1px 5px;border-radius:3px">data.js</code>.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+          <code style="font-family:var(--mono);font-size:11px;background:#fff4ef;color:#c94700;padding:5px 10px;border-radius:6px;border:1px solid #fad4be">level.html?lid=100L</code>
+          <code style="font-family:var(--mono);font-size:11px;background:#eef2fd;color:#1a3da0;padding:5px 10px;border-radius:6px;border:1px solid #c3d0f5">semester.html?sid=100L_sem2</code>
+          <code style="font-family:var(--mono);font-size:11px;background:#fdf4ff;color:#7e22ce;padding:5px 10px;border-radius:6px;border:1px solid #ddd6fe">course.html?cid=MTH101</code>
+          <code style="font-family:var(--mono);font-size:11px;background:#f0fdf4;color:#15803d;padding:5px 10px;border-radius:6px;border:1px solid #bbf7d0">module.html?mid=MTH101_m1</code>
+          <code style="font-family:var(--mono);font-size:11px;background:#fdf8ef;color:#92400e;padding:5px 10px;border-radius:6px;border:1px solid #fcd34d">unit.html?uid=MTH101_m1_u1</code>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- FILE STRUCTURE -->
+      <span class="sec-label">Project files</span>
+      <h2>Complete File Structure</h2>
+      <p class="sec-desc">Create this exact folder structure before you write a single line of content. Get the scaffolding right first.</p>
+
+      <div class="file-tree">
+<span class="ft-dir">studyvault/</span>
+<span class="ft-indent1 ft-html">├── index.html         <span class="ft-note">← Dashboard / Home page</span></span>
+<span class="ft-indent1 ft-html">├── level.html         <span class="ft-note">← Shows semesters inside a level</span></span>
+<span class="ft-indent1 ft-html">├── semester.html      <span class="ft-note">← Shows courses inside a semester</span></span>
+<span class="ft-indent1 ft-html">├── course.html        <span class="ft-note">← Shows modules inside a course</span></span>
+<span class="ft-indent1 ft-html">├── module.html        <span class="ft-note">← Shows units inside a module</span></span>
+<span class="ft-indent1 ft-html">├── unit.html          <span class="ft-note">← Read summary, notes, mark reviewed</span></span>
+<span class="ft-indent1 ft-dir">│</span>
+<span class="ft-indent1 ft-dir">└── assets/</span>
+<span class="ft-indent2 ft-dir">├── css/</span>
+<span class="ft-indent3 ft-css">└── styles.css         <span class="ft-note">← CSS variables, dark mode, layout</span></span>
+<span class="ft-indent2 ft-dir">└── js/</span>
+<span class="ft-indent3 ft-js">├── data.js            <span class="ft-note">⭐ All course/module/unit data here</span></span>
+<span class="ft-indent3 ft-js">├── app.js             <span class="ft-note">← Shared utilities (theme, search, getParam)</span></span>
+<span class="ft-indent3 ft-js">├── dashboard.js       <span class="ft-note">← index.html logic</span></span>
+<span class="ft-indent3 ft-js">├── level.js           <span class="ft-note">← level.html logic</span></span>
+<span class="ft-indent3 ft-js">├── semester.js        <span class="ft-note">← semester.html logic</span></span>
+<span class="ft-indent3 ft-js">├── course.js          <span class="ft-note">← course.html logic</span></span>
+<span class="ft-indent3 ft-js">├── module.js          <span class="ft-note">← module.html logic</span></span>
+<span class="ft-indent3 ft-js">└── unit.js            <span class="ft-note">← unit.html logic</span></span>
+      </div>
+
+      <div style="background:#fff4ef;border:1.5px solid #fad4be;border-radius:10px;padding:16px 20px;margin-top:4px;font-size:13px">
+        <strong style="color:var(--accent)">Script loading order</strong> — every HTML file loads scripts in this exact order at the bottom of <code style="font-family:var(--mono);font-size:12px">&lt;body&gt;</code>:<br><br>
+        <code style="font-family:var(--mono);font-size:12px;background:var(--ink);color:#c3e88d;padding:10px 14px;border-radius:6px;display:block;line-height:2;margin-top:4px">&lt;script src="assets/js/data.js"&gt;&lt;/script&gt;<br>&lt;script src="assets/js/app.js"&gt;&lt;/script&gt;<br>&lt;script src="assets/js/dashboard.js"&gt;&lt;/script&gt;  &lt;!-- or the relevant page JS --&gt;</code>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 2: SITEMAP
+═════════════════════════════════════ -->
+<div id="tab-sitemap" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">Full site architecture</span>
+      <h2>Sitemap & Navigation Tree</h2>
+      <p class="sec-desc">Every page, what URL it lives at, and how it connects to other pages.</p>
+
+      <!-- VISUAL TREE -->
+      <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:32px;overflow-x:auto;margin-bottom:32px">
+
+        <!-- Row 1: Home -->
+        <div style="display:flex;justify-content:center;margin-bottom:20px">
+          <div class="sitemap-node root" style="text-align:center">
+            <div class="sitemap-node-label">🏠 index.html</div>
+            <div class="sitemap-node-sub">Dashboard · URL: /</div>
+          </div>
+        </div>
+
+        <!-- Connector line down -->
+        <div style="width:2px;height:24px;background:var(--line);margin:0 auto;margin-bottom:0"></div>
+
+        <!-- Row 2: Level (single node) -->
+        <div style="display:flex;justify-content:center;margin-bottom:0">
+          <div class="sitemap-node lv2" style="text-align:center">
+            <div class="sitemap-node-label">level.html</div>
+            <div class="sitemap-node-sub">?lid=100L · Shows 2 semester cards</div>
+          </div>
+        </div>
+
+        <div style="width:2px;height:24px;background:var(--line);margin:0 auto"></div>
+
+        <!-- Row 3: Semester (single node) -->
+        <div style="display:flex;justify-content:center">
+          <div class="sitemap-node lv3" style="text-align:center">
+            <div class="sitemap-node-label">semester.html</div>
+            <div class="sitemap-node-sub">?sid=100L_sem2 · Grid of course cards</div>
+          </div>
+        </div>
+
+        <div style="width:2px;height:24px;background:var(--line);margin:0 auto"></div>
+
+        <!-- Row 4: Courses (spread) -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:700px;margin:0 auto;position:relative">
+          <div style="position:absolute;top:0;left:12.5%;right:12.5%;height:0;border-top:2px solid var(--line);transform:translateY(-14px)"></div>
+          <div style="position:absolute;left:12.5%;width:1px;height:14px;background:var(--line);top:-14px"></div>
+          <div style="position:absolute;left:37.5%;width:1px;height:14px;background:var(--line);top:-14px"></div>
+          <div style="position:absolute;left:62.5%;width:1px;height:14px;background:var(--line);top:-14px"></div>
+          <div style="position:absolute;left:87.5%;width:1px;height:14px;background:var(--line);top:-14px"></div>
+          <div class="sitemap-node lv4" style="text-align:center">
+            <div class="sitemap-node-label">course.html</div>
+            <div class="sitemap-node-sub">?cid=CIT104</div>
+          </div>
+          <div class="sitemap-node lv4" style="text-align:center">
+            <div class="sitemap-node-label">course.html</div>
+            <div class="sitemap-node-sub">?cid=MTH101</div>
+          </div>
+          <div class="sitemap-node lv4" style="text-align:center">
+            <div class="sitemap-node-label">course.html</div>
+            <div class="sitemap-node-sub">?cid=PHY102</div>
+          </div>
+          <div class="sitemap-node lv4" style="text-align:center">
+            <div class="sitemap-node-label">course.html</div>
+            <div class="sitemap-node-sub">?cid=... ×11</div>
+          </div>
+        </div>
+
+        <div style="width:2px;height:24px;background:var(--line);margin:0 auto"></div>
+
+        <!-- Row 5: Module -->
+        <div style="display:flex;justify-content:center">
+          <div class="sitemap-node lv5" style="text-align:center">
+            <div class="sitemap-node-label">module.html</div>
+            <div class="sitemap-node-sub">?mid=MTH101_m1 · List of unit rows</div>
+          </div>
+        </div>
+
+        <div style="width:2px;height:24px;background:var(--line);margin:0 auto"></div>
+
+        <!-- Row 6: Unit -->
+        <div style="display:flex;justify-content:center">
+          <div class="sitemap-node" style="text-align:center;border-color:#b91c1c;background:#fff0f0">
+            <div class="sitemap-node-label" style="color:#b91c1c">unit.html</div>
+            <div class="sitemap-node-sub">?uid=MTH101_m1_u1 · Core reading page</div>
+          </div>
+        </div>
+
+        <!-- Second path: Search -->
+        <div style="margin-top:36px;padding-top:28px;border-top:1.5px dashed var(--line);display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <div style="font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--cream);padding:6px 12px;border-radius:6px">Shortcut via Search 🔍</div>
+          <div class="flow-arrow" style="font-size:20px">→</div>
+          <div class="sitemap-node" style="display:inline-block;background:#e6fff9;border-color:#0e7a60">
+            <div class="sitemap-node-label" style="color:#0e7a60">Search Overlay</div>
+            <div class="sitemap-node-sub">Modal over any page · Any key matches</div>
+          </div>
+          <div class="flow-arrow" style="font-size:20px">→</div>
+          <div style="font-family:var(--mono);font-size:11px;color:#b91c1c;background:#fff0f0;padding:6px 12px;border-radius:6px;border:1px solid #fecaca">→ unit.html directly</div>
+        </div>
+      </div>
+
+      <!-- PAGE URL SUMMARY TABLE -->
+      <span class="sec-label">All 6 pages at a glance</span>
+      <h2>Page URL Reference</h2>
+      <p class="sec-desc">Every page, what query param it reads, and what it renders.</p>
+
+      <div style="border:1.5px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px">
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;background:var(--cream);padding:10px 20px;font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;font-weight:600;border-bottom:1.5px solid var(--line)">
+          <span>File</span><span>URL Example</span><span>Reads Param</span><span>Renders</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;border-bottom:1px solid var(--line);align-items:center;background:var(--surface)">
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">index.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">/index.html</span>
+          <span style="color:var(--muted);font-size:12px">none</span>
+          <span style="font-size:12px">4 Level cards + progress + recent units</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;border-bottom:1px solid var(--line);align-items:center">
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent2)">level.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">?lid=100L</span>
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">lid</code>
+          <span style="font-size:12px">Semester cards for that level</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;border-bottom:1px solid var(--line);align-items:center;background:var(--surface)">
+          <code style="font-family:var(--mono);font-size:11px;color:#9333ea">semester.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">?sid=100L_sem2</span>
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">sid</code>
+          <span style="font-size:12px">Grid of 11 course cards</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;border-bottom:1px solid var(--line);align-items:center">
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent3)">course.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">?cid=MTH101</span>
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">cid</code>
+          <span style="font-size:12px">Module list + per-module progress</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;border-bottom:1px solid var(--line);align-items:center;background:var(--surface)">
+          <code style="font-family:var(--mono);font-size:11px;color:#c97c10">module.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">?mid=MTH101_m1</span>
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">mid</code>
+          <span style="font-size:12px">Unit rows with reviewed badges</span>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:0;padding:14px 20px;align-items:center">
+          <code style="font-family:var(--mono);font-size:11px;color:#b91c1c">unit.html</code>
+          <span style="color:var(--muted);font-family:var(--mono);font-size:11px">?uid=MTH101_m1_u1</span>
+          <code style="font-family:var(--mono);font-size:11px;color:var(--accent)">uid</code>
+          <span style="font-size:12px">Summary content + notes + reviewed toggle</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- SECONDARY FLOWS -->
+      <span class="sec-label">All navigation flows</span>
+      <h2>Every Way a User Can Navigate</h2>
+      <p class="sec-desc">There are 7 distinct user flows in this app. Build them in this order.</p>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:16px 20px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="font-family:var(--mono);font-size:10px;background:var(--accent);color:#fff;padding:3px 8px;border-radius:4px;font-weight:700">FLOW A</span>
+            <strong style="font-size:14px">Main Drill-Down (most used)</strong>
+          </div>
+          <div class="flow" style="flex-wrap:wrap;gap:4px">
+            <span class="flow-node fn-orange" style="padding:7px 12px;font-size:12px">Dashboard</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-blue" style="padding:7px 12px;font-size:12px">Level</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-purple" style="padding:7px 12px;font-size:12px">Semester</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-green" style="padding:7px 12px;font-size:12px">Course</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-gold" style="padding:7px 12px;font-size:12px">Module</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">Unit → Read + Review</span>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:16px 20px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="font-family:var(--mono);font-size:10px;background:var(--accent2);color:#fff;padding:3px 8px;border-radius:4px;font-weight:700">FLOW B</span>
+            <strong style="font-size:14px">Search Shortcut (skip drill-down)</strong>
+          </div>
+          <div class="flow" style="flex-wrap:wrap;gap:4px">
+            <span class="flow-node fn-orange" style="padding:7px 12px;font-size:12px">Any Page</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node" style="padding:7px 12px;font-size:12px;background:#e6fff9;border:2px solid #0e7a60;color:#0e7a60">Click 🔍 or press /</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node" style="padding:7px 12px;font-size:12px;background:#e6fff9;border:2px solid #0e7a60;color:#0e7a60">Search Overlay</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html directly</span>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:16px 20px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="font-family:var(--mono);font-size:10px;background:var(--accent3);color:#fff;padding:3px 8px;border-radius:4px;font-weight:700">FLOW C</span>
+            <strong style="font-size:14px">Breadcrumb Back-Navigation</strong>
+          </div>
+          <div class="flow" style="flex-wrap:wrap;gap:4px">
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html</span>
+            <span class="flow-arrow">→</span>
+            <span style="font-size:12px;color:var(--muted);padding:0 4px">click breadcrumb</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-gold" style="padding:7px 12px;font-size:12px">module.html</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-green" style="padding:7px 12px;font-size:12px">course.html</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-orange" style="padding:7px 12px;font-size:12px">...</span>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:16px 20px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="font-family:var(--mono);font-size:10px;background:#c97c10;color:#fff;padding:3px 8px;border-radius:4px;font-weight:700">FLOW D</span>
+            <strong style="font-size:14px">Prev / Next Unit (same module)</strong>
+          </div>
+          <div class="flow" style="flex-wrap:wrap;gap:4px">
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html (Unit 1)</span>
+            <span class="flow-arrow">→</span>
+            <span style="font-size:12px;color:var(--muted);padding:0 4px">click Next →</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html (Unit 2)</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html (Unit 3)</span>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:16px 20px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <span style="font-family:var(--mono);font-size:10px;background:#7c3aed;color:#fff;padding:3px 8px;border-radius:4px;font-weight:700">FLOW E</span>
+            <strong style="font-size:14px">Add Summary via VS Code</strong>
+          </div>
+          <div class="flow" style="flex-wrap:wrap;gap:4px">
+            <span class="flow-node fn-blue" style="padding:7px 12px;font-size:12px">data.js in VS Code</span>
+            <span class="flow-arrow">→</span>
+            <span style="font-size:12px;color:var(--muted);padding:0 4px">paste summary into unit</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-green" style="padding:7px 12px;font-size:12px">Save file</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-node fn-red" style="padding:7px 12px;font-size:12px">unit.html auto-shows it</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 3: PAGES
+═════════════════════════════════════ -->
+<div id="tab-pages" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">All 6 pages</span>
+      <h2>Page-by-Page UI Plan</h2>
+      <p class="sec-desc">What every page contains, how it looks, and what each section does. Build them in order: index → level → semester → course → module → unit.</p>
+
+      <div class="page-grid">
+
+        <!-- index.html -->
+        <div class="page-card">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#fff4ef">🏠</div>
+            <div>
+              <div class="page-card-name">index.html</div>
+              <div class="page-card-title">Dashboard</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: /index.html (no params)</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Navbar</div>
+            <div class="wf-row"><div class="wf-block w20 accent"></div><div class="wf-block w60"></div><div class="wf-block w20 blue"></div></div>
+            <div class="wf-label">Welcome + Global Progress Bar</div>
+            <div class="wf-row"><div class="wf-block h50 accent"></div></div>
+            <div class="wf-label">Level Cards (4 cards)</div>
+            <div class="wf-grid4"><div class="wf-block h80"></div><div class="wf-block h80" style="opacity:.1"></div><div class="wf-block h80" style="opacity:.07"></div><div class="wf-block h80" style="opacity:.05"></div></div>
+            <div class="wf-label">Currently Studying Highlight</div>
+            <div class="wf-row"><div class="wf-block h40 green"></div></div>
+            <div class="wf-label">Recent Units (last 5)</div>
+            <div class="wf-row"><div class="wf-block h100 solid"></div></div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Sticky Navbar with logo, search icon, theme toggle<span class="stag tag-comp">component</span></li>
+              <li><span class="snum">2</span>Welcome message + overall progress bar (reviewed / 162 units)<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>4 Level cards grid (100L, 200L, 300L, 400L) — show overall % each<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">4</span>"Currently Studying" highlight — shows active semester<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">5</span>Recent Units (last 5 visited, stored in localStorage)<span class="stag tag-local">localStorage</span></li>
+              <li><span class="snum">6</span>Footer with site name and unit count<span class="stag tag-comp">component</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- level.html -->
+        <div class="page-card">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#eef2fd">📚</div>
+            <div>
+              <div class="page-card-name">level.html</div>
+              <div class="page-card-title">Level Overview</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: level.html?lid=100L</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Breadcrumb</div>
+            <div class="wf-row"><div class="wf-block w60 solid"></div></div>
+            <div class="wf-label">Level Header</div>
+            <div class="wf-row"><div class="wf-block h50 blue"></div></div>
+            <div class="wf-label">2 Semester Cards</div>
+            <div class="wf-grid2"><div class="wf-block h100"></div><div class="wf-block h100" style="opacity:.08"></div></div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Breadcrumb: Home › 100 Level<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">2</span>Level header: big title "100 Level" + total progress<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>2 Semester cards side by side (1st Sem, 2nd Sem)<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">4</span>Each card shows: semester name, course count, progress bar<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">5</span>Click card → semester.html?sid=100L_sem2<span class="stag tag-nav">nav</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- semester.html -->
+        <div class="page-card">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#fdf4ff">🗂️</div>
+            <div>
+              <div class="page-card-name">semester.html</div>
+              <div class="page-card-title">Semester Overview</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: semester.html?sid=100L_sem2</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Breadcrumb</div>
+            <div class="wf-row"><div class="wf-block w70 solid"></div></div>
+            <div class="wf-label">Semester Header + Overall Progress</div>
+            <div class="wf-row"><div class="wf-block h40 accent"></div></div>
+            <div class="wf-label">11 Course Cards Grid</div>
+            <div class="wf-grid3"><div class="wf-block h60"></div><div class="wf-block h60" style="opacity:.12"></div><div class="wf-block h60" style="opacity:.09"></div></div>
+            <div class="wf-grid3"><div class="wf-block h60" style="opacity:.07"></div><div class="wf-block h60" style="opacity:.06"></div><div class="wf-block h60" style="opacity:.05"></div></div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Breadcrumb: Home › 100L › 2nd Semester<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">2</span>Semester header + summary progress bar<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>Responsive grid of course cards (3 cols on desktop)<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">4</span>Each card: course code badge, title, module count, mini progress bar<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">5</span>Click card → course.html?cid=MTH101<span class="stag tag-nav">nav</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- course.html -->
+        <div class="page-card">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#f0fdf4">📖</div>
+            <div>
+              <div class="page-card-name">course.html</div>
+              <div class="page-card-title">Course Detail</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: course.html?cid=MTH101</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Breadcrumb</div>
+            <div class="wf-row"><div class="wf-block w80 solid"></div></div>
+            <div class="wf-label">Course Header + Progress Bar</div>
+            <div class="wf-row"><div class="wf-block h50 green"></div></div>
+            <div class="wf-label">Module List (rows)</div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <div class="wf-block h40"></div>
+              <div class="wf-block h40" style="opacity:.1"></div>
+              <div class="wf-block h40" style="opacity:.07"></div>
+            </div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Breadcrumb: Home › 100L › 2nd Sem › MTH101<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">2</span>Course code badge + full title + unit count stat<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>Full-width progress bar (X / Y units reviewed)<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">4</span>Module rows list with module title + unit count + mini progress<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">5</span>Click module row → module.html?mid=MTH101_m1<span class="stag tag-nav">nav</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- module.html -->
+        <div class="page-card">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#fdf8ef">📑</div>
+            <div>
+              <div class="page-card-name">module.html</div>
+              <div class="page-card-title">Module Detail</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: module.html?mid=MTH101_m1</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Breadcrumb</div>
+            <div class="wf-row"><div class="wf-block solid"></div></div>
+            <div class="wf-label">Module Header</div>
+            <div class="wf-row"><div class="wf-block h40 accent" style="opacity:.2"></div></div>
+            <div class="wf-label">Unit List (clickable rows with badges)</div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <div class="wf-row"><div class="wf-block h40"></div><div class="wf-block w20 green h40"></div></div>
+              <div class="wf-row"><div class="wf-block h40" style="opacity:.1"></div><div class="wf-block w20 h40" style="opacity:.04"></div></div>
+              <div class="wf-row"><div class="wf-block h40" style="opacity:.07"></div><div class="wf-block w20 h40" style="opacity:.04"></div></div>
+            </div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Full breadcrumb: Home › 100L › Sem2 › MTH101 › Module 1<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">2</span>Module header: module title + module progress<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>Unit list rows — each shows unit number + title<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">4</span>Green ✓ "Reviewed" badge on reviewed units<span class="stag tag-local">localStorage</span></li>
+              <li><span class="snum">5</span>Grey ○ "Not reviewed" indicator on unreviewed ones<span class="stag tag-local">localStorage</span></li>
+              <li><span class="snum">6</span>Click unit row → unit.html?uid=MTH101_m1_u1<span class="stag tag-nav">nav</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- unit.html -->
+        <div class="page-card" style="border-color:var(--accent)">
+          <div class="page-card-top">
+            <div class="page-icon" style="background:#fff4ef">⭐</div>
+            <div>
+              <div class="page-card-name" style="color:var(--accent)">unit.html — CORE PAGE</div>
+              <div class="page-card-title">Unit Reading</div>
+            </div>
+          </div>
+          <div class="page-card-url">URL: unit.html?uid=MTH101_m1_u1</div>
+          <div class="wireframe">
+            <div class="wf-bar"><div class="wf-dot" style="background:#ff5f57"></div><div class="wf-dot" style="background:#ffbd2e"></div><div class="wf-dot" style="background:#28c840"></div></div>
+            <div class="wf-label">Breadcrumb + Reviewed Toggle</div>
+            <div class="wf-row"><div class="wf-block w70 solid"></div><div class="wf-block w30 green"></div></div>
+            <div class="wf-label">Unit Title + Meta</div>
+            <div class="wf-row"><div class="wf-block h50 accent"></div></div>
+            <div class="wf-label">Summary Content Area</div>
+            <div class="wf-row"><div class="wf-block h100 solid"></div></div>
+            <div class="wf-label">Notes Panel</div>
+            <div class="wf-row"><div class="wf-block h60 blue"></div></div>
+            <div class="wf-label">Prev / Next Navigation</div>
+            <div class="wf-row"><div class="wf-block w30"></div><div class="wf-block w40 solid"></div><div class="wf-block w30 accent"></div></div>
+          </div>
+          <div style="padding:0 22px 20px">
+            <ul class="section-list">
+              <li><span class="snum">1</span>Breadcrumb with full path back to home<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">2</span>Unit title, module name, course code<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">3</span>"Mark as Reviewed" toggle button (green when on)<span class="stag tag-local">localStorage</span></li>
+              <li><span class="snum">4</span>Summary content area (renders unit.summary from data.js)<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">5</span>"No summary yet" placeholder if summary is empty<span class="stag tag-dyn">dynamic</span></li>
+              <li><span class="snum">6</span>Notes panel — textarea, Save button, persists per unit<span class="stag tag-local">localStorage</span></li>
+              <li><span class="snum">7</span>Prev / Next buttons within same module<span class="stag tag-nav">nav</span></li>
+              <li><span class="snum">8</span>← Back to Module link<span class="stag tag-nav">nav</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 4: COMPONENTS
+═════════════════════════════════════ -->
+<div id="tab-components" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">Reusable building blocks</span>
+      <h2>15 UI Components</h2>
+      <p class="sec-desc">Build each component once as a JavaScript function that returns HTML. Then call it from each page's JS file. This is how you avoid repeating code.</p>
+
+      <div class="comp-grid">
+
+        <div class="comp-card">
+          <div class="comp-card-name">Navbar</div>
+          <div class="comp-card-file">app.js → renderNavbar()</div>
+          <div class="comp-card-desc">Sticky top bar with logo on left, search icon + theme toggle on right. Injected at top of every &lt;body&gt;.</div>
+          <div class="comp-card-tags"><span class="comp-tag">every page</span><span class="comp-tag">sticky</span><span class="comp-tag">position:sticky</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">Breadcrumb</div>
+          <div class="comp-card-file">app.js → renderBreadcrumb(items[])</div>
+          <div class="comp-card-desc">Takes an array like [{label:'Home', url:'/'}, {label:'MTH101', url:'...'}] and renders a clickable trail. Each item is an &lt;a&gt; tag except the last.</div>
+          <div class="comp-card-tags"><span class="comp-tag">all pages except home</span><span class="comp-tag">array-driven</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">ProgressBar</div>
+          <div class="comp-card-file">app.js → renderProgress(reviewed, total)</div>
+          <div class="comp-card-desc">Full-width bar. Green when ≥80%, amber when ≥40%, grey otherwise. Shows "12 / 19 units reviewed" text below. Reused everywhere.</div>
+          <div class="comp-card-tags"><span class="comp-tag">all pages</span><span class="comp-tag">color states</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">LevelCard</div>
+          <div class="comp-card-file">dashboard.js → renderLevelCard(level)</div>
+          <div class="comp-card-desc">Large card on home page. Shows level label (100L), total units, progress bar, and semester count. Click → level.html?lid=100L.</div>
+          <div class="comp-card-tags"><span class="comp-tag">index.html only</span><span class="comp-tag">4 instances</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">SemesterCard</div>
+          <div class="comp-card-file">level.js → renderSemesterCard(sem)</div>
+          <div class="comp-card-desc">Medium card. Shows semester name, course count, total units and progress. Click → semester.html?sid=...</div>
+          <div class="comp-card-tags"><span class="comp-tag">level.html</span><span class="comp-tag">2 instances</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">CourseCard</div>
+          <div class="comp-card-file">semester.js → renderCourseCard(course)</div>
+          <div class="comp-card-desc">Grid card. Shows course code badge, full title, module + unit counts, mini progress bar. Click → course.html?cid=...</div>
+          <div class="comp-card-tags"><span class="comp-tag">semester.html</span><span class="comp-tag">11 instances</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">ModuleRow</div>
+          <div class="comp-card-file">course.js → renderModuleRow(module)</div>
+          <div class="comp-card-desc">A list row showing module number, module title, unit count, and mini progress. Click → module.html?mid=...</div>
+          <div class="comp-card-tags"><span class="comp-tag">course.html</span><span class="comp-tag">list item</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">UnitRow</div>
+          <div class="comp-card-file">module.js → renderUnitRow(unit)</div>
+          <div class="comp-card-desc">A list row with unit number, title, and a green "Reviewed ✓" badge if isReviewed(uid) is true. Click → unit.html?uid=...</div>
+          <div class="comp-card-tags"><span class="comp-tag">module.html</span><span class="comp-tag">localStorage read</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">ReviewedToggle</div>
+          <div class="comp-card-file">unit.js → renderReviewedToggle(uid)</div>
+          <div class="comp-card-desc">Button on unit.html. When clicked it calls markReviewed(uid, true/false) and toggles its own color/label. Progress bars everywhere update next visit.</div>
+          <div class="comp-card-tags"><span class="comp-tag">unit.html</span><span class="comp-tag">localStorage write</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">NotesPanel</div>
+          <div class="comp-card-file">unit.js → renderNotesPanel(uid)</div>
+          <div class="comp-card-desc">Textarea showing getNote(uid). Has a Save button that calls saveNote(uid, text). Also shows a "Saved!" confirmation for 2 seconds.</div>
+          <div class="comp-card-tags"><span class="comp-tag">unit.html</span><span class="comp-tag">localStorage rw</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">SearchOverlay</div>
+          <div class="comp-card-file">app.js → openSearch() / closeSearch()</div>
+          <div class="comp-card-desc">Full-screen modal. Input field calls searchAll(query) on every keystroke. Shows matching unit rows. Escape or ✕ closes it. Click result → unit.html.</div>
+          <div class="comp-card-tags"><span class="comp-tag">all pages</span><span class="comp-tag">keyboard /</span><span class="comp-tag">modal</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">DarkModeToggle</div>
+          <div class="comp-card-file">app.js → toggleTheme()</div>
+          <div class="comp-card-desc">☀/🌙 button in navbar. Adds data-theme="dark" to &lt;html&gt;. All colors change via CSS variables. Theme saved to localStorage["theme"].</div>
+          <div class="comp-card-tags"><span class="comp-tag">navbar</span><span class="comp-tag">CSS vars</span><span class="comp-tag">localStorage</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">SummaryContent</div>
+          <div class="comp-card-file">unit.js → renderSummary(unit)</div>
+          <div class="comp-card-desc">Styled article container. Renders unit.summary as innerHTML if it exists. If empty string, shows a styled placeholder card "No summary yet — paste one into data.js".</div>
+          <div class="comp-card-tags"><span class="comp-tag">unit.html</span><span class="comp-tag">innerHTML</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">PrevNextNav</div>
+          <div class="comp-card-file">unit.js → renderPrevNext(uid)</div>
+          <div class="comp-card-desc">Two buttons at bottom of unit page. Finds current unit's position in module.units array and links to adjacent units. Disables if first/last unit.</div>
+          <div class="comp-card-tags"><span class="comp-tag">unit.html</span><span class="comp-tag">array indexing</span></div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-card-name">StatBadge</div>
+          <div class="comp-card-file">app.js → renderStatBadge(label, value)</div>
+          <div class="comp-card-desc">Small pill that shows "19 units" or "7 modules". Used as decorative metadata on cards and headers. A simple span with styles.</div>
+          <div class="comp-card-tags"><span class="comp-tag">multiple pages</span><span class="comp-tag">inline display</span></div>
+        </div>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- HOW TO BUILD A COMPONENT -->
+      <span class="sec-label">Pattern to follow</span>
+      <h2>How to Build Every Component</h2>
+      <p class="sec-desc">All components follow this same pattern — a function that takes data, returns an HTML string, and is injected into a container div.</p>
+
+      <div style="background:var(--ink);color:#e8e3da;font-family:var(--mono);font-size:12.5px;line-height:1.9;padding:28px 32px;border-radius:14px;overflow-x:auto">
+<span style="color:#546e7a">// 1. In app.js or the page-specific JS file:</span>
+<span style="color:#c792ea">function</span> <span style="color:#82aaff">renderProgressBar</span>(reviewed, total) {
+  <span style="color:#c792ea">const</span> pct = total ? Math.round((reviewed / total) * <span style="color:#f78c6c">100</span>) : <span style="color:#f78c6c">0</span>;
+  <span style="color:#c792ea">const</span> color = pct >= <span style="color:#f78c6c">80</span> ? <span style="color:#c3e88d">'green'</span> : pct >= <span style="color:#f78c6c">40</span> ? <span style="color:#c3e88d">'amber'</span> : <span style="color:#c3e88d">'grey'</span>;
+  <span style="color:#c792ea">return</span> <span style="color:#c3e88d">`
+    &lt;div class="progress-wrap"&gt;
+      &lt;div class="progress-bar ${color}" style="width:${pct}%"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class="progress-label"&gt;${reviewed} / ${total} units reviewed&lt;/p&gt;
+  `</span>;
+}
+
+<span style="color:#546e7a">// 2. In HTML, create a container with an id:</span>
+<span style="color:#ff9580">&lt;div id="course-progress"&gt;&lt;/div&gt;</span>
+
+<span style="color:#546e7a">// 3. In the page's JS file, inject it:</span>
+<span style="color:#c792ea">const</span> prog = <span style="color:#82aaff">getCourseProgress</span>(course);
+document.<span style="color:#82aaff">getElementById</span>(<span style="color:#c3e88d">'course-progress'</span>).innerHTML =
+  <span style="color:#82aaff">renderProgressBar</span>(prog.reviewed, prog.total);
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 5: DATA & STORAGE
+═════════════════════════════════════ -->
+<div id="tab-data" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">Where everything lives</span>
+      <h2>Data & Storage Strategy</h2>
+      <p class="sec-desc">Your app has two types of data. Understanding the difference is critical before you write any code.</p>
+
+      <div class="data-flow-grid">
+        <div class="df-card" style="border-color:#c97c10">
+          <div class="df-card-title">
+            <div class="df-icon" style="background:#fdf8ef;font-size:16px">📄</div>
+            data.js — Static Content
+          </div>
+          <p style="font-size:13px;color:var(--muted);margin-bottom:14px">Permanent academic content. You edit this file in VS Code when you want to add or update summaries. Never changes at runtime.</p>
+          <ul class="df-list">
+            <li>Level IDs, labels, semester structure<span>Fixed forever — 100L, 200L, 300L, 400L</span></li>
+            <li>All 11 course IDs, codes, titles<span>CIT104, MTH101, PHY102 etc.</span></li>
+            <li>All 46 module IDs and titles<span>MTH101_m1 "Set Theory" etc.</span></li>
+            <li>All 162 unit IDs and titles<span>MTH101_m1_u1 "Elementary Sets Theory"</span></li>
+            <li>Unit summaries (summary: "...")<span>You paste ChatGPT summaries here over time</span></li>
+          </ul>
+        </div>
+        <div class="df-card" style="border-color:var(--accent3)">
+          <div class="df-card-title">
+            <div class="df-icon" style="background:#f0fdf4;font-size:16px">💾</div>
+            localStorage — User Data
+          </div>
+          <p style="font-size:13px;color:var(--muted);margin-bottom:14px">Your personal interactions with the site. Stored automatically by the browser. Persists across sessions. Never touches data.js.</p>
+          <ul class="df-list">
+            <li>reviewed_MTH101_m1_u1 = "true"<span>One key per unit — did you review it?</span></li>
+            <li>note_MTH101_m1_u1 = "My note here"<span>One key per unit — your personal notes</span></li>
+            <li>theme = "dark" or "light"<span>Your preferred color theme</span></li>
+            <li>recent_units = JSON array<span>Last 5 unit IDs you visited (for dashboard)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <span class="sec-label">localStorage key naming</span>
+      <h2>localStorage Key Convention</h2>
+      <p class="sec-desc">Use this exact pattern for every key so your JS functions work correctly.</p>
+
+      <div style="background:var(--ink);color:#e8e3da;font-family:var(--mono);font-size:13px;line-height:2.2;padding:28px 32px;border-radius:14px;overflow-x:auto;margin-bottom:24px">
+<span style="color:#546e7a">// KEY FORMAT            EXAMPLE VALUE       PURPOSE</span>
+<span style="color:#c3e88d">"theme"</span>                <span style="color:#f78c6c">"dark"</span>              <span style="color:#546e7a">// light or dark mode</span>
+<span style="color:#c3e88d">"reviewed_{unitId}"</span>   <span style="color:#f78c6c">"true"</span>              <span style="color:#546e7a">// e.g. reviewed_MTH101_m1_u1</span>
+<span style="color:#c3e88d">"note_{unitId}"</span>       <span style="color:#f78c6c">"Notes text here"</span>   <span style="color:#546e7a">// e.g. note_GST102_m4_u3</span>
+<span style="color:#c3e88d">"recent_units"</span>        <span style="color:#f78c6c">'["uid1","uid2"]'</span>   <span style="color:#546e7a">// JSON array of last 5 visited</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <span class="sec-label">CSS custom properties</span>
+      <h2>CSS Variables for Dark Mode</h2>
+      <p class="sec-desc">Put all colors as CSS variables in styles.css. Dark mode is then just one attribute toggle — no extra classes needed anywhere.</p>
+
+      <div style="background:var(--ink);color:#e8e3da;font-family:var(--mono);font-size:12.5px;line-height:2;padding:28px 32px;border-radius:14px;overflow-x:auto">
+<span style="color:#546e7a">/* assets/css/styles.css */</span>
+
+<span style="color:#82aaff">:root</span> {
+  <span style="color:#80cbc4">--bg</span>:           <span style="color:#f78c6c">#f7f4ef</span>;     <span style="color:#546e7a">/* page background */</span>
+  <span style="color:#80cbc4">--surface</span>:      <span style="color:#f78c6c">#ffffff</span>;     <span style="color:#546e7a">/* card/component background */</span>
+  <span style="color:#80cbc4">--border</span>:       <span style="color:#f78c6c">#e0dbd2</span>;     <span style="color:#546e7a">/* borders and dividers */</span>
+  <span style="color:#80cbc4">--text</span>:         <span style="color:#f78c6c">#1a1714</span>;     <span style="color:#546e7a">/* main text */</span>
+  <span style="color:#80cbc4">--text-muted</span>:   <span style="color:#f78c6c">#7a7469</span>;     <span style="color:#546e7a">/* secondary/muted text */</span>
+  <span style="color:#80cbc4">--accent</span>:       <span style="color:#f78c6c">#2d5be3</span>;     <span style="color:#546e7a">/* primary blue accent */</span>
+  <span style="color:#80cbc4">--green</span>:        <span style="color:#f78c6c">#16a34a</span>;     <span style="color:#546e7a">/* reviewed / success */</span>
+  <span style="color:#80cbc4">--amber</span>:        <span style="color:#f78c6c">#d97706</span>;     <span style="color:#546e7a">/* in-progress warning */</span>
+}
+
+<span style="color:#c792ea">[data-theme="dark"]</span> {
+  <span style="color:#80cbc4">--bg</span>:           <span style="color:#f78c6c">#0f0e0c</span>;
+  <span style="color:#80cbc4">--surface</span>:      <span style="color:#f78c6c">#1c1a17</span>;
+  <span style="color:#80cbc4">--border</span>:       <span style="color:#f78c6c">#2e2b26</span>;
+  <span style="color:#80cbc4">--text</span>:         <span style="color:#f78c6c">#f0ece4</span>;
+  <span style="color:#80cbc4">--text-muted</span>:   <span style="color:#f78c6c">#7a7469</span>;
+  <span style="color:#80cbc4">--accent</span>:       <span style="color:#f78c6c">#5b8af5</span>;
+  <span style="color:#80cbc4">--green</span>:        <span style="color:#f78c6c">#22c55e</span>;
+  <span style="color:#80cbc4">--amber</span>:        <span style="color:#f78c6c">#fbbf24</span>;
+}
+
+<span style="color:#546e7a">/* Now use only var(--bg), var(--text) etc. everywhere —
+   dark mode is automatic when JS sets data-theme="dark" on &lt;html&gt; */</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 6: BUILD ROADMAP
+═════════════════════════════════════ -->
+<div id="tab-build" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">Step-by-step construction</span>
+      <h2>Complete Build Roadmap</h2>
+      <p class="sec-desc">8 phases. Build in this exact order. Never skip phases — each one depends on the previous. Estimated times assume you already understand HTML/CSS/JS.</p>
+
+      <!-- PHASE STRIP -->
+      <div class="phase-strip">
+        <div class="phase-item"><div class="phase-num">0</div><span class="phase-name">Project Setup</span><span class="phase-time">1–2 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">1</div><span class="phase-name">Data Layer</span><span class="phase-time">1 hr</span></div>
+        <div class="phase-item"><div class="phase-num">2</div><span class="phase-name">Shared Styles</span><span class="phase-time">2–3 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">3</div><span class="phase-name">Dashboard</span><span class="phase-time">3–4 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">4</div><span class="phase-name">Nav Chain</span><span class="phase-time">4–5 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">5</div><span class="phase-name">Unit Page</span><span class="phase-time">3–4 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">6</div><span class="phase-name">Search</span><span class="phase-time">2–3 hrs</span></div>
+        <div class="phase-item"><div class="phase-num">7</div><span class="phase-name">Polish</span><span class="phase-time">ongoing</span></div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:10px">
+
+        <!-- PHASE 0 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph0">0</div>
+            <div>
+              <div class="phase-card-title">Phase 0 — Project Setup</div>
+              <div class="phase-card-meta">Create all files · Verify Tailwind loads · Goal: zero errors</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#e8f4ff;color:#1a5bb5;padding:3px 10px;border-radius:4px">1–2 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">Create root folder <code>studyvault/</code> and open it in VS Code</span><span class="step-file">—</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Create all 6 HTML files: <code>index.html</code>, <code>level.html</code>, <code>semester.html</code>, <code>course.html</code>, <code>module.html</code>, <code>unit.html</code></span><span class="step-file">root/</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">Create folder <code>assets/css/</code> and file <code>styles.css</code> inside it</span><span class="step-file">assets/css/</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Create folder <code>assets/js/</code> and all 8 JS files: <code>data.js</code>, <code>app.js</code>, <code>dashboard.js</code>, <code>level.js</code>, <code>semester.js</code>, <code>course.js</code>, <code>module.js</code>, <code>unit.js</code></span><span class="step-file">assets/js/</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Add HTML boilerplate to all 6 HTML files. Include Tailwind CDN link in <code>&lt;head&gt;</code> and script tags at bottom of <code>&lt;body&gt;</code></span><span class="step-file">all HTML</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Install the <strong>Live Server</strong> extension in VS Code. Right-click <code>index.html</code> → Open with Live Server. Confirm it opens in browser.</span><span class="step-file">VS Code</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">In each HTML file, add <code>&lt;h1&gt;[PageName]&lt;/h1&gt;</code> placeholder so you can confirm the right page loads when you navigate.</span><span class="step-file">all HTML</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">Open browser DevTools → Console tab. Confirm no errors appear on any page.</span><span class="step-file">browser</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 1 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph1">1</div>
+            <div>
+              <div class="phase-card-title">Phase 1 — Data Layer</div>
+              <div class="phase-card-meta">Paste data.js · Verify in console · Goal: academicData is readable</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#fff8e6;color:#b37a00;padding:3px 10px;border-radius:4px">1 hr</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">Copy the complete <code>academicData</code> object from the data plan into <code>data.js</code></span><span class="step-file">data.js</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Copy all helper functions into <code>app.js</code>: <code>getParam()</code>, <code>getUnitById()</code>, <code>getCourseById()</code>, <code>getCourseProgress()</code>, <code>isReviewed()</code>, <code>markReviewed()</code>, <code>getNote()</code>, <code>saveNote()</code>, <code>loadTheme()</code>, <code>searchAll()</code></span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">In browser console on any page, type <code>academicData.levels[0].semesters[1].courses.length</code>. Should return <code>11</code>.</span><span class="step-file">console check</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Test: <code>getParam</code>, type in console: <code>searchAll("titration")</code> — should return CHM191 units.</span><span class="step-file">console check</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Add <code>loadTheme()</code> call at the very bottom of <code>app.js</code> so it runs on every page load.</span><span class="step-file">app.js</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 2 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph2">2</div>
+            <div>
+              <div class="phase-card-title">Phase 2 — Shared Styles & Components</div>
+              <div class="phase-card-meta">CSS variables · Navbar · Dark mode · Breadcrumb · ProgressBar</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#fef2eb;color:#c94700;padding:3px 10px;border-radius:4px">2–3 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">In <code>styles.css</code>, define all CSS variables in <code>:root</code> block: --bg, --surface, --border, --text, --text-muted, --accent, --green, --amber</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Add <code>[data-theme="dark"]</code> block with dark versions of all the same variables</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">Write <code>renderNavbar()</code> function in <code>app.js</code> — returns HTML string with logo, search icon button, theme toggle button</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">In <code>index.html</code>, add <code>&lt;div id="navbar"&gt;&lt;/div&gt;</code> at top of body. In <code>dashboard.js</code>, inject navbar: <code>document.getElementById('navbar').innerHTML = renderNavbar()</code></span><span class="step-file">index.html + dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Wire up the theme toggle button: add onclick to call <code>toggleTheme()</code>. Verify dark mode works.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Write <code>renderBreadcrumb(items)</code> function. Takes array of {label, url} objects. Last item has no link.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">Write <code>renderProgressBar(reviewed, total)</code> function with 3 color states (green/amber/grey).</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">Style all shared components in <code>styles.css</code>: navbar, breadcrumb, progress bar, cards base styles.</span><span class="step-file">styles.css</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 3 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph3">3</div>
+            <div>
+              <div class="phase-card-title">Phase 3 — Dashboard (index.html)</div>
+              <div class="phase-card-meta">Level cards · Overall progress · Recently visited units</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#f0fdf4;color:#15803d;padding:3px 10px;border-radius:4px">3–4 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">Build the full HTML structure in <code>index.html</code>: navbar container, welcome section, progress area, level cards grid, recent units section, footer.</span><span class="step-file">index.html</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">In <code>dashboard.js</code>, write <code>renderLevelCard(level)</code> — loops level data, calculates overall progress, returns card HTML.</span><span class="step-file">dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">Inject all 4 level cards into the grid container. Only 100L should look "active" — others can be dimmed.</span><span class="step-file">dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Call <code>getGlobalProgress()</code> and render the overall progress bar at the top.</span><span class="step-file">dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Make each level card a link: clicking "100 Level" card goes to <code>level.html?lid=100L</code>.</span><span class="step-file">dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Add "Recently Visited" section: read <code>localStorage["recent_units"]</code> (JSON array), render each unit as a row with link to unit.html. Show "No recent units yet" if empty.</span><span class="step-file">dashboard.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">Style the dashboard page in <code>styles.css</code>: grid layout, card hover effects, progress bar.</span><span class="step-file">styles.css</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph4">4</div>
+            <div>
+              <div class="phase-card-title">Phase 4 — Navigation Chain (level → semester → course → module)</div>
+              <div class="phase-card-meta">4 pages wired together with query params · Breadcrumbs working</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#fdf4ff;color:#7e22ce;padding:3px 10px;border-radius:4px">4–5 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text"><strong>level.html</strong>: In <code>level.js</code>, call <code>getParam('lid')</code>, find the level in <code>academicData</code>, render its 2 semester cards, inject breadcrumb "Home › 100 Level".</span><span class="step-file">level.html + level.js</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Semester card links: each card href = <code>semester.html?sid=100L_sem2</code></span><span class="step-file">level.js</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text"><strong>semester.html</strong>: In <code>semester.js</code>, call <code>getParam('sid')</code>, find matching semester, render all 11 course cards in a grid.</span><span class="step-file">semester.html + semester.js</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Add breadcrumb: "Home › 100 Level › 2nd Semester" — each part is a link except the last.</span><span class="step-file">semester.js</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text"><strong>course.html</strong>: In <code>course.js</code>, call <code>getParam('cid')</code>, find course, render header + progress bar + module rows list.</span><span class="step-file">course.html + course.js</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Each module row href = <code>module.html?mid=MTH101_m1</code></span><span class="step-file">course.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text"><strong>module.html</strong>: In <code>module.js</code>, call <code>getParam('mid')</code>, find module, render unit rows with reviewed badges.</span><span class="step-file">module.html + module.js</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">Each unit row: check <code>isReviewed(uid)</code> — show green ✓ badge if true.</span><span class="step-file">module.js</span></li>
+              <li class="step-item"><span class="step-num">09</span><span class="step-text">Each unit row href = <code>unit.html?uid=MTH101_m1_u1</code></span><span class="step-file">module.js</span></li>
+              <li class="step-item"><span class="step-num">10</span><span class="step-text">Test the full chain: Dashboard → 100L → 2nd Sem → MTH101 → Module 1 → confirm unit rows appear.</span><span class="step-file">browser test</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 5 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph5">5</div>
+            <div>
+              <div class="phase-card-title">Phase 5 — Unit Page (Core Reading Experience)</div>
+              <div class="phase-card-meta">Summary content · Reviewed toggle · Notes · Prev/Next</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#fff0f0;color:#b91c1c;padding:3px 10px;border-radius:4px">3–4 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">In <code>unit.js</code>, call <code>getParam('uid')</code>, then <code>getUnitById(uid)</code> to get unit + all its parent context.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Render the full breadcrumb: Home › 100L › 2nd Sem › MTH101 › Set Theory › [Unit Name]</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">Render unit title, course code badge, module name as the page header.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Write <code>renderReviewedToggle(uid)</code>. Check <code>isReviewed(uid)</code> for initial state. On click, call <code>markReviewed()</code> and update button appearance.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Write <code>renderSummary(unit)</code>. If <code>unit.summary</code> is non-empty, render it as innerHTML in a styled article. If empty, show a placeholder with instructions.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Write <code>renderNotesPanel(uid)</code>. Textarea pre-filled with <code>getNote(uid)</code>. Save button calls <code>saveNote(uid, textarea.value)</code>. Show "Saved ✓" for 2s.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">Write <code>renderPrevNext(uid)</code>. Find unit's index in <code>module.units</code>. Build prev/next links. Disable (grey out) if at start/end of module.</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">When unit.html loads, push uid to <code>localStorage["recent_units"]</code> array (keep only last 5).</span><span class="step-file">unit.js</span></li>
+              <li class="step-item"><span class="step-num">09</span><span class="step-text">Style the unit page: comfortable reading width (~680px), good font size (16–18px), generous line height for summary content.</span><span class="step-file">styles.css</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 6 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph6">6</div>
+            <div>
+              <div class="phase-card-title">Phase 6 — Global Search</div>
+              <div class="phase-card-meta">Search overlay · Real-time results · Keyboard navigation</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#e6fff9;color:#0e7a60;padding:3px 10px;border-radius:4px">2–3 hrs</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">In <code>index.html</code> (and all HTML files), add a hidden <code>&lt;div id="search-overlay"&gt;</code> at the top of the body with full-screen fixed positioning.</span><span class="step-file">all HTML files</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Inside overlay: input field, results container div, and close (✕) button.</span><span class="step-file">all HTML files</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">In <code>app.js</code>, write <code>openSearch()</code> — shows overlay, focuses input. Write <code>closeSearch()</code> — hides overlay, clears input.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Wire the navbar 🔍 icon to call <code>openSearch()</code>.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Add keyboard shortcut: <code>document.addEventListener('keydown', e =&gt; { if(e.key === '/') openSearch(); if(e.key === 'Escape') closeSearch(); })</code></span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">On input <code>oninput</code> event: call <code>searchAll(input.value)</code>, render results as a list. Each result shows unit title + course code + module name.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">Each result item is an <code>&lt;a href="unit.html?uid=..."&gt;</code> that also calls <code>closeSearch()</code>.</span><span class="step-file">app.js</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">Show "No results found" message when searchAll returns empty array.</span><span class="step-file">app.js</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PHASE 7 -->
+        <div class="phase-card">
+          <div class="phase-card-header" onclick="togglePhase(this)">
+            <div class="phase-badge ph7">7</div>
+            <div>
+              <div class="phase-card-title">Phase 7 — Polish, Transitions & Content</div>
+              <div class="phase-card-meta">Hover effects · Smooth transitions · Paste real summaries</div>
+            </div>
+            <span style="margin-left:auto;font-family:var(--mono);font-size:11px;background:#f0f7ff;color:#1a5bb5;padding:3px 10px;border-radius:4px">Ongoing</span>
+            <span class="phase-chev" style="margin-left:12px">▶</span>
+          </div>
+          <div class="phase-card-body">
+            <ul class="step-list">
+              <li class="step-item"><span class="step-num">01</span><span class="step-text">Add <code>transition: all 0.2s ease</code> to all cards, buttons, and interactive elements.</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">02</span><span class="step-text">Add hover states: cards lift slightly (<code>transform: translateY(-2px)</code> + shadow). Links change color. Buttons scale slightly.</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">03</span><span class="step-text">Add responsive breakpoints: on mobile, 2-col grids become 1-col. Navbar collapses. Progress bar font shrinks.</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">04</span><span class="step-text">Add page-load fade-in animation to main content areas. Simple <code>@keyframes fadeIn</code> + <code>animation: fadeIn 0.3s ease</code>.</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">05</span><span class="step-text">Test all 7 navigation flows end-to-end. Check breadcrumbs are correct on every page.</span><span class="step-file">browser test</span></li>
+              <li class="step-item"><span class="step-num">06</span><span class="step-text">Start pasting ChatGPT-generated unit summaries into <code>data.js</code> one at a time. Verify each one renders correctly on unit.html.</span><span class="step-file">data.js</span></li>
+              <li class="step-item"><span class="step-num">07</span><span class="step-text">Verify dark mode looks good on all 6 pages. Fix any colors that look wrong in dark mode.</span><span class="step-file">styles.css</span></li>
+              <li class="step-item"><span class="step-num">08</span><span class="step-text">Test localStorage: mark a unit as reviewed, refresh page — badge should still show. Add a note, refresh — note should persist.</span><span class="step-file">browser test</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     TAB 7: TIPS
+═════════════════════════════════════ -->
+<div id="tab-tips" class="section">
+  <div class="page">
+    <div style="padding-top:64px">
+      <span class="sec-label">Before you start coding</span>
+      <h2>Key Rules & Tips</h2>
+      <p class="sec-desc">Things that will save you hours of frustration. Read these once before you write any code.</p>
+
+      <div class="tips-grid">
+
+        <div class="tip-card tip-orange">
+          <div class="tip-card-title">⚠️ Script Order Matters</div>
+          Always load scripts in this order in every HTML file: <strong>data.js first</strong>, then app.js, then the page-specific JS. If you put dashboard.js before data.js, nothing will work because academicData won't exist yet.
+        </div>
+
+        <div class="tip-card tip-blue">
+          <div class="tip-card-title">💡 Build One Page at a Time</div>
+          Do NOT try to build all 6 pages at once. Fully complete index.html first. Then level.html. Then continue down the chain. If one page breaks, you'll know exactly which file caused it.
+        </div>
+
+        <div class="tip-card tip-green">
+          <div class="tip-card-title">✅ Console-First Debugging</div>
+          Keep browser DevTools open at all times. After every function you write, test it in the console before moving on. <code>getUnitById("MTH101_m1_u1")</code> should return an object, not undefined.
+        </div>
+
+        <div class="tip-card tip-red">
+          <div class="tip-card-title">🚫 Never Use innerHTML for User Input</div>
+          The Notes panel textarea content should be set with <code>textarea.value = text</code> not <code>innerHTML</code>. Only use innerHTML for content that comes from your own data.js file.
+        </div>
+
+        <div class="tip-card tip-orange">
+          <div class="tip-card-title">⚠️ Always Check for null</div>
+          Every page reads a URL param. If someone navigates to <code>course.html</code> with no <code>?cid=</code> param, <code>getParam('cid')</code> returns null. Always handle this: show a "Course not found" message instead of crashing.
+        </div>
+
+        <div class="tip-card tip-blue">
+          <div class="tip-card-title">💡 Summaries Can Be HTML</div>
+          The <code>summary: ""</code> field in data.js renders as innerHTML. So your ChatGPT summary can include <code>&lt;h3&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;p&gt;</code> tags for richer formatting inside unit.html.
+        </div>
+
+        <div class="tip-card tip-green">
+          <div class="tip-card-title">✅ Use Document Title for Navigation</div>
+          Set <code>document.title</code> dynamically in each page's JS. On unit.html it could be "Elementary Sets Theory — MTH101". This makes browser history and tabs readable.
+        </div>
+
+        <div class="tip-card tip-red">
+          <div class="tip-card-title">🚫 Don't Skip the Placeholder</div>
+          On unit.html, if <code>unit.summary === ""</code>, show a helpful placeholder: "No summary yet. Open data.js in VS Code and paste a summary into this unit's summary field." This prevents confusion.
+        </div>
+
+        <div class="tip-card tip-orange">
+          <div class="tip-card-title">⚠️ Mobile First for unit.html</div>
+          unit.html is the most-visited page. Make sure it reads well on your phone. Use a max-width of ~680px centered, 16–18px font for summary text, and large tap targets for buttons.
+        </div>
+
+        <div class="tip-card tip-blue">
+          <div class="tip-card-title">💡 Add Loading States</div>
+          Each page JS runs after DOM loads. Consider adding a brief CSS animation or fade-in so content doesn't "pop" into view. A simple <code>opacity: 0 → 1</code> transition on the main container looks professional.
+        </div>
+
+        <div class="tip-card tip-green">
+          <div class="tip-card-title">✅ Verified Build Order</div>
+          Phase 0 → 1 → 2 → 3 → 4 → 5 → 6 → 7. Do not skip. After each phase, verify in browser before moving to the next. This prevents mysterious bugs from accumulating.
+        </div>
+
+        <div class="tip-card tip-red">
+          <div class="tip-card-title">🚫 Don't Over-Engineer Early</div>
+          Build it simple first. Get it working first. Style it second. Search in Phase 6, not Phase 2. Dark mode in Phase 2, not Phase 7. Follow the order in the roadmap — it's sequenced deliberately.
+        </div>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- QUICK REFERENCE -->
+      <span class="sec-label">Cheat sheet</span>
+      <h2>Quick Reference — URL Params & IDs</h2>
+      <p class="sec-desc">The most important ID patterns to remember while building.</p>
+
+      <div style="background:var(--ink);color:#e8e3da;font-family:var(--mono);font-size:13px;line-height:2.5;padding:28px 32px;border-radius:14px;overflow-x:auto">
+<span style="color:#546e7a">// ─── LEVEL IDs ──────────────────────────</span>
+<span style="color:#c3e88d">"100L"</span>  <span style="color:#c3e88d">"200L"</span>  <span style="color:#c3e88d">"300L"</span>  <span style="color:#c3e88d">"400L"</span>
+
+<span style="color:#546e7a">// ─── SEMESTER IDs ───────────────────────</span>
+<span style="color:#c3e88d">"100L_sem1"</span>  <span style="color:#c3e88d">"100L_sem2"</span>
+
+<span style="color:#546e7a">// ─── COURSE IDs (all 11, 2nd semester) ──</span>
+<span style="color:#c3e88d">"CIT104"</span>  <span style="color:#c3e88d">"CIT108"</span>  <span style="color:#c3e88d">"CIT191"</span>  <span style="color:#c3e88d">"MTH101"</span>  <span style="color:#c3e88d">"MTH102"</span>
+<span style="color:#c3e88d">"PHY102"</span>  <span style="color:#c3e88d">"PHY191"</span>  <span style="color:#c3e88d">"CHM191"</span>  <span style="color:#c3e88d">"BIO191"</span>
+<span style="color:#c3e88d">"GST102"</span>  <span style="color:#c3e88d">"GST104"</span>
+
+<span style="color:#546e7a">// ─── MODULE ID PATTERN ──────────────────</span>
+<span style="color:#c3e88d">"{courseId}_m{moduleNumber}"</span>
+<span style="color:#546e7a">// e.g.:</span> <span style="color:#c3e88d">"MTH101_m1"</span>  <span style="color:#c3e88d">"CHM191_m2"</span>  <span style="color:#c3e88d">"GST104_m6"</span>
+
+<span style="color:#546e7a">// ─── UNIT ID PATTERN ────────────────────</span>
+<span style="color:#c3e88d">"{courseId}_m{moduleNum}_u{unitNum}"</span>
+<span style="color:#546e7a">// e.g.:</span> <span style="color:#c3e88d">"MTH101_m1_u1"</span>  <span style="color:#c3e88d">"GST102_m4_u3"</span>
+
+<span style="color:#546e7a">// ─── URL PATTERNS ───────────────────────</span>
+level.html<span style="color:#82aaff">?lid=</span><span style="color:#c3e88d">100L</span>
+semester.html<span style="color:#82aaff">?sid=</span><span style="color:#c3e88d">100L_sem2</span>
+course.html<span style="color:#82aaff">?cid=</span><span style="color:#c3e88d">MTH101</span>
+module.html<span style="color:#82aaff">?mid=</span><span style="color:#c3e88d">MTH101_m1</span>
+unit.html<span style="color:#82aaff">?uid=</span><span style="color:#c3e88d">MTH101_m1_u1</span>
+
+<span style="color:#546e7a">// ─── localStorage KEY PATTERNS ──────────</span>
+localStorage.<span style="color:#82aaff">getItem</span>(<span style="color:#c3e88d">`reviewed_${unitId}`</span>)
+localStorage.<span style="color:#82aaff">getItem</span>(<span style="color:#c3e88d">`note_${unitId}`</span>)
+localStorage.<span style="color:#82aaff">getItem</span>(<span style="color:#c3e88d">"theme"</span>)
+      </div>
+
+      <div style="height:64px"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  window.scrollTo({top: 0, behavior: 'instant'});
+}
+
+function togglePhase(header) {
+  header.closest('.phase-card').classList.toggle('open');
+}
+
+// Open all phases by default for first load
+document.addEventListener('DOMContentLoaded', () => {
+  // Keep closed by default - user opens them
+});
+</script>
+</body>
+</html>

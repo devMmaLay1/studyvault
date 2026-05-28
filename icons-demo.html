@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault — Icon System Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .icon-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 20px;
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        .icon-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        .icon-name {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            text-align: center;
+        }
+        .demo-section {
+            margin-bottom: 48px;
+        }
+        .demo-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <main class="container">
+        <div class="welcome-section">
+            <h1>Icon System Demo 🎨</h1>
+            <p class="welcome-text">Explore Lucide and Heroicons integration in StudyVault</p>
+        </div>
+
+        <!-- Size Variants -->
+        <div class="demo-section">
+            <h2>Icon Sizes</h2>
+            <div style="display: flex; align-items: center; gap: 24px;">
+                <div style="text-align: center;">
+                    <i data-lucide="star" class="icon-xs icon-accent"></i>
+                    <p class="icon-name">xs (14px)</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="star" class="icon-sm icon-accent"></i>
+                    <p class="icon-name">sm (16px)</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="star" class="icon-md icon-accent"></i>
+                    <p class="icon-name">md (20px)</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="star" class="icon-lg icon-accent"></i>
+                    <p class="icon-name">lg (24px)</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="star" class="icon-xl icon-accent"></i>
+                    <p class="icon-name">xl (32px)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Variants -->
+        <div class="demo-section">
+            <h2>Icon Colors</h2>
+            <div style="display: flex; align-items: center; gap: 24px;">
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-primary"></i>
+                    <p class="icon-name">primary</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-secondary"></i>
+                    <p class="icon-name">secondary</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-muted"></i>
+                    <p class="icon-name">muted</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-accent"></i>
+                    <p class="icon-name">accent</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-success"></i>
+                    <p class="icon-name">success</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="circle" class="icon-lg icon-warning"></i>
+                    <p class="icon-name">warning</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons with Icons -->
+        <div class="demo-section">
+            <h2>Buttons with Icons</h2>
+            <div class="demo-buttons">
+                <button class="btn btn-primary">
+                    <i data-lucide="save" class="icon-sm"></i>
+                    Save Changes
+                </button>
+                <button class="btn btn-secondary">
+                    <i data-lucide="download" class="icon-sm"></i>
+                    Download
+                </button>
+                <button class="btn btn-secondary">
+                    Next
+                    <i data-lucide="arrow-right" class="icon-sm"></i>
+                </button>
+                <button class="btn btn-secondary">
+                    <i data-lucide="arrow-left" class="icon-sm"></i>
+                    Back
+                </button>
+            </div>
+        </div>
+
+        <!-- Animations -->
+        <div class="demo-section">
+            <h2>Icon Animations</h2>
+            <div style="display: flex; align-items: center; gap: 32px;">
+                <div style="text-align: center;">
+                    <i data-lucide="loader" class="icon-xl icon-accent icon-spin"></i>
+                    <p class="icon-name">Spinning</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="bell" class="icon-xl icon-accent icon-pulse"></i>
+                    <p class="icon-name">Pulsing</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="arrow-up" class="icon-xl icon-accent icon-hover-lift"></i>
+                    <p class="icon-name">Hover Lift</p>
+                </div>
+                <div style="text-align: center;">
+                    <i data-lucide="settings" class="icon-xl icon-accent icon-hover-rotate"></i>
+                    <p class="icon-name">Hover Rotate</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Icons -->
+        <div class="demo-section">
+            <h2>Popular Icons</h2>
+            <div class="icon-showcase">
+                <div class="icon-item">
+                    <i data-lucide="home" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">home</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="book-open" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">book-open</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="graduation-cap" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">graduation-cap</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="check-circle" class="icon-xl icon-success"></i>
+                    <span class="icon-name">check-circle</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="x-circle" class="icon-xl icon-muted"></i>
+                    <span class="icon-name">x-circle</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="search" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">search</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="calendar" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">calendar</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="clock" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">clock</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="star" class="icon-xl icon-warning"></i>
+                    <span class="icon-name">star</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="heart" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">heart</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="file-text" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">file-text</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="pencil" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">pencil</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="trash" class="icon-xl icon-muted"></i>
+                    <span class="icon-name">trash</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="settings" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">settings</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="user" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">user</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="bell" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">bell</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="trending-up" class="icon-xl icon-success"></i>
+                    <span class="icon-name">trending-up</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="bar-chart-2" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">bar-chart-2</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="zap" class="icon-xl icon-warning"></i>
+                    <span class="icon-name">zap</span>
+                </div>
+                <div class="icon-item">
+                    <i data-lucide="target" class="icon-xl icon-accent"></i>
+                    <span class="icon-name">target</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Dashboard -->
+        <div style="text-align: center; padding: 40px 0;">
+            <a href="index.html" class="btn btn-secondary">
+                <i data-lucide="arrow-left" class="icon-sm"></i>
+                Back to Dashboard
+            </a>
+        </div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

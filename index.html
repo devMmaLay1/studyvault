@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyVault — Dashboard</title>
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#2d5be3">
+  <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Lucide Icons (local first, CDN fallback) -->
+  <script src="assets/js/lucide.minn.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/lucide@latest';document.head.appendChild(s)"></script>
+</head>
+<body>
+
+  <div id="navbar"></div>
+  
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="search-overlay">
+    <div class="search-container">
+      <div class="search-header">
+        <i data-lucide="search" class="icon-md icon-muted"></i>
+        <input type="text" id="search-input" class="search-input" placeholder="Search units, courses, modules... (Press / or Ctrl+K)" oninput="handleSearch(this.value)">
+        <button class="search-close" onclick="closeSearch()"><i data-lucide="x" class="icon-lg"></i></button>
+      </div>
+      <div id="search-results" class="search-results"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <div class="welcome-eyebrow">100L · 2nd Semester</div>
+      <h1>Welcome back! 👋</h1>
+      <p class="welcome-text">Track your progress across all courses and units.</p>
+    </div>
+
+    <!-- Global Progress -->
+    <div class="global-progress-card">
+      <h3>Overall Progress</h3>
+      <div id="global-progress"></div>
+      <div class="global-progress-actions">
+        <button id="resetProgressBtn" class="reset-progress-btn" type="button">Reset Progress</button>
+      </div>
+    </div>
+
+    <!-- Level Cards Grid -->
+    <div class="section-header">
+      <h2>Your Levels</h2>
+      <p class="text-muted">Select a level to view semesters and courses</p>
+    </div>
+    <div id="level-cards-grid" class="level-cards-grid"></div>
+
+    <!-- Currently Studying -->
+    <div id="currently-studying" class="currently-studying"></div>
+
+    <!-- Daily Study Queue -->
+    <div class="section-header mt-4">
+      <h2>Daily Study Queue</h2>
+      <p class="text-muted">Your top units for today: due first, then weak areas, then new units</p>
+    </div>
+    <div id="dailyQueue" class="daily-queue-list"></div>
+
+    <!-- Needs Revisiting -->
+    <div class="section-header mt-4">
+      <h2>Needs Revisiting</h2>
+      <p class="text-muted">Units due for recall based on confidence and last review time</p>
+    </div>
+    <div id="dueSection" class="due-list"></div>
+
+    <!-- Recent Units -->
+    <div class="section-header mt-4">
+      <h2>Recently Visited</h2>
+      <p class="text-muted">Quick access to your last 5 units</p>
+    </div>
+    <div id="recent-units-list" class="recent-units-list"></div>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+      <p>StudyVault · 162 units across 11 courses</p>
+    </footer>
+  </main>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

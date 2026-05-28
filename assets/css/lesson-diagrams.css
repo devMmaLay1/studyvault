@@ -1,0 +1,370 @@
+/* Flowchart diagrams for interactive lessons */
+
+/* Diagram area = always high-contrast "paper" (shapes stay light, text stays dark) */
+
+.lesson-diagram-wrap {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  overflow-x: auto;
+  color: #0f172a;
+}
+
+[data-theme="dark"] .lesson-diagram-wrap {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.lesson-diagram-caption {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .lesson-diagram-caption {
+  color: #1e293b;
+}
+
+.fc-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.fc-flow-horizontal {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fc-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 0.5rem 0.85rem;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+/* Terminator — oval */
+.fc-terminator {
+  background: #bfdbfe;
+  border: 2px solid #1d4ed8;
+  border-radius: 999px;
+  min-width: 88px;
+  min-height: 38px;
+  color: #1e3a8a;
+}
+
+/* Process — rectangle */
+.fc-process {
+  background: #c7d2fe;
+  border: 2px solid #4338ca;
+  border-radius: 4px;
+  min-width: 120px;
+  min-height: 42px;
+  color: #312e81;
+}
+
+/* Decision — diamond */
+.fc-decision-wrap {
+  width: 108px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.35rem 0;
+}
+
+.fc-decision {
+  width: 76px;
+  height: 76px;
+  background: #fcd34d;
+  border: 2px solid #b45309;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+.fc-decision .fc-decision-text {
+  transform: rotate(-45deg);
+  font-size: 0.7rem;
+  font-weight: 800;
+  max-width: 62px;
+  line-height: 1.2;
+  color: #451a03;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Input/Output — parallelogram */
+.fc-parallelogram {
+  background: #6ee7b7;
+  border: 2px solid #047857;
+  transform: skewX(-14deg);
+  min-width: 110px;
+  min-height: 40px;
+  padding: 0.5rem 1rem;
+  color: #064e3b;
+}
+
+.fc-parallelogram .fc-para-text {
+  transform: skewX(14deg);
+  display: block;
+  font-weight: 700;
+}
+
+/* Document */
+.fc-document {
+  background: #ffffff;
+  border: 2px solid #334155;
+  border-radius: 2px 2px 12px 12px;
+  min-width: 90px;
+  position: relative;
+  color: #0f172a;
+}
+
+.fc-document::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 8px;
+  width: 24px;
+  height: 8px;
+  background: #f8fafc;
+  border: 2px solid #334155;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Vertical connector arrow */
+.fc-v-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 28px;
+  color: #334155;
+}
+
+.fc-v-connector .fc-line {
+  width: 2px;
+  flex: 1;
+  background: #475569;
+}
+
+.fc-v-connector .fc-arrowhead {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #475569;
+}
+
+/* Branch row (decision yes/no) */
+.fc-branch-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 0.35rem 0;
+  position: relative;
+}
+
+.fc-branch-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.fc-branch-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #15803d;
+  margin-bottom: 0.35rem;
+}
+
+.fc-branch-label.no {
+  color: #b91c1c;
+}
+
+.fc-h-connector {
+  font-size: 1.1rem;
+  color: #334155;
+  font-weight: 800;
+  padding: 0 0.35rem;
+  align-self: center;
+}
+
+.fc-mini-arrow {
+  color: #334155;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+/* Symbol legend grid */
+.fc-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.fc-legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.fc-legend-item .fc-legend-name {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.fc-legend-item .fc-legend-desc {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.35;
+}
+
+/* Swimlanes */
+.fc-swimlane-chart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border: 2px solid #475569;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.fc-lane {
+  display: flex;
+  min-height: 100px;
+  border-bottom: 1px solid #94a3b8;
+}
+
+.fc-lane:last-child {
+  border-bottom: none;
+}
+
+.fc-lane-header {
+  width: 72px;
+  flex-shrink: 0;
+  background: #cbd5e1;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.35rem;
+  border-right: 1px solid #94a3b8;
+}
+
+.fc-lane-body {
+  flex: 1;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background: #f8fafc;
+}
+
+.fc-lane-body .fc-process {
+  min-width: 80px;
+  font-size: 0.68rem;
+}
+
+/* Highlight pulse on diagram (optional) */
+.fc-node.fc-highlight {
+  animation: fcPulse 2s ease-in-out infinite;
+}
+
+@keyframes fcPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
+}
+
+/* Compare mini table */
+.fc-compare-visual {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.fc-compare-box {
+  flex: 1;
+  min-width: 140px;
+  max-width: 200px;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #0f172a;
+  line-height: 1.45;
+}
+
+.fc-compare-box strong {
+  color: #0f172a;
+}
+
+.fc-compare-box.algo {
+  background: #f8fafc;
+  border: 2px dashed #475569;
+}
+
+.fc-compare-box.fc {
+  background: #dbeafe;
+  border: 2px solid #1d4ed8;
+}
+
+/* Force readable text inside diagrams (overrides global dark theme on nodes) */
+.lesson-diagram-wrap .fc-node,
+.lesson-diagram-wrap .fc-decision-text,
+.lesson-diagram-wrap .fc-para-text,
+.lesson-diagram-wrap .fc-legend-name,
+.lesson-diagram-wrap .fc-legend-desc,
+.lesson-diagram-wrap .fc-lane-header,
+.lesson-diagram-wrap .fc-compare-box,
+.lesson-diagram-wrap .fc-compare-box strong {
+  color: inherit;
+}
+
+.lesson-diagram-wrap p {
+  color: #475569;
+  font-size: 0.7rem;
+}

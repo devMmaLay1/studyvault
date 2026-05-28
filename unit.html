@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault — Unit</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5be3">
+    <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Lucide Icons (local first, CDN fallback) -->
+    <script src="assets/js/lucide.minn.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/lucide@latest';document.head.appendChild(s)"></script>
+</head>
+
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <div id="navbar"></div>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <i data-lucide="search" class="icon-md icon-muted"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="Search units, courses, modules... (Press / or Ctrl+K)" oninput="handleSearch(this.value)">
+                <button class="search-close" onclick="closeSearch()"><i data-lucide="x" class="icon-lg"></i></button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Breadcrumb -->
+        <div id="breadcrumb"></div>
+
+        <!-- Unit Header -->
+        <div id="unit-header" class="unit-header"></div>
+
+        <!-- Recall Trigger -->
+        <div class="recall-trigger">
+            <button id="recallBtn" class="recall-btn">
+                <i data-lucide="brain" class="icon-sm"></i>
+                Test Yourself - Hide summary and recall
+            </button>
+        </div>
+
+        <!-- Summary Content -->
+        <div id="unit-summary" class="unit-summary"></div>
+
+        <!-- Exam Questions Section -->
+        <div id="exam-questions" class="exam-questions-section"></div>
+
+        <!-- Recall Panel (hidden by default) -->
+        <div id="recall-panel" class="recall-panel hidden">
+            <p class="recall-prompt">
+                The summary is hidden. Write down everything you can remember about this unit.
+                Do not peek. Just recall from memory.
+            </p>
+            <textarea
+                id="recallInput"
+                class="recall-textarea"
+                placeholder="Start writing... it can be rough notes."
+            ></textarea>
+            <div class="voice-tools">
+                <button id="voiceBtn" class="voice-btn" type="button" aria-pressed="false">
+                    <i data-lucide="mic" class="icon-sm"></i>
+                    <span id="voiceBtnLabel">Speak</span>
+                </button>
+            </div>
+            <p id="voiceSupportMsg" class="voice-support-msg hidden"></p>
+            <p id="voiceInterim" class="voice-interim hidden"></p>
+            <p id="voiceError" class="voice-error hidden"></p>
+            <button id="revealBtn" class="reveal-btn">Reveal Summary</button>
+
+            <div id="recallCompare" class="recall-compare hidden">
+                <strong class="compare-title">Your recall:</strong>
+                <p id="recallOutput" class="recall-wrote"></p>
+                <p class="recall-hint">
+                    Compare what you wrote with the summary above.
+                    Rate your confidence below to schedule smart revision.
+                </p>
+            </div>
+
+            <div id="confidencePrompt" class="confidence-prompt hidden">
+                <p>How did you do?</p>
+                <div class="confidence-btns">
+                    <button class="conf-btn conf-hard" data-conf="hard">Struggled</button>
+                    <button class="conf-btn conf-medium" data-conf="medium">Missed some</button>
+                    <button class="conf-btn conf-easy" data-conf="easy">Got it all</button>
+                </div>
+                <p id="confSavedMsg" class="conf-saved-msg hidden"></p>
+            </div>
+        </div>
+
+        <!-- Notes Panel -->
+        <div id="unit-notes" class="unit-notes"></div>
+
+        <!-- Navigation -->
+        <div id="unit-navigation" class="unit-navigation"></div>
+    </main>
+
+    <!-- Floating Back Button -->
+    <a id="back-btn" href="#" class="back-float">
+        <i data-lucide="arrow-left" class="icon-sm"></i>
+        Back to Module
+    </a>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/examQuestions.js"></script>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/unit.js"></script>
+</body>
+
+</html>
