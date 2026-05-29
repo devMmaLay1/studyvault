@@ -132,6 +132,13 @@ function renderUnitHeader(context) {
             '</a>';
     }
 
+    let explanationLinkHtml = '';
+    if (window.unitExplanations && window.unitExplanations[context.unit.id]) {
+        explanationLinkHtml = '<a href="explanation.html?uid=' + context.unit.id + '&section=1" class="btn btn-primary" style="margin-right:0.5rem">' +
+            '<i data-lucide="book-open" class="icon-sm"></i> Full explanation' +
+            '</a>';
+    }
+
     // Load existing quiz score badge
     var scoreBadgeHtml = '<span id="unit-quiz-score-badge" style="display:none;margin-left:8px;"></span>';
     if (typeof getQuizScore === 'function') {
@@ -152,6 +159,7 @@ function renderUnitHeader(context) {
         '</div>' +
         '<h1>' + context.unit.title + '</h1>' +
         '<div class="unit-header-actions">' +
+        explanationLinkHtml +
         lessonLinkHtml +
         '<button id="reviewed-toggle" class="btn-reviewed ' + (reviewed ? 'active' : '') + '" onclick="toggleReviewed(\'' + context.unit.id + '\')">' +
         '<span class="btn-reviewed-icon"><i data-lucide="' + checkIcon + '" class="icon-sm"></i></span>' +

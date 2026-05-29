@@ -4082,3 +4082,1216 @@ img {
     gap: 10px;
   }
 }
+
+
+/* ==========================================================================
+   UNIT EXPLANATION PAGE
+   ========================================================================== */
+
+.explanation-container {
+  max-width: 980px;
+  width: 100%;
+  min-width: 0;
+}
+
+.explanation-hero {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+.explanation-container,
+.explanation-container * {
+  min-width: 0;
+  letter-spacing: 0;
+}
+
+.explanation-container h1,
+.explanation-container h2,
+.explanation-container h3,
+.explanation-container p,
+.explanation-container a,
+.explanation-container span,
+.explanation-container strong,
+.explanation-container small,
+.explanation-container li,
+.explanation-container div {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.explanation-eyebrow,
+.section-progress-label,
+.concept-kicker {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.explanation-eyebrow {
+  color: var(--accent);
+  background: rgba(45, 91, 227, 0.08);
+  border: 1px solid rgba(45, 91, 227, 0.18);
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-bottom: 14px;
+}
+
+[data-theme="dark"] .explanation-eyebrow {
+  background: rgba(232, 80, 10, 0.1);
+  border-color: rgba(232, 80, 10, 0.22);
+}
+
+.section-progress-label {
+  color: var(--green);
+  margin-left: 8px;
+}
+
+.explanation-hero h1 {
+  font-size: 44px;
+  margin: 12px 0;
+  letter-spacing: 0;
+}
+
+.explanation-hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 70ch;
+  color: var(--text-secondary);
+}
+
+.section-progress-track {
+  width: 100%;
+  height: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 20px 0 18px;
+}
+
+.section-progress-track span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--green));
+  border-radius: inherit;
+}
+
+.explanation-hero-actions,
+.explanation-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.explanation-hero-actions .btn,
+.explanation-navigation .btn {
+  min-height: 44px;
+  white-space: normal;
+  text-align: center;
+  flex: 0 1 auto;
+}
+
+.explanation-flow {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+  margin: 18px 0 28px;
+}
+
+.flow-step {
+  min-height: 76px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.flow-step.active {
+  border-color: var(--accent);
+  background: rgba(45, 91, 227, 0.08);
+}
+
+.flow-step.complete {
+  border-color: rgba(22, 163, 74, 0.3);
+  background: rgba(22, 163, 74, 0.07);
+}
+
+[data-theme="dark"] .flow-step.active {
+  background: rgba(232, 80, 10, 0.11);
+}
+
+[data-theme="dark"] .flow-step.complete {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.flow-step-number {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.flow-step.complete .flow-step-number {
+  color: var(--green);
+}
+
+.flow-step-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.explanation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.concept-section,
+.section-recap-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.concept-kicker {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.concept-section h2,
+.section-recap-card h2 {
+  font-size: 30px;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.concept-definition {
+  max-width: none;
+  padding: 16px 18px;
+  background: rgba(45, 91, 227, 0.08);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+[data-theme="dark"] .concept-definition {
+  background: rgba(232, 80, 10, 0.1);
+}
+
+.teach-block {
+  padding: 16px 0 16px 18px;
+  border-left: 3px solid var(--border);
+}
+
+.teach-block + .teach-block {
+  border-top: 1px solid var(--border);
+}
+
+.teach-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.teach-block p {
+  max-width: 74ch;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.concept-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.concept-point {
+  padding: 14px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.concept-point strong {
+  display: block;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.concept-point span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.explain-diagram {
+  margin: 24px 0 2px;
+  padding: 20px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  max-width: 100%;
+}
+
+.explain-diagram figcaption {
+  margin-top: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.diagram-flow,
+.diagram-split,
+.hardware-map {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 36px minmax(150px, 1fr) 36px minmax(150px, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.diagram-box {
+  min-height: 126px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 16px;
+  border: 2px solid transparent;
+}
+
+.diagram-box span {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #111827;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.diagram-box strong,
+.method-lane strong,
+.character-grid strong,
+.computer-method-grid strong {
+  display: block;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.diagram-box small,
+.method-lane small,
+.character-grid small,
+.computer-method-grid small {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.box-blue {
+  background: rgba(45, 91, 227, 0.1);
+  border-color: rgba(45, 91, 227, 0.3);
+}
+
+.box-amber {
+  background: rgba(217, 119, 6, 0.11);
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+.box-green {
+  background: rgba(22, 163, 74, 0.11);
+  border-color: rgba(22, 163, 74, 0.3);
+}
+
+.box-purple {
+  background: rgba(147, 51, 234, 0.1);
+  border-color: rgba(147, 51, 234, 0.3);
+}
+
+.diagram-arrow {
+  position: relative;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.diagram-arrow::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-top: 4px solid var(--accent);
+  border-right: 4px solid var(--accent);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.method-lanes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.method-lane,
+.character-grid div,
+.computer-method-grid div,
+.environment-map div,
+.tree-branches div {
+  min-height: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  text-align: center;
+}
+
+.method-lane.manual {
+  border-color: rgba(217, 119, 6, 0.35);
+  background: rgba(217, 119, 6, 0.08);
+}
+
+.method-lane.mechanical {
+  border-color: rgba(147, 51, 234, 0.35);
+  background: rgba(147, 51, 234, 0.08);
+}
+
+.method-lane.computer {
+  border-color: rgba(22, 163, 74, 0.35);
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.character-grid,
+.computer-method-grid,
+.environment-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 12px;
+}
+
+.tree-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tree-root {
+  align-self: center;
+  min-width: min(100%, 280px);
+  text-align: center;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: white;
+  background: var(--accent);
+  font-weight: 800;
+}
+
+.tree-branches {
+  display: grid;
+  gap: 12px;
+}
+
+.tree-branches.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tree-branches.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tree-branches small {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.section-recap-card {
+  border-color: rgba(22, 163, 74, 0.35);
+  background: linear-gradient(180deg, rgba(22, 163, 74, 0.07), var(--surface));
+}
+
+.recap-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.recap-list li {
+  position: relative;
+  padding: 12px 14px 12px 38px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.recap-list li::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.final-message {
+  max-width: none;
+  margin: 18px 0 0;
+  padding: 16px 18px;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: rgba(45, 91, 227, 0.08);
+  color: var(--text);
+  font-size: 17px;
+}
+
+.section-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.section-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 116px;
+  min-width: 0;
+  padding: 18px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.section-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.section-nav-card span {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.section-nav-card.next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.section-nav-card strong {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+@media (max-width: 860px) {
+  .explanation-hero h1 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+
+  .concept-section h2,
+  .section-recap-card h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .explanation-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .diagram-flow,
+  .diagram-split,
+  .hardware-map {
+    grid-template-columns: 1fr;
+  }
+
+  .diagram-arrow {
+    width: 4px;
+    height: 30px;
+    justify-self: center;
+  }
+
+  .diagram-arrow::after {
+    right: 50%;
+    top: auto;
+    bottom: -1px;
+    transform: translateX(50%) rotate(135deg);
+  }
+
+  .method-lanes,
+  .tree-branches.three,
+  .tree-branches.two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .explanation-hero,
+  .concept-section,
+  .section-recap-card {
+    padding: 20px;
+  }
+
+  .explanation-hero h1 {
+    font-size: 30px;
+    line-height: 1.18;
+  }
+
+  .explanation-hero-text {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .explanation-hero-actions .btn,
+  .explanation-navigation .btn {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .section-progress-label {
+    display: flex;
+    margin: 8px 0 0;
+  }
+
+  .explanation-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flow-step {
+    min-height: 68px;
+    padding: 10px;
+  }
+
+  .flow-step-number {
+    width: 26px;
+    height: 26px;
+  }
+
+  .teach-block {
+    padding-left: 12px;
+  }
+
+  .teach-block p,
+  .concept-definition {
+    font-size: 16px;
+  }
+
+  .concept-section h2,
+  .section-recap-card h2 {
+    font-size: 24px;
+  }
+
+  .explain-diagram {
+    padding: 14px;
+  }
+
+  .diagram-box,
+  .method-lane,
+  .character-grid div,
+  .computer-method-grid div,
+  .environment-map div,
+  .tree-branches div {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .section-nav-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-nav-card.next {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .explanation-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .explanation-hero,
+  .concept-section,
+  .section-recap-card {
+    padding: 16px;
+  }
+
+  .explanation-hero h1 {
+    font-size: 26px;
+  }
+
+  .concept-section h2,
+  .section-recap-card h2 {
+    font-size: 22px;
+  }
+
+  .explanation-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-step {
+    min-height: 56px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .concept-definition,
+  .teach-block p,
+  .final-message {
+    font-size: 15px;
+  }
+
+  .recap-list li {
+    padding-right: 12px;
+  }
+}
+
+
+/* ==========================================================================
+   EXPLANATION AUDIO PLAYER
+   ========================================================================== */
+
+/* ─── ACTIVE CONCEPT HIGHLIGHT ─── */
+.concept-section.audio-active,
+.section-recap-card.audio-active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(45, 91, 227, 0.12),
+              0 4px 20px rgba(45, 91, 227, 0.08);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+[data-theme="dark"] .concept-section.audio-active,
+[data-theme="dark"] .section-recap-card.audio-active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(232, 80, 10, 0.15),
+              0 4px 20px rgba(232, 80, 10, 0.1);
+}
+
+/* ─── HERO SEAMLESS LISTEN BUTTON ─── */
+.audio-seamless-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none !important;
+  background: transparent !important;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  position: relative;
+  overflow: visible;
+  flex-shrink: 0;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.audio-seamless-btn:hover {
+  color: var(--accent);
+  transform: translateY(-2px) scale(1.1);
+}
+
+/* Playing state styles - pure animated icon */
+.audio-seamless-btn.playing {
+  color: var(--accent) !important;
+  transform: scale(1.05);
+}
+
+/* Paused state styles */
+.audio-seamless-btn.paused {
+  color: var(--accent) !important;
+}
+
+/* Icon wrapper & state toggling */
+.audio-icon-wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaker-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sound-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2.2px;
+  width: 18px;
+  height: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sound-wave .bar {
+  display: block;
+  width: 2.5px;
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 99px;
+  transition: height 0.2s ease;
+}
+
+/* Transitions when .playing */
+.audio-seamless-btn.playing .speaker-icon {
+  opacity: 0;
+  transform: scale(0.6);
+  pointer-events: none;
+}
+
+.audio-seamless-btn.playing .sound-wave {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+/* Sound wave animations */
+.audio-seamless-btn.playing .bar {
+  animation: soundWavePulse 1s ease-in-out infinite alternate;
+}
+
+.audio-seamless-btn.playing .bar-1 {
+  animation-delay: 0.1s;
+}
+
+.audio-seamless-btn.playing .bar-2 {
+  animation-delay: 0.3s;
+}
+
+.audio-seamless-btn.playing .bar-3 {
+  animation-delay: 0.2s;
+}
+
+.audio-seamless-btn.playing .bar-4 {
+  animation-delay: 0.4s;
+}
+
+@keyframes soundWavePulse {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 14px;
+  }
+}
+
+/* ─── STICKY MINI PLAYER ─── */
+.audio-mini-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.audio-mini-player.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.audio-mini-inner {
+  max-width: 680px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08),
+              0 0 0 1px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(12px);
+}
+
+[data-theme="dark"] .audio-mini-inner {
+  background: rgba(17, 17, 19, 0.92);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4),
+              0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* ─── CONTROL BUTTONS ─── */
+.audio-ctrl-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.audio-ctrl-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.audio-play.playing {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-color: #6366f1;
+  color: white;
+  animation: audioPulse 2s ease-in-out infinite;
+}
+
+.audio-stop:hover {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+/* ─── MINI PLAYER INFO ─── */
+.audio-mini-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.audio-status-text {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.audio-progress-mini {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.audio-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+[data-theme="dark"] .audio-progress-fill {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+/* ─── SPEED CONTROL ─── */
+.audio-speed-control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.audio-speed-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.audio-speed-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.audio-rate-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+  min-width: 38px;
+  text-align: center;
+}
+
+/* ─── RESPONSIVE: AUDIO PLAYER ─── */
+@media (max-width: 640px) {
+  .audio-mini-inner {
+    margin: 0 8px 8px;
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 12px;
+  }
+
+  .audio-ctrl-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .audio-speed-control {
+    display: none;
+  }
+}
+
+
+/* ==========================================================================
+   REAL-TIME ACTIVE READING HIGHLIGHTS
+   ========================================================================== */
+
+/* Seamlessly transition text properties */
+.explanation-container .audio-sentence {
+  transition: opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              color 0.2s ease,
+              background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Dim other paragraphs slightly when audio is actively playing */
+.explanation-container.audio-playing .audio-sentence {
+  opacity: 0.42; /* Increased dimming to make active text pop */
+}
+
+/* Brighten, highlight, and gently elevate the active reading line */
+.explanation-container.audio-playing .audio-sentence.audio-sentence-active {
+  opacity: 1 !important;
+  color: #1a1714 !important; /* Premium dark text for light mode contrast */
+  background: rgba(245, 158, 11, 0.24) !important; /* Vibrant golden-amber highlighter */
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.24); /* Cushioned highlight padding */
+  font-weight: 600 !important; /* Slightly bolder for absolute legibility */
+}
+
+/* Active concept card and bullet term overrides */
+.explanation-container.audio-playing .concept-point.audio-sentence.audio-sentence-active {
+  opacity: 1 !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+  border-color: #d97706 !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.15);
+}
+
+/* Dark mode custom adaptations - gorgeous glowing gold-orange */
+[data-theme="dark"] .explanation-container.audio-playing .audio-sentence.audio-sentence-active {
+  color: #ffffff !important;
+  background: rgba(232, 80, 10, 0.32) !important; /* Vivid neural glowing gold-orange */
+  box-shadow: 0 0 0 3px rgba(232, 80, 10, 0.32);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.18); /* Soft backlight text glow */
+  font-weight: 600 !important;
+}
+
+[data-theme="dark"] .explanation-container.audio-playing .concept-point.audio-sentence.audio-sentence-active {
+  background: rgba(232, 80, 10, 0.16) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 4px 16px rgba(232, 80, 10, 0.35);
+}
+
+
+/* ==========================================================================
+   DIAGRAM DUAL-MODE SYSTEM
+   Mode 1 — STATIC (default): Fully visible for silent readers, with hover FX
+   Mode 2 — AUDIO:  Step-by-step narrated draw-in, synced to speech
+   ========================================================================== */
+
+/* ─── MODE 1: STATIC (DEFAULT) — everything visible ─── */
+.diagram-anim {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Arrows fully stretched in static mode */
+.diagram-arrow.diagram-anim {
+  transform-origin: left center;
+}
+
+/* ─── STATIC HOVER MICRO-INTERACTIONS ─── */
+/* Boxes gently lift and glow when hovered (only when NOT in audio mode) */
+.explain-diagram:not(.diagram-audio-mode) .diagram-box.diagram-anim {
+  cursor: default;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease,
+              filter 0.3s ease;
+}
+
+.explain-diagram:not(.diagram-audio-mode) .diagram-box.diagram-anim:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(45, 91, 227, 0.18);
+  z-index: 2;
+}
+
+[data-theme="dark"] .explain-diagram:not(.diagram-audio-mode) .diagram-box.diagram-anim:hover {
+  box-shadow: 0 8px 28px rgba(232, 80, 10, 0.22);
+}
+
+/* Arrows subtly brighten on hover */
+.explain-diagram:not(.diagram-audio-mode) .diagram-arrow.diagram-anim:hover {
+  filter: brightness(1.3);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MODE 2: AUDIO — Step-by-step narrated draw-in
+   Activated by adding .diagram-audio-mode to the <figure>
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Hide all elements when audio mode is active */
+.explain-diagram.diagram-audio-mode .diagram-anim {
+  opacity: 0;
+  transform: translateY(18px) scale(0.88);
+  filter: blur(6px);
+  transition: opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+              transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+              filter 0.6s ease,
+              box-shadow 0.6s ease;
+}
+
+/* Arrows: stretch from zero in audio mode */
+.explain-diagram.diagram-audio-mode .diagram-arrow.diagram-anim {
+  transform: scaleX(0) translateY(0);
+  transform-origin: left center;
+  filter: blur(0);
+}
+
+/* ─── STEP REVEAL: Each step appears ONLY when .step-visible is added ─── */
+.explain-diagram.diagram-audio-mode .diagram-anim.step-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Arrows stretch out when their step is revealed */
+.explain-diagram.diagram-audio-mode .diagram-arrow.diagram-anim.step-visible {
+  transform: scaleX(1) translateY(0);
+}
+
+/* ─── GLOW PULSE ON LANDING ─── */
+.explain-diagram.diagram-audio-mode .diagram-box.diagram-anim.step-visible {
+  animation: diagramBoxLand 1s ease forwards;
+}
+
+@keyframes diagramBoxLand {
+  0%   { box-shadow: 0 0 0 0 transparent; }
+  40%  { box-shadow: 0 0 24px 6px rgba(45, 91, 227, 0.25); }
+  100% { box-shadow: none; }
+}
+
+[data-theme="dark"] .explain-diagram.diagram-audio-mode .diagram-box.diagram-anim.step-visible {
+  animation-name: diagramBoxLandDark;
+}
+
+@keyframes diagramBoxLandDark {
+  0%   { box-shadow: 0 0 0 0 transparent; }
+  40%  { box-shadow: 0 0 28px 8px rgba(232, 80, 10, 0.3); }
+  100% { box-shadow: none; }
+}
+
+/* ─── RESPONSIVE: MOBILE ─── */
+@media (max-width: 640px) {
+  .explain-diagram.diagram-audio-mode .diagram-arrow.diagram-anim {
+    transform-origin: center top;
+    transform: scaleY(0) translateY(0);
+  }
+
+  .explain-diagram.diagram-audio-mode .diagram-arrow.diagram-anim.step-visible {
+    transform: scaleY(1) translateY(0);
+  }
+}
+

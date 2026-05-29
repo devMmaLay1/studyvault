@@ -1,0 +1,8 @@
+# IDEs and Editors
+.vscode/
+.cursor/
+
+# Temporary / Scratch files
+.codex-tmp/
+test-results/
+text

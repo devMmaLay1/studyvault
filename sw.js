@@ -1,4 +1,4 @@
-const CACHE_NAME = "studyvault-offline-v2";
+const CACHE_NAME = "studyvault-offline-v13";
 
 const CORE_ASSETS = [
     "./index.html",
@@ -9,6 +9,7 @@ const CORE_ASSETS = [
     "./unit.html",
     "./recall.html",
     "./lesson.html",
+    "./explanation.html",
     "./site.webmanifest",
     "./assets/icons/studyvault-icon.svg",
     "./assets/css/styles.css",
@@ -30,7 +31,10 @@ const CORE_ASSETS = [
     "./assets/js/recall.js",
     "./assets/js/lesson-diagrams.js",
     "./assets/js/lesson-engine.js",
-    "./assets/js/lessons/CIT108_m2_u3.js"
+    "./assets/js/lessons/CIT108_m2_u3.js",
+    "./assets/js/explanations.js",
+    "./assets/js/explanation-audio.js",
+    "./assets/js/explanation.js"
 ];
 
 self.addEventListener("install", function (event) {

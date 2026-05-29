@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault - Unit Explanation</title>
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#2d5be3">
+    <link rel="icon" href="assets/icons/studyvault-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/lucide.minn.js" onerror="var s=document.createElement('script');s.src='https://unpkg.com/lucide@latest';document.head.appendChild(s)"></script>
+</head>
+
+<body>
+    <div id="reading-progress"></div>
+
+    <div id="navbar"></div>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <i data-lucide="search" class="icon-md icon-muted"></i>
+                <input type="text" id="search-input" class="search-input" placeholder="Search units, courses, modules... (Press / or Ctrl+K)" oninput="handleSearch(this.value)">
+                <button class="search-close" onclick="closeSearch()"><i data-lucide="x" class="icon-lg"></i></button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <main class="container explanation-container">
+        <div id="breadcrumb"></div>
+        <section id="explanation-hero" class="explanation-hero"></section>
+        <nav id="explanation-flow" class="explanation-flow" aria-label="Explanation progress"></nav>
+        <section id="explanation-content" class="explanation-content"></section>
+        <section id="explanation-recap" class="explanation-recap"></section>
+        <div id="explanation-navigation" class="explanation-navigation"></div>
+    </main>
+
+    <a id="back-btn" href="#" class="back-float">
+        <i data-lucide="arrow-left" class="icon-sm"></i>
+        Back to Summary
+    </a>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/icons.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/explanations.js"></script>
+    <script src="assets/js/explanation-audio.js"></script>
+    <script src="assets/js/explanation.js"></script>
+</body>
+
+</html>

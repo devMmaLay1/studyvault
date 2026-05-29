@@ -33,7 +33,58 @@ const academicData = {
                                     id: "CIT104_m1",
                                     title: "Understanding the Computer",
                                     units: [
-                                        { id: "CIT104_m1_u1", title: "Basic Concepts", summary: "" },
+                                        { id: "CIT104_m1_u1", title: "Basic Concepts", summary: `<h3>CIT104 - Unit 1: Basic Concepts</h3>
+<h4>1. What This Unit Is About</h4>
+<p>This unit introduces the basic ideas needed to understand computers. It explains what a computer is, what data and information mean, the methods of data processing, the characteristics of a computer, and the parts of the computing system.</p>
+
+<h4>2. Definition of a Computer</h4>
+<p>A computer is a tool or machine used for processing data to give required information.</p>
+<p>A computer can take input data through the keyboard, store the data, process it in the Central Processing Unit (CPU), and give out the result on the screen or Visual Display Unit (VDU).</p>
+
+<h4>3. Data and Information</h4>
+<table>
+  <thead><tr><th>Term</th><th>Simple Meaning</th><th>Examples From the Unit</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Data</strong></td><td>Facts about a person, object, or place.</td><td>Name, age, complexion, school, class, height.</td></tr>
+    <tr><td><strong>Information</strong></td><td>Processed data or a meaningful statement.</td><td>Net pay of workers, examination results, list of successful candidates.</td></tr>
+  </tbody>
+</table>
+
+<h4>4. Main Data Processing Flow</h4>
+<p><strong>Input</strong> means data enters the computer. <strong>Processing</strong> means the computer works on the data. <strong>Output</strong> means the computer gives the result as information.</p>
+
+<h4>5. Methods of Data Processing</h4>
+<table>
+  <thead><tr><th>Method</th><th>Tools or Machines</th><th>Main Idea</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Manual method</strong></td><td>Chalk, wall, pen, pencil.</td><td>Uses much human effort and can be slow, tiring, and affected by human errors.</td></tr>
+    <tr><td><strong>Mechanical method</strong></td><td>Typewriter, roneo machines, adding machines.</td><td>Uses machines but can be routine, noisy, hazardous, error prone, and untidy.</td></tr>
+    <tr><td><strong>Computer method</strong></td><td>Computer.</td><td>Processes data steadily and continuously, stores data and instructions, corrects errors neatly, and produces neat output reports.</td></tr>
+  </tbody>
+</table>
+
+<h4>6. Characteristics of a Computer</h4>
+<ul>
+  <li><strong>Speed:</strong> The computer can manipulate large data at incredible speed.</li>
+  <li><strong>Accuracy:</strong> Its accuracy is very high and consistent.</li>
+  <li><strong>Storage:</strong> It has internal and external storage facilities for data and instructions.</li>
+  <li><strong>Automatic:</strong> Once a program is in memory, it can run automatically when opened.</li>
+  <li><strong>Reliability:</strong> It does not suffer tiredness or lack of concentration.</li>
+  <li><strong>Flexibility:</strong> It can perform tasks once they can be reduced to logical steps.</li>
+</ul>
+
+<h4>7. The Computing System</h4>
+<p>The computing system is made up of the computer system, the user, and the environment in which the computer is operated.</p>
+<ul>
+  <li><strong>Computer system:</strong> Made up of hardware and software.</li>
+  <li><strong>Hardware:</strong> Made up of input unit, processing unit, and output unit.</li>
+  <li><strong>Software:</strong> Series of instructions that enable the computer to perform tasks.</li>
+  <li><strong>Computer users:</strong> The people who operate the computer.</li>
+  <li><strong>Computing environment:</strong> The building and support items around the computer, such as furniture, voltage stabiliser, UPS, fans, and air conditioners.</li>
+</ul>
+
+<h4>8. Final Exam Memory</h4>
+<p>A computer accepts data, processes it, and produces information. The computer method is better than manual and mechanical methods because it improves speed, neatness, accuracy, reliability, and storage.</p>` },
                                         {
                                             id: "CIT104_m1_u2",
                                             title: "Historical Overview of the Computer",
